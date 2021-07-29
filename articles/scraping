@@ -1,0 +1,15 @@
+(sorry about not having formatting; it's hard ok)
+
+A few days ago, I wanted to download some anime. Specifically, Detective Conan. I planned to rewatch it (I've already gone through the whole thing) in order to perfect my opinion on how its tone and quality have shifted over the years.
+
+it's a long show. There are over a thousand episodes out now. So, I figured I should probably skip the fillers. There are a lot of filler episodes, and i don't quite remember which ones they are (it's a really long list).
+
+But there's this episode that does: https://xerblade.com/p/detective-conan-important-episodes-list.html
+
+Great, right? It has a sequential list of every episode or episode range that's at all relevant to the plot, and circles and arrows and a paragraph on the back of each one explaining what it was and how it was used in service of the story.
+
+Well unfortunately, the source code for the website is rather a mess. Well, not exactly a mess (it's certainly better than this website), just it's been minified. Minified html. They remove the newline characters to save a couple kilobytes of internet. That said, the author does try to avoid javascript, so let's not rag on him too much.
+
+What I want to do is run a shell one-liner that will display a list of each episode number in order, so I can dump it to a file and use it later.
+
+I use cURL. It's a fantastic tool that spits out the raw text of a webpage to your terminal (stdout). Other stuff like GNU wget might have some neat abilities (like actually good progress bars, grrr), but curl takes the cake in terms of efficiency and meme minimalism.
