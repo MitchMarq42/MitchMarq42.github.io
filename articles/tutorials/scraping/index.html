@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-26 Sat 08:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<p>
+(This article is currently incomplete. I will work on it more later.)
+</p>
+
+
+
+
+
+
+
+<p>
+= Using `sed` and `curl` to extract information from webpages =
+-&#x2014;
+<code>= Introduction =</code>
+I'll go over a bit more technicalities in my article on `grep`, but I wanted to discuss a practical use of UNIX command-line tools. This is also in relation to data-hoarding, but we'll get into that.
+</p>
+
+<p>
+<code>= The problem =</code>
+Detective Conan is a very long-running anime. It is basiscally season-less and has been running more-or-less continuously since 1996. As of the time of writing, there are 1036 episodes out, and every week that number ticks up by one. It's also not a masterpiece, so about 42% of that is filler.
+The easy solution is to just not watch it, but I think we can do better. Here is how I found a list of canon/plot-relevant episodes, and extracted that into something to be used with various other tools at my disposal&#x2013; and how you can too!
+</p>
+
+<p>
+-&#x2014;
+</p>
+
+<p>
+First we google (or bing, or duck, or brave) for "detective conan list of important episodes". <a href="https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0%7CThis">https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0%7CThis</a> is the top result on Google and Brave, and is thankfully also the one I used in the past to come up with the following procedure.
+</p>
+
+<p>
+In the browser, it's a pretty good page. Decorated but tasteful, modern but not bloated. Run basically by one guy, who strives to not use JavaScript as much as possible (an honorable goal).
+</p>
+
+<p>
+But we're working in the command line. And on the command line, everything is reduced to plaintext. If you're lucky enough to not know what HTML looks like, here's a sample from the aformentioned page (obtained with `curl 'https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0'`):
+</p>
+
+<p>
+{{{HTML
+&lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;*Main Plot*&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;971-974&lt;/span&gt; [INTL 1028-1031] (manga 1013-1017|V95F10-V96F3):&lt;/span&gt; &lt;span class='dc-list-char'&gt;Detective &lt;span lang='ja-Latn'&gt;Chiba&lt;/span&gt;&lt;/span&gt; and &lt;span class='dc-list-char' lang='ja-Latn'&gt;Miike&lt;/span&gt; development. &lt;span class='dc-list-char' lang='ja-Latn'&gt;Kuroda&lt;/span&gt; development. &lt;span class='dc-list-char' lang='ja-Latn'&gt;Amuro&lt;/span&gt; development. Plus a development for &lt;span class='dc-list-char' lang='ja-Latn'&gt;Yumi&lt;/span&gt; and &lt;span class='dc-list-char' lang='ja-Latn'&gt;Shūkichi&lt;/span&gt; in the background. &lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;*Main Plot*&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;983-984&lt;/span&gt; [INTL 1040-1041] (manga 1018-1021|V96F4-7):&lt;/span&gt; &lt;span class='dc-list-char' lang='ja-Latn'&gt;Heiji&lt;/span&gt; case, &lt;span class='dc-list-char' lang='ja-Latn'&gt;Kaitō Kid&lt;/span&gt;, &lt;span class='dc-list-char' lang='ja-Latn'&gt;Morofushi&lt;/span&gt; development, &lt;span class='dc-list-char' lang='ja-Latn'&gt;Amuro&lt;/span&gt; development, and &lt;span class='dc-list-char' lang='ja-Latn'&gt;Hiromitsu&lt;/span&gt; development. &lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;*Main Plot*&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;span class='dc-list-pos'&gt;&lt;span class='dc-list-no'&gt;993-995&lt;/span&gt; [INTL 1050-1052] (manga 1022-1026|V96F8-V97F1):&lt;/span&gt; &lt;span class='dc-list-char' lang='ja-Latn'&gt;Sera Masumi&lt;/span&gt; development. Also, &lt;
+}}}
+</p>
+
+<p>
+Sorry. You shouldn't have had to endure that. In fact, you probably didn't. I bet your eyes glazed over. In fact, this is just a segment from near the end of a <span class="underline">huge</span> pagagraph which actually contains everything we've been looking for. Obviously, just reading it like this isn't really doable. Let's chop it up into some better pieces.
+</p>
+
+<p>
+`sed` is a stream editor. You give it a stream of text, and it applies a rule or conversion to the text according to the expression you put after it (the first <b>argument</b>.) It is often used for search-and-replace.
+</p>
+
+<p>
+For example, we can convert every instance of `&gt;&lt;` to, say, `&gt; &lt;` or better yet to
+    `&gt;`
+    `&lt;`
+. Here's the command now:
+</p>
+
+<p>
+`curl 'https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0' | sed 's/&gt;&lt;/&gt;\n&lt;/g'`
+</p>
+
+<p>
+The `s/thing1/thing2/g` tells `sed` to _S<sub>ubstitute</sub> thing1 with thing2 _G<sub>lobally</sub>, every time in the line. Without the `g` it would only do the first one (which is useful but not here). That `\n` is what's called a <b>regular expression</b>&#x2013; this one specifically means "newline". You often can't type an actual Enter character on the command line because it'll try to execute, so using `\n` works better.
+</p>
+
+<p>
+Anyway.
+</p>
+
+<p>
+Now the bits of that paragraph each look something like this:
+{{{HTML
+&lt;span class='dc-list-pos'&gt;
+&lt;span class='dc-list-no'&gt;971-974&lt;/span&gt; [INTL 1028-1031] (manga 1013-1017|V95F10-V96F3):&lt;/span&gt; &lt;span class='dc-list-char'&gt;Detective &lt;span lang='ja-Latn'&gt;Chiba&lt;/span&gt;
+&lt;/span&gt; and &lt;span class='dc-list-char' lang='ja-Latn'&gt;Miike&lt;/span&gt; development. &lt;span class='dc-list-char' lang='ja-Latn'&gt;Kuroda&lt;/span&gt; development. &lt;span class='dc-list-char' lang='ja-Latn'&gt;Amuro&lt;/span&gt; development. Plus a development for &lt;span class='dc-list-char' lang='ja-Latn'&gt;Yumi&lt;/span&gt; and &lt;span class='dc-list-char' lang='ja-Latn'&gt;Shūkichi&lt;/span&gt; in the background. &lt;span class='dc-list-pos'&gt;
+&lt;span class='dc-list-no'&gt;*Main Plot*&lt;/span&gt;
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+}}}
+Not completely immune to overlong lines, but it's something.
+Now pay attention to that line that says `class='dc-list-no'&gt;971-974&lt;/span&gt;`. If we go back to the browser and control-F 971-974 we find&#x2026; that there are no results because the page is portioned out per hundred episodes. Let's click on the 900s tab and try again.
+</p>
+
+<p>
+Aaand it looks like this:
+</p>
+
+<p>
+<b>971-974</b> [INTL 1028-1031] (manga 1013-1017|V95F10-V96F3): Detective Chiba and Miike development. Kuroda development. Amuro development. Plus a development for Yumi and Shūkichi in the background. \**Main Plot*\*
+</p>
+
+<p>
+As you can see, the author has very kindly left a keyword next to every episode number or range that does not appear in the page itself: `dc-list-no`. Let's try `grep`ing the whole mess for that string.
+</p>
+
+<p>
+`curl 'https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0' | sed 's/&gt;&lt;/&gt;\n&lt;/g' | grep 'dc-list-no'`
+</p>
+
+<p>
+Now we end up with blocks that look like
+{{{HTML
+&lt;span class='dc-list-no'&gt;971-974&lt;/span&gt; [INTL 1028-1031] (manga 1013-1017|V95F10-V96F3):&lt;/span&gt; &lt;span class='dc-list-char'&gt;Detective &lt;span lang='ja-Latn'&gt;Chiba&lt;/span&gt;
+&lt;span class='dc-list-no'&gt;*Main Plot*&lt;/span&gt;
+}}}
+</p>
+
+<p>
+Hmmm. Not perfect. But we're getting there. Most lines now either contain the episode numbers like we want, or not much numbers at all. There are some like
+{{{HTML
+&lt;span class='dc-list-no'&gt;(Both 1 Hour Specials)&lt;/span&gt;
+}}}
+but that's probably alright as you'll see.
+</p>
+
+<p>
+-&#x2014;
+</p>
+
+<p>
+I'm just going to drop a link to <a href="https://www.gnu.org/software/sed/manual/sed.html%7Cthe%20GNU%20online%20manual%20for%20%60sed%60">https://www.gnu.org/software/sed/manual/sed.html%7Cthe%20GNU%20online%20manual%20for%20%60sed%60</a> here. It's a good reference.
+</p>
+
+<p>
+Here I'll just leave it at this: `sed` is the successor of the ancient `ed` editor, and kind of has its own language. A language of editing. Of going to places in the stream, of operating on text objects in the line, of substituting and printing.
+</p>
+
+<p>
+-&#x2014;
+</p>
+
+<p>
+What
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2022-03-26 Sat 08:32</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+</div>
+</body>
+</html>
