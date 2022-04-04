@@ -20,8 +20,8 @@
       (list
        (list "my-org-site"
              :recursive t
-             :base-directory "./"
-             :publishing-directory "../vimwiki_html"
+             :base-directory "./org"
+             :publishing-directory "./html"
              :publishing-function 'org-html-publish-to-html
 	     :section-numbers nil
 	     :with-creator t
