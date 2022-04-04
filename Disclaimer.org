@@ -1,0 +1,4 @@
+* Pages generated with VimWiki
+* Typed in Neovide, a GUI for Neovim
+* Hosted on a convertible laptop
+* DNS provided by (unknown)

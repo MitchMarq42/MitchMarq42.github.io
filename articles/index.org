@@ -1,0 +1,10 @@
+* Index. This contains all the files I want you to see.
+
+(but actually it's just lost hopes and dreams)
+
+- [o] TODO: All below:
+    - [X] [[./deletion.org][deletion]] -- Just a meme. To remind me.
+    - [X] [[./selflangs.org][Communication is Fake, actually...]]
+    - [ ] [[./depression.org][Dealing with drift-away, impostor syndrome, inferiority, etc]] (not advice)
+    - [X] [[./based.org][Why does everyone based have to be so stupid?]] [RANT]
+    - [ ] [[./idkman.org][Help! I've fallen and I can't get up]]
