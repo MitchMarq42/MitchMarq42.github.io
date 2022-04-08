@@ -1,5 +1,4 @@
 #+TITLE: The best site ever! (not)
-# #+HTML_HEAD: <title>The best site ever! (not)</title>
 #+OPTIONS: toc:nil title:nil
 #+LINK_HOME: index.html
 
