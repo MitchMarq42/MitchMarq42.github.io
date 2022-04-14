@@ -1,1 +1,1 @@
-/home/mitch/.local/git/mitchmarq42.github.io/org/musings_log.org
+musings_log.org
