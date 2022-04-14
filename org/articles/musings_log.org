@@ -1,5 +1,1 @@
-= Empty page =
-
-There is currently no text on this page. You can search for text on this page, or search the related logs, but you cannot create this page.
-
-Bye!
+/home/mitch/.local/git/mitchmarq42.github.io/org/musings_log.org
