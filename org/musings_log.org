@@ -1,4 +1,4 @@
-12-28-2021 9:45 pm
+* 12-28-2021 9:45 pm
 Just deleted reddit. u/KasaneTeto_ was banned and I have no reason to live.
 Oh take me higher, far away to the sun! (song)
 Was I wrong to push Miguel on the ice? Or was he wrong to resist? He did 
@@ -76,7 +76,7 @@ But they'll never throw it back to you (song)
 Well I've been writing on here for a whole hour now. It's a date. Good night 
 for realizes.
 
-2021-12-29 7:26 am
+* 2021-12-29 7:26 am
 Woke up at 7:18. Was having a dream in which Lillian wanted to have sex with 
 me. I had to pee first, and that's when I woke up. Her act of choosing me 
 seemed unexpected, and she did it publicly and decisively and suddenly, and I 
@@ -89,12 +89,12 @@ up to the lonely dark me with an erect penis and a full bladder. Which is just
 the worst. Now I'm writing more in here. Kinda worried that this document will 
 be huge by the end.
 
-2021-12-29 8:21 am
+* 2021-12-29 8:21 am
 Just got to work. Already bored. And no reddit, how about that. Gonna open 
 termux and do some customization in that. Probably fix my dotfiles updation and 
 stuff.
 
-2021-12-29 9:42 am
+* 2021-12-29 9:42 am
 Stage plays are really something. How can the audience suspend their disbelief? 
 When I watch an anime, I believe it's happening. Not in a grasp able way, but 
 there is some world in which everything basically holds together and makes 
@@ -108,7 +108,7 @@ it too. Of course.
 Chemistry, says The Martian, is a bitch. And this sekai is made of chemistry. 
 Thus, this sekai is a bitch. Gotta learn Japanese here pretty soon.
 
-2021-12-29 10:25 am
+* 2021-12-29 10:25 am
 My mind is surprisingly clear right now. And how? I don't doubt nothing about 
 it feels like words and things and stuff. So full I can't eat. My throat 
 recoils at the mere thought. And yet I will eat again, I will enjoy it, I will 
@@ -136,14 +136,14 @@ Jonas. Wish we had something in common, he was a good guy. Too good for the
 likes of me. He won, I lost. I lost, how could I count the cost. All well that 
 ends well and this didn't so thats just as well hope it gives you hell.
 
-2021-12-29 11:16 am
+* 2021-12-29 11:16 am
 Slime was such a Good show. Is such a good show. Wish I could go back and watch 
 it again. Need moar. I want to watch them all. But only the good ones. 
 
-2021-12-29 12:24 pm
+* 2021-12-29 12:24 pm
 Jon tells me the world was once free. How disturbing.
 
-2021-12-29 8:48 pm
+* 2021-12-29 8:48 pm
 Ate probably too much today. Bought a carpet and it is nice. Also tried to 
 submodule-ize my .config/nvim and did, but now am concerned about updation. I 
 want it to act like a slave to the main dotfiles repo, but git doesn't quite 
@@ -168,7 +168,7 @@ remarkable. Seriously need a better network connection, this is ridiculous. I'm
 at 101 gigs this month. Bye now. Gonna waste some time on YT. Make it 103 gigs. 
 Night.
 
-2021-12-30 7:50 am
+* 2021-12-30 7:50 am
 Went to bed late and woke up early. Am I evolving? Is this my life now? Or is 
 it the caffeine? Perhaps the stress or something. Anyway. Successfully 
 submoduled my nvim config so that's nice. Also conan-dl I threw out the old one 
@@ -179,7 +179,7 @@ take a set of arguments, and if they contain any custom functions within them
 those will also be the same way. The Process section will be a single 
 invocation. I gotta go to work bye.
 
-2021-12-31 9:34 pm
+* 2021-12-31 9:34 pm
 So close to the new year.I'm tired. My ears hurt from these headphones. Truly I 
 ask, seeking no answer: are there any headphones that don't do this? Earbuds 
 don't count since they are garbage and make my brain hurt. The ears are just 
@@ -212,6 +212,7 @@ probably could. I've made peace with everything up till now. Lazy is as lazy
 does, they may say. Still, it could be worse:
 
 [story name="musings of a fly on the wall" note="May revisit later" ]
+#+begin_src
 The Atheist sat down. He sat on a chair. It was a wooden chair. It was a wooden 
 chair with thick arms and thin round legs and spines on the back. It was sloped 
 back and the seat was carved out. In fact it was a remarkably pleasant chair, 
@@ -241,13 +242,15 @@ rested that foot's ankle atop the other knee.
 "Well," he wearily declared, "that will be an affair of three wasteful hours 
 and several hundred dollars. But I may as well attend. I've got nothing else to 
 do that evening."
+#+end_src
 [/story]
 I love writing. But also it's painful and time consuming and fake. Whatever. I 
 don't plan out stories, I just set things in motion and hope the lore will 
 write itself. Thankfully my mind multitasks enough that it usually does. Sadly 
 the actual story never gets finished.
 
-2022-01-01 12:21 am
+* 2022-01-01 12:21 am
+#+begin_src
 <song>that's me in the corner
 That's me in the spotlight
 Losing my religion.
@@ -256,6 +259,7 @@ And I don't know if I can do it
 Oh no I've said too much
 I said it all
 </song>
+#+end_src
 Starting today, I will write in here what the best thing I accomplished each 
 day was. I will go into as much detail as is necessary for later recollection. 
 I will save charting and analyzing progress for the future. Three toasts to the 
@@ -280,11 +284,11 @@ should monetize or at least advertise myself. I have one viewer of my github
 and zero on my website. It's literally just me. Which is nice but garbage. Also 
 haven't pushed to youtube in forever. Nothing to say. Hey hey.
 
-2022-01-01 8:46 am
+* 2022-01-01 8:46 am
 Just woke up. So tired. Man, all nighters are overrated. Already, I've started 
 to redo conan-dl in python. This is the furthest I've ever gotten.
 
-2022-01-01 12:03 pm
+* 2022-01-01 12:03 pm
 Just picked up a used knife block from the share nook (temporary name). Knives 
 are chilling in the sink. Kinda worried that will do sth bad to them, but they 
 appear to have had rough lives so far anyway. I don't think it'll be that big a 
@@ -293,7 +297,7 @@ doing laundry. Hypothetical bedbugs haven't shown themselves yet so I'll
 pretend I'm safe. Washing the shirt but not the pants. They smell less and are 
 not as noticeable.
 
-2022-01-01 11:53 pm
+* 2022-01-01 11:53 pm
 The bedbugs have shown themselves. I did some laundry and took a nice long 
 bath. We have now reached a hostile truce to make useless shots at each other 
 until either they amass enough members to drain me of blood, or I draw forth 
@@ -303,7 +307,7 @@ windowsill. That was an achievement. Also the bath was really soothing.
 Rewriting conan-dl in python is going to be painful, but I will learn this 
 language. Must sleep.
 
-2022-02-01 8:17 pm
+* 2022-02-01 8:17 pm
 I'm full. That makes me tired. Mac n cheese is truly remarkable as a general 
 sedative, at least to my body these past few years. Dad just texted and Shannon 
 cheated on Tammy. With Andrea. Truly there is no hope for humanity. Men and 
@@ -348,7 +352,7 @@ would still not be satisfied. Something made him this way, but this cannot
 excuse his continued pursuit of these desires. Okay, I think I'm getting 
 extreme here. That example was too colorful.
 
-2022-01-02 9:16 pm
+* 2022-01-02 9:16 pm
 Welp. Work is tomorrow.
 Best thing I did today: disable mouse clicks in vim insert mode. Tiny thing, 
 literally one character fix, but has bothered me for weeks. Also crushed the 
@@ -356,17 +360,19 @@ last of the cans I had brought to the car. Also texting dad was kind of a
 relief.
 I'm gonna get my makeshift pj's on and fill out som MC Donald's receipts. Night.
 
-2022-01-03 9:18 am
+* 2022-01-03 9:18 am
 $2500 pay for December including Christmas bonus. Nice. Gonna live off $400 
 this month. Nifty.
 
-2022-01-03 11:23 am
+* 2022-01-03 11:23 am
+#+begin_src
 <story part=2 name="musings of a fly on the wall" >
 As the Atheist left, he noticed a black mark on the dingy but clean beige wall. 
 He smacked it and it smeared and died. The end. 
 </story>
+#+end_src
 
-2022-01-03 9:46 pm
+* 2022-01-03 9:46 pm
 Best thing of day: cleaning apartment in preparation for bedbug heat death. 
 Also getting paid was super nice. Christmas bonus ftw. In the morning I will 
 leave my door unlocked. In the evening I will dine with Macklen. At the end I 
@@ -374,18 +380,18 @@ will return and reassemble my scattered belongings. I hope the laptops survive
 the fridge for 24 hours. Eh, should be mostly fine. Anime is a lie and I can't 
 get enough. Good night.
 
-2022-01-05 7:32 am
+* 2022-01-05 7:32 am
 Forgot to say best thing of yesterday. How about, dinner with Macklen. Eh. Not 
 actually proud of it, but nothing else springs to mind..
 
-2022-01-05 8:18 am
+* 2022-01-05 8:18 am
 Not going to work. Well, maybe in the afternoon when nothing will get done. The 
 bugs apparently do not die when they are killed, so that has been unfortunate. 
 I caught another one, but that was my only Tupperware so now I can't eat. 
 Whoops. Probably will go for a nice long fast-food parking lot run and waste 
 some fuel. For now, time to see if the laptops still work after being fridged...
 
-2022-01-05 10:04 pm
+* 2022-01-05 10:04 pm
 Did nothing. Feel nothing. Cthulu and the futility of life burn large on my 
 brain. Garfield is an eldrich god that torments Jon. Roko's Basilisk is a 
 strawman fallacy cringe. All cringe is post cringe. We want to be Garfield. I 
@@ -409,32 +415,32 @@ getting too based to keep around. Better quit.
 Best thing today: bought broom. Not using it, but bought it at least. Pathetic. 
 What you will.
 
-2022-01-06 8:45 am
+* 2022-01-06 8:45 am
 Bright and early. Too late to change a thing. We waste so much storage here. 
 Stupid one-time-write discs. We hates them, but actually no, they have their 
 purpose. Ech. Ick. Itch. Scratch. Slap. Pinch and twist. r/goodnightreddit. 
 Woosh. Will nothing rid me of this troublesome infestation! Let them die too.
 
-2022-01-07 6:45 am
+* 2022-01-07 6:45 am
 Best thing of yesterday: not giving up. Work was stressful. It always is when 
 Josh comes in.
 So today is Friday. Let's hope the exterminators actually come and do their 
 thing. I wouldn't mind everything getting messed up if it means the bugs die.
 
-2022-01-07 11:22 pm
+* 2022-01-07 11:22 pm
 Best thing of today: actually finished lunch. Miserable. I'm so fat. Also
 Might not sleep tonight. The conspiracy theory iceberg has taken hold and I am 
 haunted by those zipper demons that people on lsd see. Better re-watch 
 transformers beast machines. Welp, that's some nice old mixed feelings 
 nostalgia...
 
-2022-01-09 4:17 am
+* 2022-01-09 4:17 am
 Counting this as late night on the 8th. It's been a long day of moving things 
 and doing actual work, so I needed a night of not sleep. Best thing of 
 yesterday: getting the carpet. Also working up the courage to take blazer #1 to 
 the dry cleaners'. All these have needed to happen.
 
-2022-01-09 4:02 pm
+* 2022-01-09 4:02 pm
 It feels like a lot earlier in the day. I'm three hours shifted. Maybe sleep 
 more? John Titor is super interesting. Definitely real. On and unrelated note, 
 steins;gate was so good...
@@ -459,7 +465,7 @@ Shame on target. Transgender bathrooms that everyone forgot about. Remember
 when that mattered? I do. And yet life goes on, nobody cares, and we pretend we 
 are logical and learn from the past. You gotta hate it.
 
-2022-01-09 8:55 pm
+* 2022-01-09 8:55 pm
 Best thing of today: washing. Also discovering animedl and the constant 
 improvements to Ani-cli. Someday I will menu-atize it. So that it works with 
 rofi, wofi, dmenu, fzf, anything else. And then make a custom menu script that 
@@ -482,25 +488,25 @@ So far from preliminary testing it appears that we cannot, in fact, "just
 werks" filename completion in the default terminal buffer. I many need to find 
 a workaround... Also the block cursor is annoying.
 
-2022-01-10 8:07 am
+* 2022-01-10 8:07 am
 Only one at the office. Fhat a wucking joke. Jon won't answer his text messages 
 yet. Guess it's just me! Better check the calendar. In a minute. First I want 
 to consider this. The hint of the century. Consider this. The slip. You brought 
 me to my knees pale. What if all these fantasies come flailing around and now 
 I've said too much.
 
-2022-01-10 10:32 pm
+* 2022-01-10 10:32 pm
 Best thing: took a shower and killed a bug with my bare hands. They can be 
 defeated. Also got dad to basically promise to give me a TV. In return I have 
 to show him how the apt has progressed. Slightly nervous but whatever. Tired. 
 Night.
 
-2022-01-11 5:27 pm
+* 2022-01-11 5:27 pm
 Best thing: set up mtg with mom on Saturday, then going to dad's to pick up the 
 TV. Will swing by Carrs on the way back and get some ice cream. In the 
 meantime, apparently neovide is working again. Will use that. Night.
 
-2022-01-11 9:39 pm
+* 2022-01-11 9:39 pm
 No bug sightings today. That's almost good. Kind of worried now though. Where 
 did they go?
 Took another crack at Awesome Window Manager. Not truly awesome. Maybe kinda 
@@ -533,12 +539,12 @@ Fighting'z only begun...
 No it didn't. I made edits in vim and they did t transfer. Clearly there are 
 multi problem. S. Night.
 
-2022-01-12 7:20 am
+* 2022-01-12 7:20 am
 I had a dream. Maybe sort of scp related or something. There was a house with 
 some special property and that kept coming up. The events were like youtu.be 
 videos. I can't remember the rest.
 
-2022-01-12 7:48 pm
+* 2022-01-12 7:48 pm
 Chatting with the GCI rep man on their website. This is $80 per month for 250 
 gigs of high-ish speed. Fast enough, certainly. 200m down, 10 up. So bad but 
 usable. And not relying on Dad. But also relying on the city. But can hopefully 
@@ -548,7 +554,7 @@ and disappear without any content, but then a real one shows up. I'm too fat to
 go to youth night. I'm a dirty old man at the age of 18.
 The agent was being dumb about IP addresses. He was Indian.
 
-2022-01-12 10:37 pm
+* 2022-01-12 10:37 pm
 Best thing: got a hand truck from Lowe's. Will use. Also got GCI set up to give 
 me a router. $80 a month. Had trouble with specifics because the poor Indian on 
 the phone isn't interested in the subject and wouldn't have access to the info 
@@ -559,7 +565,7 @@ worst that happens is nothing works and I cancel the subscription and have a
 random router lying around. But that won't happen unless it does. I must rest. 
 Night.
 
-2022-01-12 11:45 pm
+* 2022-01-12 11:45 pm
 Wall to put mirrors on is roughly 5x8 ft. A couple inches short both ways. 
 Lowe's has them. I will go there after Saturday takes place. Till then I walk 
 alone...
@@ -639,7 +645,7 @@ The sums are:
 46 2x23
 57 prime
 
-2022-01-13 8:00 am
+* 2022-01-13 8:00 am
 Just had a dream right before I woke up that I found Lillian by accident she 
 had pulled into an alternate location of Charlie's bakery that was closed in 
 closed down and I pulled in after work I have to her I asked hey are you lil 
@@ -660,7 +666,7 @@ to take it from the back of my broken hats. I'll ask I'm breaking my back. Now
 I shall be late to work because I am dictating this in the car as you can 
 probably tell just by reading it. Might edit later but probably won't.
 
-2022-01-13 8:09 pm
+* 2022-01-13 8:09 pm
 Best thing: Jon explained me how IP addresses are assigned. Slightly mind 
 bending but really rather ingenious. Also, I bought a big thing of milk and 
 eggs and used my collapsible dolly for the first time. Not perfect, but 
@@ -685,11 +691,11 @@ Yes, I'm simplifying. But that's within sight of the actual thing. Actually,
 here's the link: https://www.cbr.com/harsh-realities-of-isekai-anime/amp/
 Faith in humanity lowers just imagining it again.
 
-2022-01-14 1:09 pm
+* 2022-01-14 1:09 pm
 Got back in touch with Charles. We're dining tomorrow maybe. Gonna make him 
 carry the TV up with me.
 
-2022-01-14 9:56 pm
+* 2022-01-14 9:56 pm
 Good day. Off work early. Tomorrow will happen. Best thing of today: swept 
 apartment. Also listened to some hidden Luke Smith rants I hadn't previously 
 been aware of so that was good. I need to start recording for YT again... All 
@@ -698,7 +704,7 @@ to rewrite my website. Probably for the best as it's garbage rn anyway. I
 shouldn't say that. It's fine. Whatever.
 Night.
 
-2022-01-15 10:59 pm
+* 2022-01-15 10:59 pm
 Long day. Best thing: hanging out with Charlie. Worst thing: nah. The TV 
 falling and breaking the stand is kind of bad, but fine. Work-around-able. 
 We're leaving together
@@ -706,7 +712,7 @@ But still it's farewell
 I'm really tired
 Good night and oh well.
 
-2022-01-16 4:30 pm
+* 2022-01-16 4:30 pm
 Christopher emailed me this morning. Wants me to join some Bible group on 
 Saturday mornings and come back to mass. I didn't respond and probably won't.
  Charles Charlie God lies truth noise confusion apparently I'm scrupulous now 
@@ -726,11 +732,11 @@ And I want these words to make things right but it's the wrongs that make the
 words come to life, well who does he think he is? The worst thing I could say, 
 things are better if I stay.
 
-2022-01-16 10:44 pm
+* 2022-01-16 10:44 pm
 Best thing: setting up TV? Laundry? I did work a little on tmux and that kind 
 of thing. Maybe I should do more on that here. Okay. Night.
 
-2022-01-17 8:46 pm
+* 2022-01-17 8:46 pm
 Best thing: merging most of the vim files together. Buying new keyboard.
 Ate way too much. I almost want more now. It's either that or jacking off 
 again. Checked back in on u/KasaneTeto_. He's doing okay. Seems to have 
@@ -785,7 +791,7 @@ forward the calls to the desktop to spawn a new gui. No awkward mappings. We
 can define every key as default and redefine any as needed as if from scratch. 
 Like qutebrowser. This is my dream.
 
-2022-01-18 10:26 am
+* 2022-01-18 10:26 am
 Wore the white socks. My feet are throbbing. That whim alone will make this a 
 bad day. Maybe. The router is supposed to be delivered, so that should improve 
 things slightly. I need to skip lunch. Ate too much yesterday and this morning 
@@ -804,7 +810,7 @@ That's mostly my fault for bloating up vim. Which I maintain needs to be
 rewritten entirely in lua. But whatever. Man my feet are throbbing. Not a big 
 deal but is annoying.
 
-2022-01-18 10:14 pm
+* 2022-01-18 10:14 pm
 Best thing: nah. It was a bad day. I wasted another's money, ate way way way 
 too much, didn't get my package-- inexplicably. Eh. Probably a garbage 
 underpaid postman. I told Lael so hopefully that will resolve itself tomorrow. 
@@ -814,12 +820,12 @@ that will lead to anything. Um, watching Cowboy Bebop? Sure. It was good.
 I don't feel mad or even really disappointed, just tired. I'll stew in my 
 overstuffed thoughts tonight.
 
-2022-01-19 7:51 am
+* 2022-01-19 7:51 am
 Good morning. Whatever that means. I won't go to McDonald's today. I'll try to 
 skip lunch. Will go to youth night. Unless router comes? Nah. Not like I would 
 know anyway. Need to deposit paycheck anyway.
 
-2022-01-19 10:46 pm
+* 2022-01-19 10:46 pm
 Went to youth night. Was chill. Router came to the door so that's all set up. 
 TV stand is broken, but I ordered a full good one on Amazon. Spent 50 extra on 
 faster shipping since I don't trust their long option. Got double rent in 
@@ -827,7 +833,7 @@ Savings because I don't want to fall behind. Will hang out with Charlie Friday
 at 6. He's started Steins gate and is enjoying it. Hooray. Best thing: making 
 everything work out. I did the stuff and life delivered. Good night.
 
-2022-01-20 8:37 am
+* 2022-01-20 8:37 am
 Woke up early and semi-dreamt of a chill philosophical wakeup. Then my alarm 
 went off. Moved the craptop to underneath the table that now has the TV on top 
 of it. This will age super well at the end of the year when everything is 
@@ -844,16 +850,16 @@ much trash. Trasn in my car in my house in my mind. Abcdefu.
 And now it's morning. Jon's not here so I'm all alone. Better off all by 
 myself... Nah.
 
-2022-01-20 10:11 pm
+* 2022-01-20 10:11 pm
 Vim wiki was sorta broken so I switched back to vim-plug to make it work. 
 Configuring apache/httpd is going to be sort of tricky. Not too worried, just 
 sort of annoyed at the many pitfalls of fixing-up this setup needs. But hey, 
 we're aiming for effortless singularly by the end.
 
-2022-01-20 10:39 pm
+* 2022-01-20 10:39 pm
 Best thing: learning vimwiki. Great system, actually makes sense. Good night.
 
-2022-01-21 8:46 am
+* 2022-01-21 8:46 am
 Narrator: 'it was not a good night.'
 I stayed up till 3 am working on ports and ssl and all that madness. As it 
 stands my http works, but https does not. Trying ssh now.
@@ -861,14 +867,14 @@ Ssh works. Hmm. Should I reboot? I'll reboot. Nah. I won't.
 Didn't reboot. Of course not. I'm going to install Debian and put my dotfiles 
 on there so this starts working. Setting everything up on artix is ridiculous.
 
-2022-01-21 10:33 am
+* 2022-01-21 10:33 am
 Debian image is downloading. In a tmux pane. Yay! Paru! Apt! This is some 
 garbage and I will have to work on that setup script. I really don't want to 
 though. It's confusing. In less than 12 hours I will be frolicking with 
 Charlie. Where how can I be awake then. With lots of subway. But we're getting 
 McDonald's today for lunch. That works out. That's fine.
 
-2022-01-22 6:24 pm
+* 2022-01-22 6:24 pm
 Didn't hang out with Charlie last night. He canceled when I was literally at 
 the door. Says he was tired. We had a good talk today though. 
 Best thing of yesterday: getting all the pieces of the server up and running.
@@ -880,15 +886,15 @@ he had given up and had 5 girlfriends or something. He doesn't. He's going to
 confession tonight for the first time in like 8 years. Was stressing. Hope he 
 works through it.
 
-2022-01-23 9:45 pm
+* 2022-01-23 9:45 pm
 Went to mass at st Andrew's. Exactly how I thought it would go.
 Best thing: made myself go to mass? Took shower? Also wrote half of the 
 web-scraping article. Aight time to laze and sleep.
 
-2022-01-24 10:14 pm
+* 2022-01-24 10:14 pm
 Okay day. Best thing: research for Tier 1 of computer iceberg.
 
-2022-01-25 7:11 am
+* 2022-01-25 7:11 am
 2 dreams last night:
 1. I went back in time in Anchorage. A hundred years but also a thousand or 
 something. An ancestor of Charles was there and so was Elon Musk who had 
@@ -916,7 +922,7 @@ and pointless. Like cult leader crazy. Like that moment in the music video for
 you're gonna go far kid where leaf lady goes yuck. That's how it felt. He 
 abandoned all relatability.
 
-2022-01-25 8:25 pm
+* 2022-01-25 8:25 pm
 They sprayed my baseboards again. Good. Let the bugs die. I found some 
 carcasses.
 Still haven't shipped my TV stand. Charles can't bring the couch till Saturday 
@@ -924,7 +930,7 @@ maybe so that's a minor bummer. Bought pj pants and underwear and more cheeto
 Mac&cheese. Ate some already, now I'm very full. Jreg is so post-based. It's 
 too hot under here. They're thick pj pants. Best thing: worked more on iceberg.
 
-2022-01-26 10:48 pm
+* 2022-01-26 10:48 pm
 Best thing: youth night and got Mikael tentative for next Friday. The one in 9 
 days. We'll see what a godless nation we have become. I'm thoroughly tired but 
 want to chill awakely for a bit. Might not be wise considering the morning to 
@@ -932,7 +938,7 @@ come. Josh says he'll be in 8:00. (X) doubt. Not working on website or iceberg
 today. Gnight. Worst thing: YouTube comment arg on old back to the future pitch 
 meeting. These people are difficult to discourse with and I shouldn't bother.
 
-2022-01-27 8:55 am
+* 2022-01-27 8:55 am
 I guess I'm happy. Well worn out from last night, and Josh is awake but not 
 here. Basically it's a perfect day in the morning. Gene and Jon should be here 
 around 11 or 12. Josh says he's showing up but I doubt that too. I should stop. 
@@ -941,7 +947,7 @@ He just wanted the calendar. That's fine. Sent to him. We good, we good.
 Seriously need a vim keyboard for Android. And neovim to be rewritten in lua. 
 Let me do some research...
 
-2022-01-27 10:36 pm
+* 2022-01-27 10:36 pm
 Not a very good day. Work got miserable when Jon showed up. I love la Cabana 
 but hate how their food makes me feel at work afterwards. So heavy and slow.
 The search for a truly extensible editor has led me through some rabbit holes 
@@ -953,7 +959,7 @@ just hope we can fix the fakeness of the GUI before it gets any more
 entrenched. They say everything in Emacs is re-definable so it better be. At 
 worst we tear it all down and disable all splits and forward it to the OS.
 
-2022-01-30 1:51 am
+* 2022-01-30 1:51 am
 Whew. What a weekend maybe I guess.
 Best thing of 1/28: Josh came in and got that client some help. The one that 
 hates their previous lawyer and can't get a job because background checking is 
@@ -962,7 +968,7 @@ Best thing of 1/29: bought a homeless woman some Wendy's. It was awkward, but
 it felt good. Kind of. Also put mirrors up finally. Need to go to Lowe's 
 tomorrow to get more.
 
-2022-01-30 8:50 pm
+* 2022-01-30 8:50 pm
 Mirrors fell down in the night. Spent all day cleaning the glass up. Sucks.
 Finished CowboyBebop. Good. Watched the incomplete second season of 86. Okay. 
 Ngl the whole gritty-war-battle isn't really my thing, and a lot of what I 
@@ -1000,7 +1006,7 @@ Would have dragged her away and apologized for the inconvenience.
 Gonna make a list of anime to watch next so I'm not blindsided. New note, 
 creating now.
 
-1-30-2022 10:40 pm
+* 1-30-2022 10:40 pm
 Here's a pill to rival the bog-pill: the beggin-pill. It is this:
 The song "beggin" has existed for the entirety of humanity's history. It was 
 sung by cavemen whose cave-women left them, and has been passed down the 
@@ -1011,7 +1017,7 @@ it. No one wrote it. It is the perfect encapsulation of masculine regret, and
 is a universal constant. It will continue to exist as long as its protagonist, 
 that is to say, forever and different in the minds of each whom it touches.
 
-1-31-2022 10:38 pm
+* 1-31-2022 10:38 pm
 I was led on down a rabbit hole. Now I must plumb it, the depths of it all. I 
 began to watch Redo of Healer. By all accounts a mess, a vile mess, a highly 
 dark and sexual work. The kind where you don't think the author could possibly 
@@ -1046,7 +1052,7 @@ didn't quite die. But now I have an aversion to snowball fighting. Hope he's
 okay ish. Hope he got a clue.
 Night.
 
-2022-02-01 9:51 pm
+* 2022-02-01 9:51 pm
 Finished redo of healer. Wow, wow wow wow wow. Terrible. The sum of all 
 depravity. Needs another season.
 His revenge isn't ordered, or logical, or even really fitting. Well, maybe it 
@@ -1089,7 +1095,7 @@ enough, the sponsor on a Zach Star sketch about watching xxx for the plot.
 I need some sign that there can be a better future. This rabbit hole is a 
 vantablack rug and I stubbed my toe on it.
 
-2022-02-02 7:30 am
+* 2022-02-02 7:30 am
 Last night I dreamt that I was a replacement actor for Shinji in an extremely 
 high budget Evangelion live-action movie. The other actors had been studying 
 and practicing much longer than I had, and seemed to fit their roles better. 
@@ -1099,7 +1105,7 @@ others never broke character. So I didn't either. I channeled that nervousness
 into a shinji like grim pragmatic wimpiness. Thus acting out of character by 
 getting in the robot, I guess. That didn't occur to me then. Huh.
 
-2022-02-02 10:45 pm
+* 2022-02-02 10:45 pm
 Best thing: real talk with Charlie. Discussed religion, basedness, and the 
 Healer. He is hopeful but still believes that only Catholic/Orthodox is right 
 and accounts for everything. Does not understand / accept my "understand every 
@@ -1108,7 +1114,7 @@ But I want to understand. I want to emphasize. I think I understand Hitler
 already, maybe Stalin too. From what I know of their histories it seems to make 
 sense.
 
-2022-02-03 11:10 pm
+* 2022-02-03 11:10 pm
 Finally doing the emacs theme right. This could be good.
 Tiring myself out with heavy work and light anime. This could be heaven and 
 this could be hell.
@@ -1116,7 +1122,7 @@ Best thing of today: sitting down after the whole move-all-change-of-pleas
 affair. It felt so good and relaxing.
 Man I really want that couch. Charles...
 
-2022-02-04 10:58 pm
+* 2022-02-04 10:58 pm
 Emacs is going well. I may switch pretty soon. The canned org-html copypasta 
 seems somewhat broken, but individual file export works fine. Tomorrow I may 
 try magit. And then? A fully literate config? It would be good to go document 
@@ -1141,7 +1147,7 @@ is dumb and broken.
 Wow I'm useless. Did nothing today and won't be tired yet.
 Good night.
 
-2022-02-06 1:17 am
+* 2022-02-06 1:17 am
 This counts as last night because I'm still awake from that day.
 There is hope for emacs. Nvim will take decades to catch up at this rate. 
 Especially since evil-mode already exists.
@@ -1164,6 +1170,7 @@ I have a minor ache in the left side of my head, I feel heavy, and my eyes are
 a little dry. Shikashi, I am fine. Perfectly single-minded.
 But tired. Still, it's been too much dew today (6 cans total?) so I couldn't 
 sleep if I tried. May as well write.
+#+begin_src
 <song name="father to son" artist="Queen" >
 Take this letter that I give you
 Take it sonny hold it high
@@ -1171,9 +1178,10 @@ You won't understand a word that's in it
 But you'll write it all again before you die.
 <solo/>
 </song>
+#+begin_src
 Man, html is nasty. Really got to switch to Org Mode.
 
-2022-02-06 9:29 pm
+* 2022-02-06 9:29 pm
 Time is crazy. I am sorta tired. Today was mostly pointless. Watched a bunch of 
 Emacs videos. Began the Great README.org Migration Project with my zshrc. 
 There's still so much to unravel from this ecosystem, and get used to. It's not 
@@ -1222,7 +1230,7 @@ singular waveform collapse. Just as Marvel has its sky-beam or Star Wars its
 spherical planet destroying laser or isekai has its demon king.
 I don't feel like thinking about this anymore. Taida desu ne. Oyasumi!
 
-2022-02-07 10:02 pm
+* 2022-02-07 10:02 pm
 Tired. Stressed. Too much or not enough, constantly bouncing between. What even 
 be?
 Best thing: made omelet for real for the first time in the new apt. Got 
@@ -1230,7 +1238,7 @@ paycheck. Didn't go buy ice cream even though I was all the way out in Eagle
 River. Ah well. I'm going back on Saturday to help mom move. That will be a 
 struggle.
 
-2022-02-08 10:14 pm
+* 2022-02-08 10:14 pm
 I'm okay. I'm not okay. Well, mostly okay. Emacs continues to exist. That's 
 fine. Did a few things today and they all worked except editing over ssh, which 
 is a problem with the underlying OS and not a big deal. Best thing: accurately 
@@ -1252,7 +1260,7 @@ really did just go "hey let's communicate everything as text and when we get
 thinner text just put more spaces in so it kinda lines up and fix it in the 
 toolkit". Come on.
 
-2022-02-09 7:16 am
+* 2022-02-09 7:16 am
 Just woke up. Dreamt of the Disaster Leg: a copypasta and human benchmark. 
 Associated with the new year and a lot of other things too. In the dream I 
 drove to HRA's new location in the Jitters mall in Eagle River and read the 
@@ -1279,7 +1287,7 @@ Leg.
 I'm missing something. That was weird. Why did I remember? Oh well. Might tell 
 Charlie if he shows up tonight. If I show up tonight.
 
-2022-02-09 10:41 pm
+* 2022-02-09 10:41 pm
 Went to youth night. Got pretty tired because dodging. Context is fleeting. 
 Whatever.
 I asked Gabe for the forms to be an adult helper since I'm old now. He said 
@@ -1306,7 +1314,7 @@ Virgin is such a weird concept. It's desirable but embarrassing. A physical
 distinction with social exceptions.
 I'm falling asleep just trying to come up with words so bye.
 
-2022-02-10 9:41 pm
+* 2022-02-10 9:41 pm
 I have nothing to put here. I have saturated myself with information and 
 experience today, but I am satisfied. Nothing is right but nothing is wrong. 
 Everything is redefined lisp expressions anyway. Everybody's are stacked 
@@ -1323,7 +1331,7 @@ the middleware. And then? And then we have an emacs OS. The Linux Kernel,
 that the tty is a bad terminal.
 That reminds me. Gotta try something. Night.
 
-2022-02-11 9:45 pm
+* 2022-02-11 9:45 pm
 I feel mad and sad. I have the pressure of doing that paperwork looming over 
 me. I sort of want to ignore it and move away. Just leave this community for a 
 bit until it stops mattering. It think Gabe hates me. I know he doesn't, but I 
@@ -1342,7 +1350,7 @@ sufficient. Need more.
 The depression must have seeped in today. It really wasn't this bad. Let me go 
 to the apparent source to alleviate this.
 
-2022-02-11 11:06 pm
+* 2022-02-11 11:06 pm
 Well I filled out the documents and am feeling a bit better. Just called Mom to 
 ask about printing and she didn't pick up. So huh. Also it looks like I made 
 the elite council of Retreat Helpers-- which also includes Murray-sensei. No. 
@@ -1351,7 +1359,7 @@ Only one more hurdle: Safe Environment. From what I've heard, it's just a
 reactionary BS wrapper around somewhat-unknown common sense. I need to stop 
 holding myself in such a paradoxical regard.
 
-2022-02-12 10:25 pm
+* 2022-02-12 10:25 pm
 Nothing to say?
 Emacs was taking several seconds to start. This was unacceptable so I deleted 
 the original config. This new one uses a better packaging system, avoids 
@@ -1362,7 +1370,7 @@ My eye is like dying. It's fine, but it's really not. I'm typing this blind and
 hoping it comes out okay. Editing it later of course. Surprisingly good...
 Alright. Time to not sleep. Just had a dew for some reason.
 
-2022-02-13 9:44 pm
+* 2022-02-13 9:44 pm
 It went smoothly. Office Depot to print the forms, retreat meeting, -etc- there 
 was nothing else. Came home and did nothing. Tried to reinstall fedora from 
 within itself to fix the dns issue, but couldn't get a mirror configured. 
@@ -1375,7 +1383,7 @@ to bed so it's hard to relax. But I have to so I will. Good night.
 Best thing: I don't know. The hair. Let's say the hair. 
 Hey, let's write that installation script!
 
-2022-02-14 10:09 pm
+* 2022-02-14 10:09 pm
 Best thing: new daily exercise. Walking up to top of stairs, then to basement, 
 then back to apt. Simple. Easy enough. Yet still consumes a fair amount of 
 energy.
@@ -1388,7 +1396,7 @@ function leads to insanity. I don't understand enough to solve it yet. Hey
 let's put that on top and put the modeline on the bottom. Can that happen? Will 
 investigate tomorrow. I'm not quite tired but I should sleep.
 
-2022-02-15 10:18 pm
+* 2022-02-15 10:18 pm
 Best thing: went and bought TV stand. What I ended up with is janky, but at 
 least it exists.
 Emacs modeline as external frame is totally a thing, but it's kind of bad. The 
@@ -1405,7 +1413,7 @@ s2 is downloading so I can watch that tomorrow.
 Best thing: fixed zplug, and got strike through in Org-mode. It's plus signs, 
 for future reference.
 
-2022-02-18 0:11 am
+* 2022-02-18 0:11 am
 Counting this as last night. Best thing: did laundry and showered. Ate la 
 Cabana leftovers. Watched Mushoku Tensei part 2. This is gonna be a long one. 
 Of course we have to wait...
@@ -1442,7 +1450,7 @@ sexuality in general and innuendo in particular. It pisses me off for the sole
 reason (not the only, but a major) that I was once blind to it and consider its 
 existence a betrayal of my innocence.
 
-2022-02-18 11:35 pm
+* 2022-02-18 11:35 pm
 Didn't go to retreat. Gonna relax and stew here. Hate hate hate. Love it and 
 hate the taste. Maybe buy a flip phone and hack it. You can get Busybox, so 
 emacs can't be that far off.
@@ -1458,7 +1466,7 @@ awkward shot, and the movement is unnatural. Could have been way better with
 more shadow maybe, to draw out distinct shapes. Now I'm ranting about the bread 
 too.
 
-2022-02-19 sometime morning? 
+* 2022-02-19 sometime morning? 
 I don't believe it's better. Watch you go. I go, I go, look how I go. Ikuzo.
 They didn't call. Didn't question me. That means they didn't need me. Oh well. 
 Cool then.
@@ -1468,12 +1476,12 @@ the ATT version. Not ordering online because reasons. It looks like a good day
 out there.
 Where's my Android lisp ide?
 
-2022-02-21 3:05 pm
+* 2022-02-21 3:05 pm
 Had no night last night. Drove to Eagle River for no reason, got a snack, came 
 back. Best thing of Saturday: not finding phone. Sunday: taking out garbage. 
 Today: TBD. If I don't say later, put waking up.
 
-2022-02-21 9:36 pm
+* 2022-02-21 9:36 pm
 Wow. Attack on Titan is crazy. Those first few episodes were still a drag and I 
 don't regret dropping it. But there's enough mystery expansion to sort of make 
 it watchable and interesting for me.
@@ -1481,7 +1489,7 @@ My head hurts. I was up really late last night. Had way too much caffeine and
 salt today. Actually no caffeine. Maybe that's why. It hurts. I will try to 
 sleep.
 
-2022-02-22 9:44 pm
+* 2022-02-22 9:44 pm
 Head hurt all day today. Had a piece of underripe pineapple for lunch.
 Best thing: this moment right now. My head is finally clear. My nose is 
 evacuated. It's all better.
@@ -1499,7 +1507,7 @@ I was disappointed and a little surprised and felt indulgent, so I said I was
 angry. And in saying, validated that anger.
 Good night.
 
-2022-02-25 10:57 pm
+* 2022-02-25 10:57 pm
 Best thing of 2/23: telling Josh I was upset. He said I'll "just have to get 
 used to it". Ass.
 Best thing of 2/24: Mac n cheese I guess. Nothing notable enough had happened.
@@ -1575,19 +1583,19 @@ teacher that confused both of us. She explained the other meaning to everyone
 else.
 Might revisit the preschool memories later. This is all I'm recalling for now.
 
-2022-02-26 4:23 pm
+* 2022-02-26 4:23 pm
 Charlie says he'll come with Lill and her sister's truck and his couch. At 
 7:20ish. We'll see how that goes. I'd maybe clean up but up to a point it 
 doesn't matter. I want to appear together but not totally hygienic. It's a 
 better plot than strapping it to the car...
 
-2022-02-26 11:05 pm
+* 2022-02-26 11:05 pm
 Went fine. They came over, Lillian stayed in the truck, Charlie and I made 2 
 trips.
 Best thing:  finally recorded YouTube video. Latest since 4 months. Gomenasorry 
 about the shallow take.
 
-2022-02-26 11:17 pm
+* 2022-02-26 11:17 pm
 Bad take bad take: suicide.
 I'm not suicidal. But when I was (or was close), I was acutely aware that the 
 "suicide hotlines" etc were dumb. How can someone on the other side of the 
@@ -1622,7 +1630,7 @@ those who merely fuck and live on. But it is better for one to both accomplish
 great advancement _and_ fuck.
 I'm falling asleep.
 
-2022-02-27 8:47 pm
+* 2022-02-27 8:47 pm
 Best thing: working on fixing emacs relative line numbers. It's kind of stupid 
 how this isn't yet a thing.
 Basically, in vim you have a couple options. `set number` turns on absolute 
@@ -1640,7 +1648,7 @@ My head is spinning with the absurdity of Chris Chan. The grammatical dialect,
 the interweaving yet contradictory delusions, the naïve self-righteousness, 
 the pointless retcons. And of course the influence of the trolls.
 
-2022-02-28 7:36 am
+* 2022-02-28 7:36 am
 I had a dream. I was working for Walmart against the thieves and my job was to 
 hide in a couch near the front wall that they sat on. I spoke from behind them 
 and said something nonsense about silverfish and Minnesota, then gave them a 
@@ -1650,7 +1658,7 @@ head type girl, came out. I sort of weakly yelled to her are we supposed to
 stay here, but she didn't hear me enough to respond. I saw some cops and it was 
 weird because we were in cahoots but I didn't trust them.
 
-2022-02-28 8:22 pm
+* 2022-02-28 8:22 pm
 On hanime I saw a comment: "I would switch to this school in a heartbeat". The 
 school in question has a ritual in which the three highest scoring boys at 
 tennis each pick a girl to do sexual things with. I had accepted the premise 
@@ -1661,7 +1669,7 @@ would make my peace with it, and even play the tennis and be in the room, and
 would speak out against the ritual but secretly get good so as to be forced to 
 participate in the degeneracy.
 
-2022-02-28 9:33 pm
+* 2022-02-28 9:33 pm
 Best thing of today: writing schedule.ps1 script. Hopefully John will bring 
 over his copy of Visual Studio so I can bundle the pdf parser dependencies. For 
 now it just pops open all the court pdfs, which is nice but kind of a strain on 
@@ -1677,7 +1685,7 @@ curve. It's Microsoft garbage so I'm skeptical, but if it works and is portable
 I can't complain. Also had to rewrite the script from memory today due to a 
 botched copy/move operation. Stupid powershell coreutils...
 
-2022-03-01 7:22 am
+* 2022-03-01 7:22 am
 Had a dream. Setting was like Attack on Titan but without the walls or odm gear 
 or anything. The however-many of us were at the park when we realized what had 
 happened, that everyone not present was a deadly monster. My father was locked 
@@ -1697,7 +1705,7 @@ have a digestive tract so he came out the other side with the big chunk of gold
 and hightailed it away. The guy trying to rescue him had been using the bendy 
 tree as a spring and ladder and jumping aid.
 
-2022-03-01 8:27 pm
+* 2022-03-01 8:27 pm
 Today. Was a day. Went to la Cabana for fat Tuesday. Guess I'd better fast on 
 something slow.
 Now I remember the worst thing about the existence of sex. It is this: the 
@@ -1741,7 +1749,7 @@ studio cd to bundle the pdf dependencies. Hang on. I used this yesterday. He
 forgot to bring the disc in.
 Actual best thing of today: writing in here. I've brought myself down.
 
-2022-03-02 9:19 pm
+* 2022-03-02 9:19 pm
 Best thing: emacs load-path. It was frustrating but I finally got it in there. 
 Always put (provide 'thing) in the file to be loaded and (require 'thing) 
 before where it needs to be loaded. Nothing I read said that directly, so the 
@@ -1759,14 +1767,14 @@ I want to write all that emacs has from scratch, to understand it. I don't
 right now, and I doubt anyone fully does. There's a nano clone written fully in 
 guile. I might try that.
 
-2022-03-03 9:20 pm
+* 2022-03-03 9:20 pm
 Best thing: decided to give up YouTube and spider solitaire. I've been wasting 
 my time on them and need to stop.
 
-2022-03-04 7:18 am
+* 2022-03-04 7:18 am
 Friday... Without youtu.be. Without solitaire. How will I do?
 
-2022-03-04 10:20 pm
+* 2022-03-04 10:20 pm
 Best thing of today: I'll sleep in a moment. That shall be the best.
 But first. I need to say a few things.
 I am perplexed by the character Josh. He's oldish and has his life together, 
@@ -1781,12 +1789,12 @@ money from it. I should find a new job. But this is so chill... No it's not, no
 its not. I have no life left. No time to do other things. The weekend is a 
 curse that makes me decompress so I am softened under Monday's harsh blows.
 
-2022-03-06 2:42 am
+* 2022-03-06 2:42 am
 Counting this as yesterday. Best thing: installing windows 10 virtual machine 
 for visual studio. Now I'm having to write visual basic and it's confusing.
 After all... To end... I'm so tired.
 
-2022-03-06 5:33 pm
+* 2022-03-06 5:33 pm
 My wifi Hotspot broke this morning. I'm not sure what happened, but it appears 
 to be an internal dns issue. Switching connection managers or even using an 
 android doesn't appear to help, though.
@@ -1796,7 +1804,7 @@ and finish that as well. Tomorrow will be bad. I'm not in a good place mentally
 and Josh will probably be in early. Which means more hassles. Less than a week 
 into Lent and I've already broken it all.
 
-2022-03-06 6:08 pm
+* 2022-03-06 6:08 pm
 Hmmm. Not a ton to say. It's been 3 months into the year 2022. That's a 
 quarter. Nah, it's really more 2 months. That's 1/6. Less impressive. Well, 
 soon I'll be 19. A whole year of adulthood. A whole wasted worthless year of 
@@ -1836,11 +1844,11 @@ is like Charles. I identified with him and thought I could be "that person".
 Whatever. My passions are calling. Time to watch the last half of the first 
 half of the last season of attack on Titan, a show I dropped after episode 4.
 
-2022-03-06 8:48 pm
+* 2022-03-06 8:48 pm
 Best thing of today: the ice cream. Birthday cake flavor. It is truly the 
 nectar of the gods. I certainly didn't do anything to be proud of...
 
-2022-03-07 9:44 pm
+* 2022-03-07 9:44 pm
 Best thing of today: shredding. So chill.
 I broke professionalism today. Daron called and begged for money. He said he 
 was lucky he had a heart attack yesterday so he didn't freeze overnight. I told 
@@ -1869,7 +1877,7 @@ r/Linux too maybe. Worst that happens is I get banned from reddit. Which I
 haven't used in months. Best is I get fame as "the guy who solved windows 
 drivers forever".
 
-2022-03-08 7:21 am
+* 2022-03-08 7:21 am
 No reddit and no YouTube. My brain wants stimulation right now. But I have none 
 to give it. I have to look at reality, at the silly waste of my organization of 
 this apartment. I should really reach out and ask for a studio when one becomes 
@@ -1886,7 +1894,7 @@ nature, like the rays of the sun. To truly eradicate them would be to slaughter
 all of humanity. Which if you care enough would be an acceptable solution to 
 me. But I doubt that those who presume to hate bedbugs would dare go that far.
 
-2022-03-08 8:50 pm
+* 2022-03-08 8:50 pm
 Bad. Bad bad bad. What do we idly wish for, and where do our dark daydreams 
 destinate? Mom is breaking down. Her mind has begun to crumble, and she isn't 
 aware enough to keep up. Let alone limit herself to conserve thought. Now she's 
@@ -1911,13 +1919,13 @@ didn't notice. Dad didn't notice. We were too caught up in our own changes to
 think anything of it. And we lost her.
 I need to call Dad and keep him in the loop.
 
-2022-03-09 6:57 am
+* 2022-03-09 6:57 am
 Woke up early this morning. Too much dew. Now I shall play on the computer, 
 striving for the ideal state.
 I will wait on telling dad. No, I can't wait. But I will. Ehh. I can't tell him 
 but I can't not.
 
-2022-03-09 9:58 pm
+* 2022-03-09 9:58 pm
 In a few hours I will count as 19 on the public record. It doesn't mean much 
 but I can inject whatever meaning I want and have it stick. This is a chance, 
 not to be wasted on cheap disappointment.
@@ -1932,7 +1940,7 @@ docx or some such. In the same format as Jon's hand-written word files now.
 It's so close. And then I'll slowly convert the whole project to PowerShell, 
 and then make it bootstrap its own dependencies, and then ship that as an exe.
 
-2022-03-10 7:22 am
+* 2022-03-10 7:22 am
 It's time. It's good morning. I am awake and I am 19. I've lost too much to 
 time, I shan't lose this too.
 I had a dream last night. I was a skeleton like Ains Ooal Gown and was trapped 
@@ -1944,7 +1952,7 @@ very fast toward Palmer. I was still in the cave, standing perfectly still. I
 had been discovered many times throughout the centuries, but never given any 
 food.
 
-2022-03-10 9:17 pm
+* 2022-03-10 9:17 pm
 Best thing of today: converting the schedule script to (mostly) powershell. I 
 still need to figure out grep though. The current thing just passes everything 
 through. Maybe because powershell pipes work on objects and not true streams? 
@@ -1981,7 +1989,7 @@ much liability. Haha pun. Bad pun. Has sound without meaning. I should write a
 thing on what makes a good pun good.
 But now. Sleep.
 
-2022-03-11 6:57 pm
+* 2022-03-11 6:57 pm
 I know. I feel. I see. I breathe. I itch. I scratch it. And I always fall, a 
 little short in front of you.
 Ani-cli works on Android now. That's pretty cool. Not as cool as having a whole 
@@ -1998,7 +2006,7 @@ protective, horny. What a horrible word. The etymology is presumably related to
 erection, but it doesn't mean erect. It is a mostly mental thing. That will 
 then become physical arousal no matter what.
 
-2022-03-11 11:40 pm
+* 2022-03-11 11:40 pm
 Best thing of today: reading re:zero. We got through the Darkest Moment and 
 into some great lore teases.
 The bedbug crew will come on Sunday, not tomorrow or today. A shame but oh 
@@ -2013,7 +2021,7 @@ leveraging the subarashii lisp WMs like rat poison, stump? There's so much
 potential there. It's lisp, after all. Okay. I'll do that. A major concern will 
 be distro availability, though. We need a fallback. Xmonad bootstrap?
 
-2022-03-12 7:37 pm
+* 2022-03-12 7:37 pm
 Best thing of today: getting out of mom and Clarice's presence. They're both so 
 exhausting.
 Qtile mostly works with xfce now. Just not xfdesktop. I am not sure how to 
@@ -2022,7 +2030,7 @@ dependencies for xmonad are just so troublesome.
 So that Xbox controller. It doesn't work as a mouse, but it does work in games. 
 I started a MC bedrock game.
 
-2022-03-13 9:39 pm
+* 2022-03-13 9:39 pm
 I believe now that criticism of film or indeed any story can be valid and 
 constructive. However, I do not think myself capable of such things. I do not 
 notice, because I make everything explained through headcanon. I will believe 
@@ -2032,12 +2040,12 @@ Bought a MacBook today. A 2020 arm model. Why? Something to do. Something to
 hold when I lose my grip.
 Best thing: sinking into this hot bed. It's so hot and nice. Okay.
 
-2022-03-14 11:55 am
+* 2022-03-14 11:55 am
 Aand as soon as I begin to write here life calls once more. I skipped the 
 morning of work. Last night was awful. So hot and sweaty and bloated and 
 accelerated. But I've had my slow wake today, so I'd better be okay.
 
-2022-03-14 8:39 pm
+* 2022-03-14 8:39 pm
 And, to everyone's surprise, I was. Nothing happened, nothing was lost. I 
 skipped the awful Monday morning, Jon had a slightly worse headache, nothing 
 was lost. Man. Taco bell nacho fry burrito is the best. The pinnacle of both 
@@ -2053,7 +2061,7 @@ believe that Linux falls so short comparatively. I was going to have a huge run
 of revamping my config style to new default apps, but I don't need to because 
 my own default apps just work.
 
-2022-03-15 8:21 pm
+* 2022-03-15 8:21 pm
 Read some more re:zero today. My mind is blown and racing. Truly so much is 
 just kind of happening right now. I can't wait for the end... But I need to 
 sleep. Etc.
@@ -2062,7 +2070,7 @@ Oh well.
 This goal of learning Japanese will not happen at the rate I had intended. It 
 will be slower. Much slower. But I will come to comprehend it all. Eventually.
 
-2022-03-16 9:09 pm
+* 2022-03-16 9:09 pm
 Re Zero continues to be subarashii desu. Best thing of today: sorting phone 
 messages and starting on the rewrite of the Messages program. John gave me a 
 copy of his version. It's a compiled exe but it's kind of garbage. Can't split 
@@ -2130,7 +2138,7 @@ around $300. It did most of the things, and almost all of them better.
 But I digress.
 And in doing so, I tire. How truly slothful. Taida desu ne.
 
-2022-03-17 9:26 pm
+* 2022-03-17 9:26 pm
 A mostly good day, I suppose. Just fine, in fact. Best thing: 'clear' button on 
 my message-taker powershell form. Eventually we will have also an email button 
 that sends an email, and a print button that opens a print dialog from which to 
@@ -2147,21 +2155,21 @@ need to get that canceled soon... But I won't. Oh well. The spur of the moment
 led us to this, and it will loop back around to stick us in the back.
 Good night?
 
-2022-03-19 7:51 am
+* 2022-03-19 7:51 am
 Forgot to come here last night. Was thinking way too much about emacs extension.
 Best thing: hmm. Probably the night and working on my emacs manpager 
 highlighting.
 
-2022-03-19 11:42 pm
+* 2022-03-19 11:42 pm
 Best thing: wandering around Fred Meyer talking to myself. Looking for a square 
 light bulb, which they did not have.
 
-2022-03-20 10:47 am
+* 2022-03-20 10:47 am
 Caught up on attack on Titan. Only a few weeks left to wait. 86 part 2 is 
 supposedly finished, but I don't believe it. That show ended last year. 
 Whatever. I'll watch it just to see it through... Now? Sure.
 
-2022-03-20 8:22 pm
+* 2022-03-20 8:22 pm
 Set my alarm earlier. Might help for some reason. I really don't want to become 
 grumpy and stiff like Jon. Well, whatever. Took a shower. Now the hair will be 
 awful for a few days, then great for a couple of weeks, then get bad and 
@@ -2175,7 +2183,7 @@ I need to steel myself for another day week life of the office. To not get
 annoyed by Gene, or depressed by John, or fed up with Josh. Oh. Right. I have 
 one mor more chore to do today... Bye.
 
-2022-03-21 8:22 pm
+* 2022-03-21 8:22 pm
 I guess that went okayly. Okaily? Okaly? OKly? Nah, OK is already the adverb. 
 Well what evveth.
 I didn't particularly fail today, but it all came off as disappointed of me. 
@@ -2194,7 +2202,7 @@ Oh well. A good metaphor, for another time.
 Best thing: waking up at 7 this morning in advance of the alarm. I'll set it 
 back 5 minutes now and see how much I can each day.
 
-2022-03-22 8:49 pm
+* 2022-03-22 8:49 pm
 If I lose it all, then I lose it all. What a meme. Took me several episodes to 
 get it. I was hearing Japanese so I couldn't make out the English. What a 
 problem.
@@ -2202,12 +2210,12 @@ These past few days, there have been things I thought, "I should write this in
 the document" and then didn't. That's a thing I guess. Or rather, it is not.
 I spoke with John about - - 
 
-2022-03-22 9:38 pm
+* 2022-03-22 9:38 pm
 Fitshucks and shitfucks. Clarice called about mom and ruined my evening. I gave 
 everyone everyone else's numbers so they can leave me out of it.
 Best thing of today: If I Lose It All. Great meme.
 
-2022-03-23 9:49 pm
+* 2022-03-23 9:49 pm
 Best thing: reinstalled server with Ubuntu Desktop Minimal instead of Debian. 
 Just Werks, unlike the weird phantom wifi problems I had been having. Now I 
 just need to make sure that the hotspot restarts itself on reboot. A venture 
@@ -2236,7 +2244,7 @@ tools, and the default verbs are ThisCase-Verbose ly long, as most are tapping
 into the Microsoft api.
 Good night.
 
-2022-03-24 9:46 pm
+* 2022-03-24 9:46 pm
 Today, for the record, I high centered my car on the berm by the road. I was 
 trying to slow down so as to not rear-end the rando in front of me. I veered 
 into the side, then right over it, and found myself unable to move. I poked 
@@ -2269,7 +2277,7 @@ calibre).? So much is untranslatable in relation to the current and most
 fitting presentation. If I lose any, I lose it all. And if I lose it all, slip 
 and fall, would you laugh at me.!?
 
-2022-03-25 10:20 pm
+* 2022-03-25 10:20 pm
 Almost figured out printing in powershell. Or rather, I can get spacing or 
 fonts but not yet both. A work in progress, but progress is being made at least.
 Gave up on the whole server-and-hotspot thing for ThinkPad. Reset the router, 
@@ -2281,7 +2289,7 @@ manually. Or just not. Plus the  system-crafter guy has a guide on getting it
 all set up so that's good.
 Best thing: getting the site back up and working correctly. That is wonderful.
 
-2022-03-26 10:34 pm
+* 2022-03-26 10:34 pm
 Watching Ascendence of a Bookworm. Exactly what I wanted in anime. Absolutely 
 subarashii.
 Also. Did some minor tweaking to emacs; I may just have to find another color 
@@ -2290,17 +2298,17 @@ Best thing: trying out doom emacs again and reading their docs. Gives a better
 perspective of what's out there to optimize.
 Still not using their theme though.
 
-2022-03-27 9:16 pm
+* 2022-03-27 9:16 pm
 Best thing: set up windows on the old dextop and simplified the Message script.
 
-2022-03-28 7:48 pm
+* 2022-03-28 7:48 pm
 Best thing: simplifying the face definitions of my emacs colorscheme and 
 working with the comment-delimiter stuff.
 There's still more to do. I want to get all of Doom's org formatting in my 
 fonts, and get the heading/ document structure figured out better. Or at least 
 better fonts and colors.
 
-2022-03-29 9:35 pm
+* 2022-03-29 9:35 pm
 Best thing: gui for ffcut script. Also super happy with my latest tweak to 
 emacs: adding a better color to the variable-name face, which is also 
 org-heading-2 for some reason. Previously it was very similar to my text face's 
@@ -2317,11 +2325,11 @@ a copy of vi, and hack ruthlessly at the cruft of ten thousand moons'
 optimizations for a bygone era.
 Welp. I need to get up in the morning. Bye.
 
-2022-03-30 9:07 pm
+* 2022-03-30 9:07 pm
 Best thing: rearranging the emacs color scheme. There's still a bunch of 
 balance issues but I think it's getting better.
 
-2022-03-31 11:33 pm
+* 2022-03-31 11:33 pm
 Best thing: deciding to walk to work tomorrow.
 Also. Today I made the ffcut script download a static ffmpeg, since github 
 doesn't let you upload files that big. I still want a progress bar, but for now 
@@ -2331,7 +2339,7 @@ done by counting a certain number of characters, finding the previous space,
 and converting it to a newline. And repeat until that is no longer possible 
 obviously. I wish someone had already done that, but it'll be okay to do myself.
 
-2022-04-01 10:17 pm
+* 2022-04-01 10:17 pm
 How long, how long will I slide? (forever and ever amen)
 Suffer at the sight (I don't)
 I don't believe it's better.
@@ -2386,7 +2394,7 @@ I have some choice words about Mom's role in all of this. Specifically, that
 she and her nearsighted good intentions created every stressful situation in my 
 childhood. But that is for not-now.
 
-2022-04-02 10:05 pm
+* 2022-04-02 10:05 pm
 Yay. Hooray. Here's another bad take.
 Realist Hero is a good show. It's lacking in filler and full of 10 billion iq 
 plays. The reference implementation of the intellectual's isekai power fantasy 
@@ -2417,7 +2425,7 @@ least. Not since that retreat I ducked out of. I need new friends, but it's not
 that quick and easy...
 At least I'm not on reddit. That has helped tremendously.
 
-2022-04-03 9:30 pm
+* 2022-04-03 9:30 pm
 This document is huge. It's going to take a while to open every day unless I do 
 something about it. Which I might. I sort of was planning to upload it to the 
 website anyway.
@@ -2451,7 +2459,7 @@ pizza and cook it on its own, does that work? Will it come out okay? Only time
 will tell. I'll finish the last of the first pizza tomorrow. Then can come the 
 experiments...
 
-2022-04-05 7:26 pm
+* 2022-04-05 7:26 pm
 I missed yesterday. I missed yesterday? Hmm. Best thing of yesterday: Jon 
 telling me that he can hear minds. I basically believe it, too.
 Best thing of today: starting to rewrite conan-dl in powershell this morning. 
@@ -2471,7 +2479,7 @@ could work. Let's try it. If I'm to train myself to wake up before the alarm,
 it must not be light-related.
 I hereby wish my immediate future self luck!
 
-2022-04-06 8:50 pm
+* 2022-04-06 8:50 pm
 Well that didn't work. At all? Not really. Not very much.
 Best thing of today: idk it was awful. I've felt like that every day lately. 
 Maybe, I need to make a change. Definitely, rather. Best thing for real today: 
@@ -2516,7 +2524,7 @@ my link with crumbling. Build me a little padded static world I can live out my
 days in, with no challenges. Then I shall be content. Actually, do it now and I 
 would be even more content.
 
-2022-04-07 8:56 pm
+* 2022-04-07 8:56 pm
 Another day. Ate too much ice cream and now I won't be able to sleep for a 
 while.
 Mom is stupid. She doesn't read my texts. She keeps asking me to come over and 
@@ -2560,7 +2568,7 @@ Ooh. An idea to work on to maybe help. A goal for tomorrow.
 Goal for tomorrow: make ffcut smooth. Progress bar at least.
 Satte. Oyasumi.
 
-2022-04-08 10:45 am
+* 2022-04-08 10:45 am
 Today is Mary Alice's birthday. For all the nil that's worth. Random pointless 
 aside.
 Anyway.
@@ -2572,11 +2580,11 @@ Now the problem is katakana and Kanji. No idea what to do about those. Is there
 already something built in? Probably. Yay. Happy happy fun times. Just wanted 
 to add this to the record before I forget...
 
-2022-04-08 4:39 pm
+* 2022-04-08 4:39 pm
 Another emacs thing:
 global-whitespace-mode for tab visualization.
 
-2022-04-08 10:47 pm
+* 2022-04-08 10:47 pm
 Both above emacs things are now incorporated into my configuration. Hooray.
 Best thing of today: getting Japanese input and whitespace visualization on 
 emacs. It's like in the movies, literally. You just type and it converts the 
@@ -2585,12 +2593,12 @@ Now what we need is to merge quail (the emacs foreign input system) into
 ivy/counsel...
 I'm tired. Good night.
 
-2022-04-09 11:14 pm
+* 2022-04-09 11:14 pm
 Best thing of today: optimizing emacs startup time. It was getting up to a 
 second there until today. Now it's about half. I'd prefer even less, but this 
 is fine for now.
 
-2022-04-10 5:58 pm
+* 2022-04-10 5:58 pm
 Finally got space bar prefixes on emacs figured out. Haven't implemented them 
 yet but they're figured out at least. Using general.el for all keybindings 
 seems to be working out.
@@ -2605,13 +2613,13 @@ that's tiring and uncomfortable. Plus when it's hot the bedbugs come out. When
 it's cold like this we can pretty well pretend they don't exist, since they 
 deactivate in the cold. Or something.
 
-2022-04-10 9:01 pm
+* 2022-04-10 9:01 pm
 Best thing of today: tackling emacs prefix keys. Soon I will have everything on 
 spacebar and need no modifier keys. No control, no meta. And hopefully in a 
 remember-able way.
 It's a good day. I have been saved. I am not Chris Chan. Thus I shall endure.
 
-2022-04-11 9:21 pm
+* 2022-04-11 9:21 pm
 Best thing of today: adding treemacs and minimap to emacs. The minimap is kind 
 of broken, but it's fine for now. I think the implementation is rather fraught, 
 inherently, but surprisingly there are only 2 and the other one is worse. 
@@ -2658,7 +2666,7 @@ assimilate my mind, and judge for yourself truly.
 I just set up the file syncer, so it might or might not have sync'd up. Let's 
 check.
 
-- 2022-04-12 10:56 pm
+* 2022-04-12 10:56 pm
 Best thing: notes sync. I don't even care if it actually worked. Today was 
 vicariously stressful and I did nothing else of note.
 
@@ -2667,3 +2675,6 @@ Bad day. But got bone-conduction headphones so that's nice.
 
 * 2022-04-13 6:36 pm
 Testing. Did the sync work? Did it?
+Apparently so.
+I just went in and fixed all the date headings, and a few of the song lyric 
+bits... 
