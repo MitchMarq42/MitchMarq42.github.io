@@ -1,1 +1,1 @@
-musings_log.org
+../musings_log.org
