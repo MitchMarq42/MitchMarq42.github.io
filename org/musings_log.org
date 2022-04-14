@@ -2677,4 +2677,15 @@ Bad day. But got bone-conduction headphones so that's nice.
 Testing. Did the sync work? Did it?
 Apparently so.
 I just went in and fixed all the date headings, and a few of the song lyric 
-bits... 
+bits...
+
+* 2022-04-13 7:32 pm
+And now maybe the line breaks will work. Maybe. Pray to the capricious regex 
+gods...
+No. It didn't. Whatever. Not like I want anyone to read this...
+Hmm.
+
+* 2022-04-13 9:56 pm
+Best thing: working out the note syncing. The only other good thing that 
+happened was hanging foil on the window. Maybe I'll be able to sleep earlier 
+now.
