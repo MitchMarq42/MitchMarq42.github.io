@@ -2698,3 +2698,17 @@ now.
 Best thing of today: waking up early and taking a shower.
 Okay, hmm. Ani-cli broke again. Might have to switch to anime-dl if that's a 
 thing. Which it definitely is.
+
+* 2022-04-14 10:07 pm
+Well, I'm trying again with converting ani-cli to powershell. I actually 
+nanaged to appease the linter, so that's at least a start. However the output 
+looks like this:
+#+begin_src
+False
+False
+$*
+False
+$*
+#+end_src
+Clearly, something is wrong. I blame the syntax differences.
+Powershell is wonderful. Absolutely crazy. Like sh but doesn't get in your way. 
