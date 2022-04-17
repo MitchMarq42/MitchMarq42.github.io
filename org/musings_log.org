@@ -2711,4 +2711,37 @@ False
 $*
 #+end_src
 Clearly, something is wrong. I blame the syntax differences.
-Powershell is wonderful. Absolutely crazy. Like sh but doesn't get in your way. 
+Powershell is wonderful. Absolutely crazy. Like sh but doesn't get in your way.
+
+* 2022-04-16 7:39 pm
+I missed yesterday, apparently. Didn't notice at all. Best thing of yesterday: 
+porting John's email button in the script from visual basic to powershell. Even 
+if it's still mysteriously broken. Just having a reference is a big help.
+Did I lose time? I legit can't remember much from yesterday. I didn't wake up 
+early, the alarm was My War (from attack on Titan), at work I did the email 
+thing and a bunch of discovery, and I must have had cheeto Mac in the evening 
+because the tupperware was oily and orange. Oh yeah. We had subway for lunch 
+and Josh was late picking it up.
+Best thing of today: fixing the READMEs for my dotfiles. Also the tangent that 
+that led me on led to using zplug to manage more things was pretty useful. I 
+want to do more with that sooner or later. But for now the next thing is to 
+auto-tangle all those org files. Ideally both on save and when deploying a new 
+system. There's gotta be a way to do that, right? Well I'll find it. And do all 
+the other things as well. If I could manage everything with zplug that would be 
+supremely convenient...
+What has this file become? All I do is gush about my pseudo-programming 
+escapades. Where are the hot takes? The rants? The reviews? They're all in my 
+head, and I'm not in the space to let them out lately. I'm pretty full right 
+now. Tomorrow I may or may not go to Dad's for Easter. May as well, except for 
+the whole gas thing. Well, I've got some 20s in the car, 30ish in my pocket, 
+and 10 extra in savings. That's an amount. I can drive to Eagle River Carrs, 
+deposit/transfer at the atm, and get gas there too.
+Or I could just not. And chill here, and watch anime and program all day, and 
+snack on the last of my chips and salsa, then cook a spoonful of over-seasoned 
+rice. I really have to find a better use for that rice. Ooh. Frozen 
+blueberries, milk, cinnamon, ginger. Boil the rice, simmer in blueberries, stir 
+in ginger, dust with cinnamon. I feel less bloated just thinking about it. But 
+still bloated.
+The car is going to be trouble. I need to get my studs off. Ooh. I'll do that 
+in Palmer. There's a place by dad's. And I can walk. I need to get some 
+exercise. Any at all.
