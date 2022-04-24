@@ -2745,3 +2745,93 @@ still bloated.
 The car is going to be trouble. I need to get my studs off. Ooh. I'll do that 
 in Palmer. There's a place by dad's. And I can walk. I need to get some 
 exercise. Any at all.
+
+* 2022-04-17 10:06 pm
+Why, oh why. Did I go. To dad's. I wasted like 5 hours and a good amount of 
+gas, and for what? Well, I at least got the tires. Need to change those very 
+soon... Like a week ago...
+Best thing of today: laying here now. Tired but resigned. I need nothing else.
+
+* 2022-04-18 9:32 pm
+~I need something else, to get me through this~ stupid song. Darn stupid 
+innuendic songs. I can't stand it. I've stood it for a while now, what happened 
+was nothing.
+Father Arthur called me today. I was real with him for once. I told him that my 
+piety was aesthetic. I told him I was staying away from mass because I didn't 
+want to run into mom. He accepted it all and told me that I can use my powers 
+for good or for evil. Hmm. Yeah, I bet. I told him I didn't want to go to 
+college because homework and stress. He said to wait and when I get to it it 
+won't be like I remember. I think he may have been a bit overwhelmed by how 
+much I shared. Oh well. That is one affliction with which I am cursed.
+Best thing of today: sending email works. In powershell. Now I just have to 
+give feedback on it.
+
+* 2022-04-19 8:12 am
+Jon out today. Guess I'll just sit here and do nothing. Nah, I'll do something 
+at least. May as well.
+Well, I restarted the ordeal of rewriting ani-cli in powershell. Copying the 
+i/o of each function, but writing them idiomatically to powershell. It'll be 
+good this time. I don't have complete certainty, but I have faith in myself.
+Doom. Depression. Desperation. ~so far away, we wait for the day / for the 
+light's also wasted and gone / we feel the pain of a lifetime lost in a 
+thousand days /through the fire and the flames we carry on~
+I am a kid. A child. I believe in children. Is that all that means to me? I am 
+a grown up. Adulting all over the place. I got a life and a job and a place to 
+live. And yet. I am not "an adult like them". To grow up is to kill your old 
+self. To want to do things that are stupid and that you shouldn't want to do, 
+that society demands. To enslave yourself to the system. "I have to do my 
+taxes" so you want to. "no, but I have to" so you do them willingly despite not 
+"wanting" to do them. Truly pathetic. Just admit that you like it. If you 
+didn't, you would resist with all your everything, and make up for it later. To 
+submit is to submit willingly. And to be willing is to want. When this all 
+shakes out, you want this.
+What do I want? ~I want to shine down, on the hearts of man, I want to take it 
+from the back of my broken hands~. Well, sort of.
+
+* 2022-04-19 9:50 pm
+My ears are ringing. They start whenever I don't have anything to listen to or 
+concentrate on. If I stop listening to it, it goes away until the next time. I 
+pop my ears and pressurize my sinuses. But nope. It endures.
+Worst thing of today: all of work.
+Best thing of today: working with powershell string manipulation for the 
+ani-cli rewrite. Most of the logic is simple to port, but I'm not sure how to 
+handle passing multi-line stdin to a While loop. I guess just use For and pipe 
+into .Add($_) if they'll let me.
+
+* 2022-04-20
+My headache is splitting. I cannot think, I cannot live. I'm just sitting and 
+breathing and listening to the ringing of my ears.
+Best thing of today: not getting pulled over this morning. There was a cop 
+right there and he didn't even look my way.
+
+* 2022-04-21 8:29 pm
+My brain no longer trembles, but the throat is ravaged and my shoulders want to 
+fall off. Weird. Unpleasant, but not quite as bad as yesterday. Nay, so much 
+better than yesterday. Last night I was up the whole time having nightmares 
+about GiBi and powershell recursion and entitled criminals. And having to pee, 
+of course.
+Well, I went to the store and got some chicken soup and a pot pie. I ate the 
+pot pie. Burnt my tongue a little bit but could still mostly taste. Also, whole 
+milk is the best. Very underrated.
+I watched Dress Up Darling today. Wholesome and original, but it's total 
+waifu-bait ecchi garbage. Makes up for a cringe and inevitable plot with sexy 
+animation. That's my brief rambling review. It's probably wrong because 
+everyone on YouTube says it's fantastic. Well, whatever. At least I'm not 
+blindly following somebody's takes on it like I do for most things.
+Best thing of today: walking around Fred Meyer. I almost felt normal.
+
+2022-04-22 10:34 pm
+The ache is pretty much gone from my shoulders. But my throat is scabbing 
+itself over a lot. Does it not know how to heal? Nah, it shall heal in time.
+Best thing of today: getting a good version of Emacs for macos installed. The 
+built-in webkit browser almost doesn't not work. Only problem, I use emacs as a 
+transient process and not as a daemon or root window. Thus having to open and 
+close the browser along with the editor all the time. Not ideal.
+
+* 2022-04-23 3:40 pm
+Current at random tire shop #1 waiting on my car. The one Jon gave me didn't 
+answer.
+
+*2022-04-23 8:51 pm
+Best thing of today: walking around after dropping off the car. Didn't get 
+anywhere but at least I burned energy.
