@@ -20,7 +20,7 @@ There are several things I intend to do with this site:
 
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[./articles/tutorials/][tutorials]]
-- [[https://jellyfin.mitchmarq42.xyz/videos/web/index.html#!/home.html][Video]] streaming (possibly through PeerTube?)
+- [[https://jellyfin.mitchmarq42.xyz/videos/web/index.html#!/home.html][Video]] streaming (through jellyfin)
 - [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]]
 
 
@@ -44,3 +44,11 @@ sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
    - [ ] This one is not checked, and that means something.
 
 And other such non-entities.
+
+#+BEGIN_EXPORT html
+<a href="https://landchad.net">
+<img
+src="https://landchad.net/pix/landchad.gif"
+alt="LandChad.net">
+</a>
+#+END_EXPORT
