@@ -33,8 +33,7 @@
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style t ;nil ;; Use our own styles
-      ;; org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />"
-      org-html-head "<link rel=\"stylesheet\" href=\"/style.css\" />"
+      org-html-head "<link rel=\"stylesheet\" href=\"https://mitchmarq42.xyz/style.css\" />"
       )
 
 ;; Generate the site output
