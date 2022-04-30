@@ -20,8 +20,8 @@ There are several things I intend to do with this site:
 
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[./articles/tutorials/][tutorials]]
-- [[./videos/anime/][Video]] streaming (possibly through PeerTube?)
-- Git server
+- [[https://jellyfin.mitchmarq42.xyz/videos/web/index.html#!/home.html][Video]] streaming (possibly through PeerTube?)
+- [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]]
 
 
     /All my life I been searchin' for something/
