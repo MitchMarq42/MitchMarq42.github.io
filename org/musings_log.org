@@ -2870,4 +2870,19 @@ most of that. Well, we got some files closed and some reckonings had. Man, all
 these alcohol users are idiots! Every last one. Especially Josh. Our business 
 is a joke. We lure people in, then do the communication of a public defender 
 and the continuances of a lifetime. And plead them out when the court starts to 
-notice. We call someone. 
+notice. We call someone. And schedule them, and reschedule them out for weeks 
+and weeks.
+
+* 2022-04-29 11:36 pm
+Best thing of today: getting jellyfin set up on the server. It works and uses 
+my garbage css from Luke Smith. Sort of likey, whatever. Also set up gitea. But 
+that was pretty trivial in comparison. For now I'm just so relieved I have 
+something to show that's more than a plain auto-generated directory listing.
+It's got a player that works on browsers and stuff, it auto-populates the 
+metadata of anything it can identify, and it was a bitch to set up. Why? I 
+don't know. All this stuff is a blur to me. Makes no sense. But if you kajigger 
+it enough it seems to mostly work, and that's farther than I ever got with 
+peertube.
+We need to make the guest user a transparent default, and I don't know how to 
+do that other than make all the hyperlinks assume we're already signed in. 
+Which doesn't work.
