@@ -34,6 +34,7 @@
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style t ;nil ;; Use our own styles
       org-html-head "<link rel=\"stylesheet\" href=\"https://mitchmarq42.xyz/style.css\" />"
+      org-html-postamble nil
       )
 
 ;; Generate the site output
