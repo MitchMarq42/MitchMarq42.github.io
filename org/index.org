@@ -23,14 +23,10 @@ There are several things I intend to do with this site:
 - [[https://jellyfin.mitchmarq42.xyz/videos/web/index.html#!/home.html][Video]] streaming (through jellyfin)
 - [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]]
 
-
-    /All my life I been searchin' for something/
-
-    /Something never comes, never leads to nothing/
-
-    /Nothing satisfies but I'm getting close/
-
-    /Closer to the prize at the end of the rope/
+: /All my life I been searchin' for something/ 
+: /Something never comes, never leads to nothing/ 
+: /Nothing satisfies but I'm getting close/ 
+: /Closer to the prize at the end of the rope/ 
 
 Etc.
 
@@ -45,10 +41,21 @@ sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
 
 And other such non-entities.
 
+* Made with:
 #+BEGIN_EXPORT html
 <a href="https://landchad.net">
 <img
 src="https://landchad.net/pix/landchad.gif"
 alt="LandChad.net">
+</a>
+<a href="https://gnu.org/software/emacs">
+<img
+src="https://www.gnu.org/software/emacs/images/emacs.png"
+alt="Built with Emacs">
+</a>
+<a href="https://orgmode.org">
+<img
+src="https://orgmode.org/resources/img/org-mode-unicorn.svg"
+alt="Built with Org Mode">
 </a>
 #+END_EXPORT
