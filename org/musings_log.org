@@ -3357,3 +3357,23 @@ still so much to tweak, but this so far is nice.
 
 * test test test
 This is a test of the exportion of notes in this app
+
+* this is another test
+Of all the every things
+
+* 2022-05-08 12:36 pm
+Well. That seems to have worked. At least for now. Ugh.
+
+I've mostly switched over to the pixel 6 for phone things. It's a little 
+heavier but a lot faster so that's nice. Problem: exporting this note is even 
+jankier than before because android 12 removed filesystem permissions.
+
+Best thing of yesterday: going to prom and schmoozing with everyone. I feel 
+understood, or at least accommodated.
+
+It's mother's day. I asked mom if she'd like to go out to lunch with me. She 
+said "no". One word, no punctuation. That's kind of sad. Not that I'd have it 
+any other way, mind you. But I wish I could have checked that box.
+
+This phone has a fingerprint sensor underneath the screen. It's like magic or 
+something. The convenience of that remains to be seen.
