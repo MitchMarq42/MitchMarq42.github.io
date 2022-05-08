@@ -1863,7 +1863,7 @@ attempting to build it from scratch. Haven't succeeded yet and there are still
 some major issues. But it's probably possible.
 
 My head is spinning with the absurdity of Chris Chan. The grammatical dialect, 
-the interweaving yet contradictory delusions, the naïve self-righteousness, 
+the interweaving yet contradictory delusions, the naÃ¯ve self-righteousness, 
 the pointless retcons. And of course the influence of the trolls.
 
 * 2022-02-28 7:36 am
@@ -2664,20 +2664,20 @@ mean? What eyes does Charles have? Can I ever look at him again, as anything?
 
 I'm probably autistic. That's easy. But all the symptoms could also be from 
 abuse. Was I abused? I remember nothing concrete. Only hating Dad for defying 
-my little logic, and being glad to be stuck in Mom's naïve box. In the box is 
-peace and intermittent predictable isolation. She would give me free time based 
-on work put in. Was it fair? Who knows anymore. But it was a good substitute. 
-When dad was around, I was on edge. He made me come out and do things. Leave me 
-the hell alone. Ive done my chore and a half, there is nothing to gain from 
-sitting in the same room as you. You're just on your computer anyway. Maybe 
-you'll make me listen to your sinful music. Maybe you'll rave about your stupid 
-engine diagrams or amplifier circuits. Just leave me alone. Maybe you'll drag 
-me on a hike to take the dog for a run. I'm in the middle of my daily cereal 
-and comics. I'm not going. It'll be all soggy when I get back. I'll eat it now. 
-At least give me 10 minutes to finish this part. Plus I have homework when I 
-get back. I gotta do that now. This is my only reprieve today until I get to 
-lie awake in bed for an hour. You are not taking this from me. Oh really. Well 
-then. No more cereal and comics. Honey cancel the newspaper.
+my little logic, and being glad to be stuck in Mom's naÃ¯ve box. In the box 
+is peace and intermittent predictable isolation. She would give me free time 
+based on work put in. Was it fair? Who knows anymore. But it was a good 
+substitute. When dad was around, I was on edge. He made me come out and do 
+things. Leave me the hell alone. Ive done my chore and a half, there is nothing 
+to gain from sitting in the same room as you. You're just on your computer 
+anyway. Maybe you'll make me listen to your sinful music. Maybe you'll rave 
+about your stupid engine diagrams or amplifier circuits. Just leave me alone. 
+Maybe you'll drag me on a hike to take the dog for a run. I'm in the middle of 
+my daily cereal and comics. I'm not going. It'll be all soggy when I get back. 
+I'll eat it now. At least give me 10 minutes to finish this part. Plus I have 
+homework when I get back. I gotta do that now. This is my only reprieve today 
+until I get to lie awake in bed for an hour. You are not taking this from me. 
+Oh really. Well then. No more cereal and comics. Honey cancel the newspaper.
 
 I'm in my room. Door is halfway open-- all the way open is wide and raw, closed 
 or barely-ajar is hiding something. Building Legos quietly. Nothing else to do, 
@@ -3311,3 +3311,49 @@ in this file.
 Didn't work. Huh. Removed a line from the push script.
 
 The problem was ssh listening wrong.
+
+* 2022-05-01 9:28 pm
+Best thing of today: taking a shower. Now my hair is all fluffy and will be 
+annoying in the morning. Oh well.
+
+* 2022-05-02 7:10 pm
+Best thing of today: org-table for the timesheet. With formulas and sums. Org 
+handles time values so that's awesome. So much better than =ses=...
+
+Also great: adding flycheck and company to all prog-modes. It feels like what I 
+always wanted neovim to be, except it actually works. Like I have the bling of 
+doom-emacs without the bloat. Now I just have to incorporate =paredit= with 
+evil bindings. May as well do that now-ish... Bye.
+
+* 2022-05-03 9:34 pm
+Best thing of today: phone message script works and compiles.
+
+Also finally got org faces in Emacs fixed. GNU+have to deploy that everywhere; 
+the default font on windows is bad.
+
+* 2022-05-04 7:16 pm
+Best thing of today: new outlook window defaults to the print dialog. Had to 
+bodge it by sending a raw key, but hey it works. Might have to do a few other 
+things, and it won't run on Jon's machine, but for now this is good for me. 
+I've switched the main remote repo to my personal git server so that's cool. 
+I'm considering switching all my git repos over. Hmm.
+
+For some reason the face fix didn't work on windows. Will troubleshoot now.
+
+* 2022-05-05 9:10 pm
+Best thing of today: hmm. I didn't feel depressed, but nothing particularly 
+good happened. Got paid, at least.
+
+TODO tomorrow:
+- make a config file for message.ps1 (half done) 
+- find some hair conditioner
+- shred a bunch of stuff DONE
+- get rid of something or some stuff. (ivy, counsel) 
+
+* 2022-05-06 11:17 pm
+Best thing of today: getting emacs set up with more atomic and customizable 
+completion. This setup looks a little better and feels faster too. There's 
+still so much to tweak, but this so far is nice.
+
+* test test test
+This is a test of the exportion of notes in this app
