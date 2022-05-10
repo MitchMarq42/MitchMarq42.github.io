@@ -3377,3 +3377,78 @@ any other way, mind you. But I wish I could have checked that box.
 
 This phone has a fingerprint sensor underneath the screen. It's like magic or 
 something. The convenience of that remains to be seen.
+
+* 2022-05-08 8:45 pm
+Best thing of today: vi mode in powershell. With a little more tweaking I might 
+switch from zsh...
+
+Powershell on Android doesn't seem to be a thing though. I might be able to get 
+the raspberry pi version to run or something.
+
+I need to remember some things. Charles and Jonas both want to hang out some 
+time. I have dinner tomorrow with Mom at 6 and plan to go to the atm at carrs 
+before then. To deposit that tax return for real.
+
+I danced with Emma. I enjoyed Emma's company. She's a good person and simple, 
+and joking around with her put my mind at ease. We talked about not knowing how 
+to dance. Thank you Emma. I have more thoughts analyzing Emma but this isn't 
+the moment for it.
+
+I danced with Angel. I enjoyed Angel's company. It's hard to relax around her 
+because she expects me to be a good person and engage. If friendship is 
+measured by hardship endured, then she is probably my best friend. I can't 
+remember what we talked about while dancing. Thank you Angel. I have nothing to 
+say on Angel as she precludes and transcends analysis, which fills me with 
+wonder and dread.
+
+I danced with Lillian. I enjoyed Lillian's company. There's baggage there but 
+ultimately we're on good terms and the same page. She asked me some stock small 
+questions and I began to explain to her that talk about how schizophrenics 
+perceive reality. She was engaged, it seemed. I didn't feel nervous or awkward 
+talking to her. When she responded I was worried I had said too much at once. 
+She danced with Charles a lot. She seems happier in his presence than mine. 
+Understandable, have a great life. Thank you Lillian. ~There are many things 
+that I would like to say to you~ so just give me time. In my me time I'll give 
+you you time too. I wouldn't speak idly of Lillian like I would of Emma. She is 
+a being like myself, needing constant unpacking and iteration, and it is a huge 
+disrespect to reduce that into mere words.
+
+I spoke with Miss Morris. Crap. I never asked her how her teaching year had 
+been. I'm such a bad conversationalist. All I did was ramble.
+
+~when all I want to do is try...~
+
+* 2022-05-09 10:01 pm
+Okay day. Best thing: getting '^p' shortcut working again in message script.
+
+I spoke out loud to no one about many things today. I think it was good. I 
+shouldn't be telling the world and I need to consider it to be more sure of 
+what I know and think.
+
+I want a hug. I need a hug. Sockness is a madman but at least he values hugs. 
+Warm fluffy tight deep hugs.
+
+I shared a half-hug with someone at prom. Right when I got in the door. Who was 
+it? Why can't I place them? Was it Angel? Probably. 
+
+~Oh take me higher, all the way to the sun!~
+
+ Things will change soon. My people are out of school in a week. Then we can 
+hang out more. Not that I'll have the time. Or that they'll want to hang out 
+with me. Well, Charlie does and Jonas sort of does. That might be good. I've 
+got to go to Eagle River tomorrow to schmooze with Mom. I'll buy her chepos and 
+ramble. It's fine. She hasn't been able to catch up to me in years.
+
+~Down to the wire, fighting's only begun!~
+
+I feel good about powershell. I wrote a profile script and it's good. I want to 
+write a declarative git-based plugin manager in and for it. Mostly to use 
+myself. But first I'll take advantage of the built-in features. Like the vi 
+implementation and stuff. Better idea: powershell use-package. Just do the 
+emacs thing but with powershell syntax. That'll be great. Ooh. But we're 
+looping over a list which is slow. Oh well. Hmm. Lots of stuff to try tomorrow. 
+Also need a Makefile or something for the office scripts so I can remember what 
+options to pass the compiler. Humph.
+
+Gnight.
+
