@@ -287,7 +287,7 @@ write itself. Thankfully my mind multitasks enough that it usually does. Sadly
 the actual story never gets finished.
 
 * 2022-01-01 12:21 am
-#+begin_src
+#+begin_quote
 <song>that's me in the corner
 That's me in the spotlight
 Losing my religion.
@@ -296,7 +296,7 @@ And I don't know if I can do it
 Oh no I've said too much
 I said it all
 </song>
-#+end_src
+#+end_quote
 Starting today, I will write in here what the best thing I accomplished each 
 day was. I will go into as much detail as is necessary for later recollection. 
 I will save charting and analyzing progress for the future. Three toasts to the 
@@ -343,12 +343,12 @@ The bedbugs have shown themselves. I did some laundry and took a nice long
 bath. We have now reached a hostile truce to make useless shots at each other 
 until either they amass enough members to drain me of blood, or I draw forth 
 building management to smoke them out and freeze dry every last one. In the 
-mean time, today. Best thing I'm proud of. Cleared all the mtn dew cans off the 
-windowsill. That was an achievement. Also the bath was really soothing. 
-Rewriting conan-dl in python is going to be painful, but I will learn this 
-language. Must sleep.
+mean time, today. ** Best thing I'm proud of: 
+Cleared all the mtn dew cans off the windowsill. That was an achievement. Also 
+the bath was really soothing. Rewriting conan-dl in python is going to be 
+painful, but I will learn this language. Must sleep.
 
-* 2022-02-01 8:17 pm
+* 2022-01-02 8:17 pm
 I'm full. That makes me tired. Mac n cheese is truly remarkable as a general 
 sedative, at least to my body these past few years. Dad just texted and Shannon 
 cheated on Tammy. With Andrea. Truly there is no hope for humanity. Men and 
@@ -397,10 +397,10 @@ extreme here. That example was too colorful.
 * 2022-01-02 9:16 pm
 Welp. Work is tomorrow.
 
-Best thing I did today: disable mouse clicks in vim insert mode. Tiny thing, 
-literally one character fix, but has bothered me for weeks. Also crushed the 
-last of the cans I had brought to the car. Also texting dad was kind of a 
-relief.
+** Best thing I did today: 
+disable mouse clicks in vim insert mode. Tiny thing, literally one character 
+fix, but has bothered me for weeks. Also crushed the last of the cans I had 
+brought to the car. Also texting dad was kind of a relief.
 I'm gonna get my makeshift pj's on and fill out som MC Donald's receipts. Night.
 
 * 2022-01-03 9:18 am
@@ -416,16 +416,19 @@ He smacked it and it smeared and died. The end.
 #+end_src
 
 * 2022-01-03 9:46 pm
-Best thing of day: cleaning apartment in preparation for bedbug heat death. 
-Also getting paid was super nice. Christmas bonus ftw. In the morning I will 
-leave my door unlocked. In the evening I will dine with Macklen. At the end I 
-will return and reassemble my scattered belongings. I hope the laptops survive 
-the fridge for 24 hours. Eh, should be mostly fine. Anime is a lie and I can't 
-get enough. Good night.
+** Best thing of day:
+ cleaning apartment in preparation for bedbug heat death. Also getting paid was 
+super nice. Christmas bonus ftw. In the morning I will leave my door unlocked. 
+In the evening I will dine with Macklen. At the end I will return and 
+reassemble my scattered belongings. I hope the laptops survive the fridge for 
+24 hours. Eh, should be mostly fine. Anime is a lie and I can't get enough. 
+Good night.
 
 * 2022-01-05 7:32 am
-Forgot to say best thing of yesterday. How about, dinner with Macklen. Eh. Not 
-actually proud of it, but nothing else springs to mind..
+Forgot to say 
+** best thing of yesterday. 
+How about, dinner with Macklen. Eh. Not actually proud of it, but nothing else 
+springs to mind..
 
 * 2022-01-05 8:18 am
 Not going to work. Well, maybe in the afternoon when nothing will get done. The 
@@ -456,8 +459,8 @@ well kill it. It has no regrets. It deserves a state of eternal choicelessness
 more than the pain of earthly toil. Let it die. If it dares exist. Anyway. I'm 
 getting too based to keep around. Better quit.
 
-Best thing today: bought broom. Not using it, but bought it at least. Pathetic. 
-What you will.
+** Best thing today:
+ bought broom. Not using it, but bought it at least. Pathetic. What you will.
 
 * 2022-01-06 8:45 am
 Bright and early. Too late to change a thing. We waste so much storage here. 
@@ -466,13 +469,14 @@ purpose. Ech. Ick. Itch. Scratch. Slap. Pinch and twist. r/goodnightreddit.
 Woosh. Will nothing rid me of this troublesome infestation! Let them die too.
 
 * 2022-01-07 6:45 am
-Best thing of yesterday: not giving up. Work was stressful. It always is when 
-Josh comes in.
+** Best thing of yesterday:
+ not giving up. Work was stressful. It always is when Josh comes in.
 So today is Friday. Let's hope the exterminators actually come and do their 
 thing. I wouldn't mind everything getting messed up if it means the bugs die.
 
 * 2022-01-07 11:22 pm
-Best thing of today: actually finished lunch. Miserable. I'm so fat. Also
+** Best thing of today:
+ actually finished lunch. Miserable. I'm so fat. Also
 
 Might not sleep tonight. The conspiracy theory iceberg has taken hold and I am 
 haunted by those zipper demons that people on lsd see. Better re-watch 
@@ -481,9 +485,10 @@ nostalgia...
 
 * 2022-01-09 4:17 am
 Counting this as late night on the 8th. It's been a long day of moving things 
-and doing actual work, so I needed a night of not sleep. Best thing of 
-yesterday: getting the carpet. Also working up the courage to take blazer #1 to 
-the dry cleaners'. All these have needed to happen.
+and doing actual work, so I needed a night of not sleep.
+** Best thing of yesterday: 
+getting the carpet. Also working up the courage to take blazer #1 to the dry 
+cleaners'. All these have needed to happen.
 
 * 2022-01-09 4:02 pm
 It feels like a lot earlier in the day. I'm three hours shifted. Maybe sleep 
@@ -518,12 +523,13 @@ when that mattered? I do. And yet life goes on, nobody cares, and we pretend we
 are logical and learn from the past. You gotta hate it.
 
 * 2022-01-09 8:55 pm
-Best thing of today: washing. Also discovering animedl and the constant 
-improvements to Ani-cli. Someday I will menu-atize it. So that it works with 
-rofi, wofi, dmenu, fzf, anything else. And then make a custom menu script that 
-just selects the one we want anyway. Also neovim status line manipulation is 
-weird. I want to make vim the default graphical window for everything. 
-Specifically nvim-qt or similar. Then this:
+** Best thing of today:
+ washing. Also discovering animedl and the constant improvements to Ani-cli. 
+Someday I will menu-atize it. So that it works with rofi, wofi, dmenu, fzf, 
+anything else. And then make a custom menu script that just selects the one we 
+want anyway. Also neovim status line manipulation is weird. I want to make vim 
+the default graphical window for everything. Specifically nvim-qt or similar. 
+Then this:
 
 - standalone window manager with super key prefixed vim motion
 
@@ -553,15 +559,16 @@ brought me to my knees pale. What if all these fantasies come flailing around
 and now I've said too much.~
 
 * 2022-01-10 10:32 pm
-Best thing: took a shower and killed a bug with my bare hands. They can be 
-defeated. Also got dad to basically promise to give me a TV. In return I have 
-to show him how the apt has progressed. Slightly nervous but whatever. Tired. 
-Night.
+** Best thing:
+ took a shower and killed a bug with my bare hands. They can be defeated. Also 
+got dad to basically promise to give me a TV. In return I have to show him how 
+the apt has progressed. Slightly nervous but whatever. Tired. Night.
 
 * 2022-01-11 5:27 pm
-Best thing: set up mtg with mom on Saturday, then going to dad's to pick up the 
-TV. Will swing by Carrs on the way back and get some ice cream. In the 
-meantime, apparently neovide is working again. Will use that. Night.
+** Best thing: 
+set up mtg with mom on Saturday, then going to dad's to pick up the TV. Will 
+swing by Carrs on the way back and get some ice cream. In the meantime, 
+apparently neovide is working again. Will use that. Night.
 
 * 2022-01-11 9:39 pm
 No bug sightings today. That's almost good. Kind of worried now though. Where 
@@ -618,10 +625,11 @@ go to youth night. I'm a dirty old man at the age of 18.
 The agent was being dumb about IP addresses. He was Indian.
 
 * 2022-01-12 10:37 pm
-Best thing: got a hand truck from Lowe's. Will use. Also got GCI set up to give 
-me a router. $80 a month. Had trouble with specifics because the poor Indian on 
-the phone isn't interested in the subject and wouldn't have access to the info 
-I wanted even if he was. Also the illusion of his understanding English was 
+** Best thing: 
+got a hand truck from Lowe's. Will use. Also got GCI set up to give me a 
+router. $80 a month. Had trouble with specifics because the poor Indian on the 
+phone isn't interested in the subject and wouldn't have access to the info I 
+wanted even if he was. Also the illusion of his understanding English was 
 shattered as soon as I mentioned IP addresses. But we did the transaction, and 
 I got receipts by email so it's probably legit, and I get a free router. The 
 worst that happens is nothing works and I cancel the subscription and have a 
@@ -744,12 +752,13 @@ I shall be late to work because I am dictating this in the car as you can
 probably tell just by reading it. Might edit later but probably won't.
 
 * 2022-01-13 8:09 pm
-Best thing: Jon explained me how IP addresses are assigned. Slightly mind 
-bending but really rather ingenious. Also, I bought a big thing of milk and 
-eggs and used my collapsible dolly for the first time. Not perfect, but 
-wonderful. Man, this building 's history is crazy. You gotta wonder, what made 
-him do that? Is the place cursed? Hey that's fun. I've always wondered what the 
-mental landscape of a horror protagonist would be.
+** Best thing: 
+Jon explained me how IP addresses are assigned. Slightly mind bending but 
+really rather ingenious. Also, I bought a big thing of milk and eggs and used 
+my collapsible dolly for the first time. Not perfect, but wonderful. Man, this 
+building 's history is crazy. You gotta wonder, what made him do that? Is the 
+place cursed? Hey that's fun. I've always wondered what the mental landscape of 
+a horror protagonist would be.
 
 Read an idiotic article from Google recommendations. Basically, isekais are bad 
 because SAO already happened and was kind of bad. I want to destroy it in full 
@@ -784,18 +793,21 @@ Got back in touch with Charles. We're dining tomorrow maybe. Gonna make him
 carry the TV up with me.
 
 * 2022-01-14 9:56 pm
-Good day. Off work early. Tomorrow will happen. Best thing of today: swept 
-apartment. Also listened to some hidden Luke Smith rants I hadn't previously 
-been aware of so that was good. I need to start recording for YT again... All 
-in due time. No router yet, might not be here till Tuesday. Argh. I will have 
-to rewrite my website. Probably for the best as it's garbage rn anyway. I 
-shouldn't say that. It's fine. Whatever.
+Good day. Off work early. Tomorrow will happen. 
+** Best thing of today: 
+swept apartment. Also listened to some hidden Luke Smith rants I hadn't 
+previously been aware of so that was good. I need to start recording for YT 
+again... All in due time. No router yet, might not be here till Tuesday. Argh. 
+I will have to rewrite my website. Probably for the best as it's garbage rn 
+anyway. I shouldn't say that. It's fine. Whatever.
 
 Night.
 
 * 2022-01-15 10:59 pm
-Long day. Best thing: hanging out with Charlie. Worst thing: nah. The TV 
-falling and breaking the stand is kind of bad, but fine. Work-around-able.
+Long day. 
+** Best thing:
+ hanging out with Charlie. Worst thing: nah. The TV falling and breaking the 
+stand is kind of bad, but fine. Work-around-able.
 ~ We're leaving together~
 
 ~But still it's farewell~
@@ -828,11 +840,13 @@ words come to life, well who does he think he is?~ The worst thing I could say,
 things are better if I stay.
 
 * 2022-01-16 10:44 pm
-Best thing: setting up TV? Laundry? I did work a little on tmux and that kind 
-of thing. Maybe I should do more on that here. Okay. Night.
+** Best thing: 
+setting up TV? Laundry? I did work a little on tmux and that kind of thing. 
+Maybe I should do more on that here. Okay. Night.
 
 * 2022-01-17 8:46 pm
-Best thing: merging most of the vim files together. Buying new keyboard.
+** Best thing: 
+merging most of the vim files together. Buying new keyboard.
 
 Ate way too much. I almost want more now. It's either that or jacking off 
 again. Checked back in on u/KasaneTeto_. He's doing okay. Seems to have 
@@ -916,10 +930,11 @@ rewritten entirely in lua. But whatever. Man my feet are throbbing. Not a big
 deal but is annoying.
 
 * 2022-01-18 10:14 pm
-Best thing: nah. It was a bad day. I wasted another's money, ate way way way 
-too much, didn't get my package-- inexplicably. Eh. Probably a garbage 
-underpaid postman. I told Lael so hopefully that will resolve itself tomorrow. 
-Generally, everything today was a disappointment. Not happy.
+** Best thing:
+ nah. It was a bad day. I wasted another's money, ate way way way too much, 
+didn't get my package-- inexplicably. Eh. Probably a garbage underpaid postman. 
+I told Lael so hopefully that will resolve itself tomorrow. Generally, 
+everything today was a disappointment. Not happy.
 
 But if I had to pick a best thing, paycheck? No. Capturing bedbug? Not like 
 that will lead to anything. Um, watching Cowboy Bebop? Sure. It was good.
@@ -937,8 +952,9 @@ Went to youth night. Was chill. Router came to the door so that's all set up.
 TV stand is broken, but I ordered a full good one on Amazon. Spent 50 extra on 
 faster shipping since I don't trust their long option. Got double rent in 
 Savings because I don't want to fall behind. Will hang out with Charlie Friday 
-at 6. He's started Steins gate and is enjoying it. Hooray. Best thing: making 
-everything work out. I did the stuff and life delivered. Good night.
+at 6. He's started Steins gate and is enjoying it. Hooray. 
+** Best thing: 
+making everything work out. I did the stuff and life delivered. Good night.
 
 * 2022-01-20 8:37 am
 Woke up early and semi-dreamt of a chill philosophical wakeup. Then my alarm 
@@ -965,7 +981,8 @@ sort of annoyed at the many pitfalls of fixing-up this setup needs. But hey,
 we're aiming for effortless singularly by the end.
 
 * 2022-01-20 10:39 pm
-Best thing: learning vimwiki. Great system, actually makes sense. Good night.
+** Best thing:
+ learning vimwiki. Great system, actually makes sense. Good night.
 
 * 2022-01-21 8:46 am
 /Narrator: 'it was not a good night.'/
@@ -987,24 +1004,28 @@ McDonald's today for lunch. That works out. That's fine.
 * 2022-01-22 6:24 pm
 Didn't hang out with Charlie last night. He canceled when I was literally at 
 the door. Says he was tired. We had a good talk today though. 
-Best thing of yesterday: getting all the pieces of the server up and running.
+** Best thing of yesterday: 
+getting all the pieces of the server up and running.
 
-Best thing of today: real talk with Charlie. We watched episode 6 of Steins 
-gate and half of episode 7. Right up to the bit where he wins the lottery. I 
-think I sort of spoiled Mr Ferdinand Braun, but he's on his toes. Or is 
-pretending to be to help my conscience. I told him I was sort of worried that 
-he had given up and had 5 girlfriends or something. He doesn't. He's going to 
-confession tonight for the first time in like 8 years. Was stressing. Hope he 
-works through it.
+** Best thing of today:
+ real talk with Charlie. We watched episode 6 of Steins gate and half of 
+episode 7. Right up to the bit where he wins the lottery. I think I sort of 
+spoiled Mr Ferdinand Braun, but he's on his toes. Or is pretending to be to 
+help my conscience. I told him I was sort of worried that he had given up and 
+had 5 girlfriends or something. He doesn't. He's going to confession tonight 
+for the first time in like 8 years. Was stressing. Hope he works through it.
 
 * 2022-01-23 9:45 pm
 Went to mass at st Andrew's. Exactly how I thought it would go.
 
-Best thing: made myself go to mass? Took shower? Also wrote half of the 
-web-scraping article. Aight time to laze and sleep.
+** Best thing:
+ made myself go to mass? Took shower? Also wrote half of the web-scraping 
+article. Aight time to laze and sleep.
 
 * 2022-01-24 10:14 pm
-Okay day. Best thing: research for Tier 1 of computer iceberg.
+Okay day.
+** Best thing:
+ research for Tier 1 of computer iceberg.
 
 * 2022-01-25 7:11 am
 2 dreams last night:
@@ -1043,14 +1064,17 @@ carcasses.
 Still haven't shipped my TV stand. Charles can't bring the couch till Saturday 
 maybe so that's a minor bummer. Bought pj pants and underwear and more cheeto 
 Mac&cheese. Ate some already, now I'm very full. Jreg is so post-based. It's 
-too hot under here. They're thick pj pants. Best thing: worked more on iceberg.
+too hot under here. They're thick pj pants. 
+** Best thing: 
+worked more on iceberg.
 
 * 2022-01-26 10:48 pm
-Best thing: youth night and got Mikael tentative for next Friday. The one in 9 
-days. We'll see what a godless nation we have become. I'm thoroughly tired but 
-want to chill awakely for a bit. Might not be wise considering the morning to 
-come. Josh says he'll be in 8:00. (X) doubt. Not working on website or iceberg 
-today. Gnight. Worst thing: YouTube comment arg on old back to the future pitch 
+** Best thing: 
+youth night and got Mikael tentative for next Friday. The one in 9 days. We'll 
+see what a godless nation we have become. I'm thoroughly tired but want to 
+chill awakely for a bit. Might not be wise considering the morning to come. 
+Josh says he'll be in 8:00. (X) doubt. Not working on website or iceberg today. 
+Gnight. Worst thing: YouTube comment arg on old back to the future pitch 
 meeting. These people are difficult to discourse with and I shouldn't bother.
 
 * 2022-01-27 8:55 am
@@ -1078,13 +1102,14 @@ worst we tear it all down and disable all splits and forward it to the OS.
 
 * 2022-01-30 1:51 am
 Whew. What a weekend maybe I guess.
-Best thing of 1/28: Josh came in and got that client some help. The one that 
-hates their previous lawyer and can't get a job because background checking is 
-unconstitutionally broken.
+** Best thing of 1/28: 
+Josh came in and got that client some help. The one that hates their previous 
+lawyer and can't get a job because background checking is unconstitutionally 
+broken.
 
-Best thing of 1/29: bought a homeless woman some Wendy's. It was awkward, but 
-it felt good. Kind of. Also put mirrors up finally. Need to go to Lowe's 
-tomorrow to get more.
+** Best thing of 1/29:
+ bought a homeless woman some Wendy's. It was awkward, but it felt good. Kind 
+of. Also put mirrors up finally. Need to go to Lowe's tomorrow to get more.
 
 * 2022-01-30 8:50 pm
 Mirrors fell down in the night. Spent all day cleaning the glass up. Sucks.
@@ -1109,10 +1134,11 @@ is like, then I want one. But I've heard bad stories, and I've made them up. I
 have a theory about manipulation and the human condition that ties into this as 
 well as Charles and everything else.
 
-Best thing: letting random lesbian in just now. She dialed the wrong door code. 
-I answered and she hung up. I went down anyway to check. Her gf apparently 
-locked her out. I believed her and let her in and rode partially up the 
-elevator. She's in 109. Hope that worked out.
+** Best thing:
+ letting random lesbian in just now. She dialed the wrong door code. I answered 
+and she hung up. I went down anyway to check. Her gf apparently locked her out. 
+I believed her and let her in and rode partially up the elevator. She's in 109. 
+Hope that worked out.
 
 Yesterday with the homeless girl. I could have gotten her to have sex in 
 exchange for a meal or money. Why didn't I? 1. She smells like cigarettes. 2. I 
@@ -1171,14 +1197,15 @@ Jonah.
 
 Anyway.
 
-Best thing of today: work went well. Deposited checks for Josh and returned 
-just in time to leave. Jon apparently had a headache, but it's fine. Tomorrow 
-is la Cabana. I have to not eat tonight or in the morning. Nothing until lunch, 
-and nothing after. It's way too much anyway. Already. I am tired. Satisfied? No 
-clue. What a terrible phrase. In preschool there was a kid who said no clue all 
-the time. He was tall(er than me). I hit him with a death snowball once and he 
-didn't quite die. But now I have an aversion to snowball fighting. Hope he's 
-okay ish. Hope he got a clue.
+** Best thing of today: 
+work went well. Deposited checks for Josh and returned just in time to leave. 
+Jon apparently had a headache, but it's fine. Tomorrow is la Cabana. I have to 
+not eat tonight or in the morning. Nothing until lunch, and nothing after. It's 
+way too much anyway. Already. I am tired. Satisfied? No clue. What a terrible 
+phrase. In preschool there was a kid who said no clue all the time. He was 
+tall(er than me). I hit him with a death snowball once and he didn't quite die. 
+But now I have an aversion to snowball fighting. Hope he's okay ish. Hope he 
+got a clue.
 Night.
 
 * 2022-02-01 9:51 pm
@@ -1226,8 +1253,9 @@ tacit but nuanced agreement with its protagonist. It is a fractal. He gaslights
 the girls and he gaslights us by showing that. By the end, I was with him. What 
 does that say about me? Are we really that different?
 
-Best thing of today: signing up for Extra. Credit score thingy-izer. Oddly 
-enough, the sponsor on a Zach Star sketch about watching xxx for the plot.
+** Best thing of today: 
+signing up for Extra. Credit score thingy-izer. Oddly enough, the sponsor on a 
+Zach Star sketch about watching xxx for the plot.
 
 I need some sign that there can be a better future. This rabbit hole is a 
 vantablack rug and I stubbed my toe on it.
@@ -1243,10 +1271,11 @@ into a shinji like grim pragmatic wimpiness. Thus acting out of character by
 getting in the robot, I guess. That didn't occur to me then. Huh.
 
 * 2022-02-02 10:45 pm
-Best thing: real talk with Charlie. Discussed religion, basedness, and the 
-Healer. He is hopeful but still believes that only Catholic/Orthodox is right 
-and accounts for everything. Does not understand / accept my "understand every 
-sin and sinner" mentality. Not sure I do either.
+** Best thing:
+ real talk with Charlie. Discussed religion, basedness, and the Healer. He is 
+hopeful but still believes that only Catholic/Orthodox is right and accounts 
+for everything. Does not understand / accept my "understand every sin and 
+sinner" mentality. Not sure I do either.
 
 But I want to understand. I want to emphasize. I think I understand Hitler 
 already, maybe Stalin too. From what I know of their histories it seems to make 
@@ -1258,8 +1287,9 @@ Finally doing the emacs theme right. This could be good.
 Tiring myself out with heavy work and light anime. This could be heaven and 
 this could be hell.
 
-Best thing of today: sitting down after the whole move-all-change-of-pleas 
-affair. It felt so good and relaxing.
+** Best thing of today: 
+sitting down after the whole move-all-change-of-pleas affair. It felt so good 
+and relaxing.
 
 Man I really want that couch. Charles...
 
@@ -1285,8 +1315,10 @@ Still thinking in shell.
 Charles should be getting that couch over here tomorrow, and Dad might show up 
 or want to eat somewhere. It'll be a day.
 
-Best thing: finding/installing yascroll, the emacs text scrollbar. That gui one 
-is dumb and broken.
+** Best thing: 
+finding/installing yascroll, the emacs text scrollbar. That gui one is dumb and 
+broken.
+
 Wow I'm useless. Did nothing today and won't be tired yet.
 
 Good night.
@@ -1297,17 +1329,18 @@ This counts as last night because I'm still awake from that day.
 There is hope for emacs. Nvim will take decades to catch up at this rate. 
 Especially since evil-mode already exists.
 
-Best thing: watching the Iruma-kun arc where he turns evil. There's just 
-something about how it was built up from the first season finale, and he's 
-keeping all the connections he made as a hapless pushover, and he actually 
-takes advantage of it all. It wouldn't have worked if he'd been like that from 
-the beginning and pretending. Interesting. I guess that happens to me too, just 
-on a smaller scale and it's always too late in the day to be of use. I'm 
-strongest and smartest when it's mostly dark and I'm on the second can of dew. 
-The most I've done for my tomodachis was at that point, the most daring 
-adventures, the tallest bluffs. I stop third-guessing myself and use all of my 
-mind. And yet, taking in new info is harder, and any bodily function wrecks the 
-flow way more than usual.
+** Best thing:
+ watching the Iruma-kun arc where he turns evil. There's just something about 
+how it was built up from the first season finale, and he's keeping all the 
+connections he made as a hapless pushover, and he actually takes advantage of 
+it all. It wouldn't have worked if he'd been like that from the beginning and 
+pretending. Interesting. I guess that happens to me too, just on a smaller 
+scale and it's always too late in the day to be of use. I'm strongest and 
+smartest when it's mostly dark and I'm on the second can of dew. The most I've 
+done for my tomodachis was at that point, the most daring adventures, the 
+tallest bluffs. I stop third-guessing myself and use all of my mind. And yet, 
+taking in new info is harder, and any bodily function wrecks the flow way more 
+than usual.
 
 Met with dad today. He's been doing a lot for work etc. Says I should Def do my 
 taxes. Bought me groceries and lunch.
@@ -1321,7 +1354,7 @@ a little dry. Shikashi, I am fine. Perfectly single-minded.
 But tired. Still, it's been too much dew today (6 cans total?) so I couldn't 
 sleep if I tried. May as well write.
 
-#+begin_src
+#+begin_src html
 <song name="father to son" artist="Queen" >
 Take this letter that I give you
 Take it sonny hold it high
@@ -1338,20 +1371,21 @@ Emacs videos. Began the Great README.org Migration Project with my zshrc.
 There's still so much to unravel from this ecosystem, and get used to. It's not 
 vim, even if it does an excellent job pretending to be.
 
-Best thing: took out trash. Worst thing: this anime is so slow and light and 
-silly. Admittedly, its jokes all hit and it's a good watch, it's just not 
-really the mood I'm in. Hey, Charlie responded and didn't seem disdainful, just 
-tired. He probably still has a life. Hmm. Guess I do too. Today is the day that 
-is a day. Meaning nothing, signifying dessication. An idle and fruitless 
-masturbation. Clouds in the shape of arrows, pointing at the omnidirectional 
-horizon of forgetful blasphemy. Shakable unshakable glowing glowering showers 
-from towers of the powers' prestige. This is writ ironical. Watching Redo of 
-Healer has changed me and not for the better, maybe. A grim reminder that 
-Shield Hero was a great show and true porn has no production value. There's an 
-isekai parody on hanime and it's literally a sideshow. No flow or story or even 
-a voice for the MC. I'm almost certain that all the girls are voiced by one 
-person. Not because of how they sound-- they don't sound like anyone or 
-anything really-- but that would fit the theme.
+** Best thing:
+ took out trash. Worst thing: this anime is so slow and light and silly. 
+Admittedly, its jokes all hit and it's a good watch, it's just not really the 
+mood I'm in. Hey, Charlie responded and didn't seem disdainful, just tired. He 
+probably still has a life. Hmm. Guess I do too. Today is the day that is a day. 
+Meaning nothing, signifying dessication. An idle and fruitless masturbation. 
+Clouds in the shape of arrows, pointing at the omnidirectional horizon of 
+forgetful blasphemy. Shakable unshakable glowing glowering showers from towers 
+of the powers' prestige. This is writ ironical. Watching Redo of Healer has 
+changed me and not for the better, maybe. A grim reminder that Shield Hero was 
+a great show and true porn has no production value. There's an isekai parody on 
+hanime and it's literally a sideshow. No flow or story or even a voice for the 
+MC. I'm almost certain that all the girls are voiced by one person. Not because 
+of how they sound-- they don't sound like anyone or anything really-- but that 
+would fit the theme.
 
 Okay, I'll just say it. It's been too long and otherwise it'll never get said.
 
@@ -1389,18 +1423,19 @@ I don't feel like thinking about this anymore. Taida desu ne. Oyasumi!
 * 2022-02-07 10:02 pm
 Tired. Stressed. Too much or not enough, constantly bouncing between. What even 
 be?
-Best thing: made omelet for real for the first time in the new apt. Got 
-paycheck. Didn't go buy ice cream even though I was all the way out in Eagle 
-River. Ah well. I'm going back on Saturday to help mom move. That will be a 
-struggle.
+** Best thing:
+ made omelet for real for the first time in the new apt. Got paycheck. Didn't 
+go buy ice cream even though I was all the way out in Eagle River. Ah well. I'm 
+going back on Saturday to help mom move. That will be a struggle.
 
 * 2022-02-08 10:14 pm
 I'm okay. I'm not okay. Well, mostly okay. Emacs continues to exist. That's 
 fine. Did a few things today and they all worked except editing over ssh, which 
-is a problem with the underlying OS and not a big deal. Best thing: accurately 
-described Josh's color pallette and explained why he should have worn a white 
-shirt. He wore blue on blue with a green tie. To Federal Court. Ah well. At 
-least he did something today.
+is a problem with the underlying OS and not a big deal. 
+**Best thing: 
+accurately described Josh's color pallette and explained why he should have 
+worn a white shirt. He wore blue on blue with a green tie. To Federal Court. Ah 
+well. At least he did something today.
 Emacsclient -c is what I want. It launches a new "frame" which is a graphical 
 window on which are drawn... Let's just do a stack hierarchy.
 
@@ -1486,8 +1521,9 @@ experience today, but I am satisfied. Nothing is right but nothing is wrong.
 Everything is redefined lisp expressions anyway. Everybody's are stacked 
 different.
 
-Best thing of today: that Graham cracker in the morning. With the water. Peak 
-snack right there. Refreshing, slow, and sets a natural limit on itself.
+** Best thing of today: 
+that Graham cracker in the morning. With the water. Peak snack right there. 
+Refreshing, slow, and sets a natural limit on itself.
 
 I tried out EXWM today. Needs more configging. Has promise, especially with the 
 next version of Emacs going pure GTK. Maybe we can throw a Wayland compositor 
@@ -1556,14 +1592,15 @@ enable that declaration. And set up silencing compiler errors for the
 native-comp pure GTK branch. I'm actually pretty excited, but I'm wearing pants 
 to bed so it's hard to relax. But I have to so I will. Good night.
 
-Best thing: I don't know. The hair. Let's say the hair. 
+** Best thing: 
+I don't know. The hair. Let's say the hair. 
 
 Hey, let's write that installation script!
 
 * 2022-02-14 10:09 pm
-Best thing: new daily exercise. Walking up to top of stairs, then to basement, 
-then back to apt. Simple. Easy enough. Yet still consumes a fair amount of 
-energy.
+** Best thing:
+ new daily exercise. Walking up to top of stairs, then to basement, then back 
+to apt. Simple. Easy enough. Yet still consumes a fair amount of energy.
 
 Also. Playing with emacs launcher window. I'd like to have it bound to s-e and 
 open a fuzzy-finding file picker that then opens a new emacs frame and closes 
@@ -1575,8 +1612,9 @@ let's put that on top and put the modeline on the bottom. Can that happen? Will
 investigate tomorrow. I'm not quite tired but I should sleep.
 
 * 2022-02-15 10:18 pm
-Best thing: went and bought TV stand. What I ended up with is janky, but at 
-least it exists.
+** Best thing:
+ went and bought TV stand. What I ended up with is janky, but at least it 
+exists.
 
 Emacs modeline as external frame is totally a thing, but it's kind of bad. The 
 highlight groups don't really transfer over, and it needs to pretend to be 
@@ -1590,8 +1628,9 @@ numbers in Org and all that. Maybe get back the scrollbar and skinny font.
 Still haven't tried updating to pure-GTK properly yet. But hey, Mushoku Tensei 
 s2 is downloading so I can watch that tomorrow.
 
-Best thing: fixed zplug, and got strike through in Org-mode. It's plus signs, 
-for future reference.
+** Best thing:
+ fixed zplug, and got strike through in Org-mode. It's plus signs, for future 
+reference.
 
 * 2022-02-18 0:11 am
 Counting this as last night. Best thing: did laundry and showered. Ate la 
@@ -3451,4 +3490,10 @@ Also need a Makefile or something for the office scripts so I can remember what
 options to pass the compiler. Humph.
 
 Gnight.
+
+* 2022-05-10 9:20 pm
+I recorded a video today. I probably won't publish it. Call it a practice 
+video. Anyway. Best thing of today: watching the next episode of better call 
+Saul. Also the actual food of dinner was pretty good. I didn't like the 
+company, but that's a given.
 
