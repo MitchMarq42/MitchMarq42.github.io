@@ -1,3 +1,4 @@
+
 * 12-28-2021 9:45 pm
 Just deleted reddit. u/KasaneTeto_ was banned and I have no reason to live.
 
@@ -1633,9 +1634,9 @@ s2 is downloading so I can watch that tomorrow.
 reference.
 
 * 2022-02-18 0:11 am
-Counting this as last night. Best thing: did laundry and showered. Ate la 
-Cabana leftovers. Watched Mushoku Tensei part 2. This is gonna be a long one. 
-Of course we have to wait...
+Counting this as last night.
+** Best thing:  did laundry and showered. Ate la Cabana leftovers. Watched 
+Mushoku Tensei part 2. This is gonna be a long one. Of course we have to wait...
 Give me a minute. This show has prodded me. Our boy caved. It was her idea, at 
 her insistence, and felt inevitable. But wrong. She was in a dark place and 
 using him. She was in no place to consent. Consent? Fake. Need to redefine. 
@@ -1664,6 +1665,7 @@ Basically anything involving addiction, sex, or other artificial alteration of
 brain chemistry. After the mortal event, you re-frame everything before it as a 
 lead-up and everything after as the fallout, the sequel. The event is added to 
 the highlights database.
+
 Autopilot is resumed, but the patterns are different. The mortal event has 
 introduced a trigger, a hook: things related to it will catch your eye. In 
 extreme cases, a complex may be developed around it. This is how I feel about 
@@ -1676,8 +1678,9 @@ Didn't go to retreat. Gonna relax and stew here. Hate hate hate. Love it and
 hate the taste. Maybe buy a flip phone and hack it. You can get Busybox, so 
 emacs can't be that far off.
 
-Best thing: driving to McDonald's in the morning. Wonderful. I want to drive 
-more tomorrow. But like, money. And food. Etc.
+** Best thing:
+ driving to McDonald's in the morning. Wonderful. I want to drive more 
+tomorrow. But like, money. And food. Etc.
 
 Got through a few episodes of attack on Titan. Up to the first twist. I think I 
 hate all the characters. Mikasa least maybe. And that Sir Patrick Stewart 
@@ -1705,8 +1708,13 @@ Where's my Android lisp ide?
 
 * 2022-02-21 3:05 pm
 Had no night last night. Drove to Eagle River for no reason, got a snack, came 
-back. Best thing of Saturday: not finding phone. Sunday: taking out garbage. 
-Today: TBD. If I don't say later, put waking up.
+back. 
+** Best thing of Saturday: 
+not finding phone. 
+** Sunday:
+ taking out garbage. 
+** Today:
+ TBD. If I don't say later, put waking up.
 
 * 2022-02-21 9:36 pm
 Wow. Attack on Titan is crazy. Those first few episodes were still a drag and I 
@@ -1720,8 +1728,10 @@ sleep.
 * 2022-02-22 9:44 pm
 Head hurt all day today. Had a piece of underripe pineapple for lunch.
 
-Best thing: this moment right now. My head is finally clear. My nose is 
-evacuated. It's all better.
+** Best thing:
+ this moment right now. My head is finally clear. My nose is evacuated. It's 
+all better.
+
 I was really mad today. At least, I said I was. I set up all those meetings for 
 yesterday and Josh blew them away like it was nothing. Told everybody the 
 office was closed. The nerve! I will rage at him. I will complain. I get there 
@@ -1739,13 +1749,15 @@ angry. And in saying, validated that anger.
 Good night.
 
 * 2022-02-25 10:57 pm
-Best thing of 2/23: telling Josh I was upset. He said I'll "just have to get 
-used to it". Ass.
+** Best thing of 2/23: 
+telling Josh I was upset. He said I'll "just have to get used to it". Ass.
 
-Best thing of 2/24: Mac n cheese I guess. Nothing notable enough had happened.
+** Best thing of 2/24: 
+Mac n cheese I guess. Nothing notable enough had happened.
 
-Best thing of today 2/25: finally got something to install on the chonktab. I 
-think I'll recreate my old configuration.
+** Best thing of today 2/25: 
+finally got something to install on the chonktab. I think I'll recreate my old 
+configuration.
 
 The Chris Chan legend fascinates me. I could have been him. In his time, with 
 his influences. Not a huge jump. But I was more focused, and scrupulous, and 
@@ -1840,8 +1852,9 @@ better plot than strapping it to the car...
 Went fine. They came over, Lillian stayed in the truck, Charlie and I made 2 
 trips.
 
-Best thing:  finally recorded YouTube video. Latest since 4 months. Gomenasorry 
-about the shallow take.
+** Best thing:  
+finally recorded YouTube video. Latest since 4 months. Gomenasorry about the 
+shallow take.
 
 * 2022-02-26 11:17 pm
 Bad take bad take: suicide.
@@ -1886,8 +1899,9 @@ great advancement _and_ fuck.
 I'm falling asleep.
 
 * 2022-02-27 8:47 pm
-Best thing: working on fixing emacs relative line numbers. It's kind of stupid 
-how this isn't yet a thing.
+** Best thing: 
+working on fixing emacs relative line numbers. It's kind of stupid how this 
+isn't yet a thing.
 
 Basically, in vim you have a couple options. `set number` turns on absolute 
 line numbers on the left. Emacs has always done this in multiple ways and that 
@@ -1927,13 +1941,14 @@ would speak out against the ritual but secretly get good so as to be forced to
 participate in the degeneracy.
 
 * 2022-02-28 9:33 pm
-Best thing of today: writing schedule.ps1 script. Hopefully John will bring 
-over his copy of Visual Studio so I can bundle the pdf parser dependencies. For 
-now it just pops open all the court pdfs, which is nice but kind of a strain on 
-the computer. Parsing the pdfs themselves would be much better. Also we gotta 
-see about spam-opening court view. Parsing shouldn't be so much a problem cause 
-that's all html and hasn't been updated in 10 years. It's the redundant 
-database queries that get me.
+** Best thing of today:
+ writing schedule.ps1 script. Hopefully John will bring over his copy of Visual 
+Studio so I can bundle the pdf parser dependencies. For now it just pops open 
+all the court pdfs, which is nice but kind of a strain on the computer. Parsing 
+the pdfs themselves would be much better. Also we gotta see about spam-opening 
+court view. Parsing shouldn't be so much a problem cause that's all html and 
+hasn't been updated in 10 years. It's the redundant database queries that get 
+me.
 
 Windows scripting is strange, annoying, but refreshing experience. A lot of 
 looking up simple things because their manpager is garbage, but complex filters 
@@ -2007,18 +2022,21 @@ in a way to set up my then to be better.
 That dream last night was f'd up. I should not have had it. But I did, so may 
 as well say it. Here's to a better one tonight.
 
-Best thing of today: working more on powershell script that opens all calendar 
-pages. Now it skips the ones we'd never want. Need John to bring in the visual 
-studio cd to bundle the pdf dependencies. Hang on. I used this yesterday. He 
-forgot to bring the disc in.
+** Best thing of today:
+ working more on powershell script that opens all calendar pages. Now it skips 
+the ones we'd never want. Need John to bring in the visual studio cd to bundle 
+the pdf dependencies. Hang on. I used this yesterday. He forgot to bring the 
+disc in.
 
-Actual best thing of today: writing in here. I've brought myself down.
+** Actual best thing of today: 
+writing in here. I've brought myself down.
 
 * 2022-03-02 9:19 pm
-Best thing: emacs load-path. It was frustrating but I finally got it in there. 
-Always put (provide 'thing) in the file to be loaded and (require 'thing) 
-before where it needs to be loaded. Nothing I read said that directly, so the 
-realization came like a stupid and blinding suspicion.
+** Best thing:
+ emacs load-path. It was frustrating but I finally got it in there. Always put 
+(provide 'thing) in the file to be loaded and (require 'thing) before where it 
+needs to be loaded. Nothing I read said that directly, so the realization came 
+like a stupid and blinding suspicion.
 
 I want to write a new lisp in zsh. Just saw a post about a guy writing a scheme 
 in python and he gave some good tips:
@@ -2040,14 +2058,16 @@ right now, and I doubt anyone fully does. There's a nano clone written fully in
 guile. I might try that.
 
 * 2022-03-03 9:20 pm
-Best thing: decided to give up YouTube and spider solitaire. I've been wasting 
-my time on them and need to stop.
+** Best thing: 
+decided to give up YouTube and spider solitaire. I've been wasting my time on 
+them and need to stop.
 
 * 2022-03-04 7:18 am
 Friday... Without youtu.be. Without solitaire. How will I do?
 
 * 2022-03-04 10:20 pm
-Best thing of today: I'll sleep in a moment. That shall be the best.
+** Best thing of today:
+ I'll sleep in a moment. That shall be the best.
 
 But first. I need to say a few things.
 
@@ -2064,8 +2084,10 @@ its not. I have no life left. No time to do other things. The weekend is a
 curse that makes me decompress so I am softened under Monday's harsh blows.
 
 * 2022-03-06 2:42 am
-Counting this as yesterday. Best thing: installing windows 10 virtual machine 
-for visual studio. Now I'm having to write visual basic and it's confusing.
+Counting this as yesterday. 
+** Best thing: 
+installing windows 10 virtual machine for visual studio. Now I'm having to 
+write visual basic and it's confusing.
 
 After all... To end... I'm so tired.
 
@@ -2124,11 +2146,12 @@ Whatever. My passions are calling. Time to watch the last half of the first
 half of the last season of attack on Titan, a show I dropped after episode 4.
 
 * 2022-03-06 8:48 pm
-Best thing of today: the ice cream. Birthday cake flavor. It is truly the 
+** Best thing of today: the ice cream. Birthday cake flavor. It is truly the 
 nectar of the gods. I certainly didn't do anything to be proud of...
 
 * 2022-03-07 9:44 pm
-Best thing of today: shredding. So chill.
+Best thing of today: 
+shredding. So chill.
 
 I broke professionalism today. Daron called and begged for money. He said he 
 was lucky he had a heart attack yesterday so he didn't freeze overnight. I told 
@@ -2241,10 +2264,11 @@ had been discovered many times throughout the centuries, but never given any
 food.
 
 * 2022-03-10 9:17 pm
-Best thing of today: converting the schedule script to (mostly) powershell. I 
-still need to figure out grep though. The current thing just passes everything 
-through. Maybe because powershell pipes work on objects and not true streams? 
-Filter left, they say.
+** Best thing of today: 
+converting the schedule script to (mostly) powershell. I still need to figure 
+out grep though. The current thing just passes everything through. Maybe 
+because powershell pipes work on objects and not true streams? Filter left, 
+they say.
 
 My day was okay. Woke up feeling pretty good in the morning. Then John drones 
 on for a while, but eventually left me alone. La Cabana was fine, but I ate too 
@@ -2300,8 +2324,9 @@ erection, but it doesn't mean erect. It is a mostly mental thing. That will
 then become physical arousal no matter what.
 
 * 2022-03-11 11:40 pm
-Best thing of today: reading re:zero. We got through the Darkest Moment and 
-into some great lore teases.
+** Best thing of today:
+ reading re:zero. We got through the Darkest Moment and into some great lore 
+teases.
 
 The bedbug crew will come on Sunday, not tomorrow or today. A shame but oh 
 well. I guess I'll lay about tomorrow and do real things Sunday.
@@ -2317,8 +2342,8 @@ potential there. It's lisp, after all. Okay. I'll do that. A major concern will
 be distro availability, though. We need a fallback. Xmonad bootstrap?
 
 * 2022-03-12 7:37 pm
-Best thing of today: getting out of mom and Clarice's presence. They're both so 
-exhausting.
+** Best thing of today: 
+getting out of mom and Clarice's presence. They're both so exhausting.
 Qtile mostly works with xfce now. Just not xfdesktop. I am not sure how to 
 handle that. Perhaps I should just switch to a more powerful WM. The Haskell 
 dependencies for xmonad are just so troublesome.
@@ -2365,27 +2390,28 @@ Read some more re:zero today. My mind is blown and racing. Truly so much is
 just kind of happening right now. I can't wait for the end... But I need to 
 sleep. Etc.
 
-Best thing of today: KFC pot pie for lunch. That seems odd and disappointing. 
-Oh well.
+** Best thing of today: 
+KFC pot pie for lunch. That seems odd and disappointing. Oh well.
 
 This goal of learning Japanese will not happen at the rate I had intended. It 
 will be slower. Much slower. But I will come to comprehend it all. Eventually.
 
 * 2022-03-16 9:09 pm
-Re Zero continues to be subarashii desu. Best thing of today: sorting phone 
-messages and starting on the rewrite of the Messages program. John gave me a 
-copy of his version. It's a compiled exe but it's kind of garbage. Can't split 
-text onto multiple lines. Won't add me to the drop down menu. Doesn't have a 
-time or date override. Print dialog is janky. Whole thing is blurry. That's the 
-thing, isn't it. The windows dialog is blurry. Huh. Well. I'm making a serious 
-shot at it in powershell, and I'll write it such as to maximize hackability. 
-Hopefully I can find an elegant shortcut to avoid copy-pasting all these 
-properties. For loop? Hmm. Variables are different than in sh, so procedural 
-variable generation may not be so simple. It's just a couple of drop down menus 
-and a text field. Why do I care? I've seen the version where the author didn't 
-care. I'm stuck with it for now. It's strange. Might be the first "bad 
-software" I've ever used. And that's quite significant seeing as what happened 
-in the distant past...
+Re Zero continues to be subarashii desu. 
+** Best thing of today: 
+sorting phone messages and starting on the rewrite of the Messages program. 
+John gave me a copy of his version. It's a compiled exe but it's kind of 
+garbage. Can't split text onto multiple lines. Won't add me to the drop down 
+menu. Doesn't have a time or date override. Print dialog is janky. Whole thing 
+is blurry. That's the thing, isn't it. The windows dialog is blurry. Huh. Well. 
+I'm making a serious shot at it in powershell, and I'll write it such as to 
+maximize hackability. Hopefully I can find an elegant shortcut to avoid 
+copy-pasting all these properties. For loop? Hmm. Variables are different than 
+in sh, so procedural variable generation may not be so simple. It's just a 
+couple of drop down menus and a text field. Why do I care? I've seen the 
+version where the author didn't care. I'm stuck with it for now. It's strange. 
+Might be the first "bad software" I've ever used. And that's quite significant 
+seeing as what happened in the distant past...
 
 Nevertheless, I'm super excited. I got home and was mad I couldn't keep working 
 on it. I almost tried AppleScript. Which I kind of don't want to do.
@@ -2447,11 +2473,12 @@ But I digress.
 And in doing so, I tire. How truly slothful. Taida desu ne.
 
 * 2022-03-17 9:26 pm
-A mostly good day, I suppose. Just fine, in fact. Best thing: 'clear' button on 
-my message-taker powershell form. Eventually we will have also an email button 
-that sends an email, and a print button that opens a print dialog from which to 
-print. That would be great. First I will catch up to John's, which he claims to 
-have slapped together in an hour.
+A mostly good day, I suppose. Just fine, in fact. 
+** Best thing:
+ 'clear' button on my message-taker powershell form. Eventually we will have 
+also an email button that sends an email, and a print button that opens a print 
+dialog from which to print. That would be great. First I will catch up to 
+John's, which he claims to have slapped together in an hour.
 
 Worst thing: I put a 2 instead of a 3. On a request to speak with an 
 incarcerated potential client. So now we need to resend it or just forget. But 
@@ -2468,12 +2495,13 @@ Good night?
 * 2022-03-19 7:51 am
 Forgot to come here last night. Was thinking way too much about emacs extension.
 
-Best thing: hmm. Probably the night and working on my emacs manpager 
-highlighting.
+** Best thing:
+ hmm. Probably the night and working on my emacs manpager highlighting.
 
 * 2022-03-19 11:42 pm
-Best thing: wandering around Fred Meyer talking to myself. Looking for a square 
-light bulb, which they did not have.
+** Best thing: 
+wandering around Fred Meyer talking to myself. Looking for a square light bulb, 
+which they did not have.
 
 * 2022-03-20 10:47 am
 Caught up on attack on Titan. Only a few weeks left to wait. 86 part 2 is 
@@ -2486,11 +2514,12 @@ grumpy and stiff like Jon. Well, whatever. Took a shower. Now the hair will be
 awful for a few days, then great for a couple of weeks, then get bad and 
 require another shower. A miserable existence to be sure...
 
-Best thing: cleaning toilet. It turns out you can push all the water through 
-the system and clear it out to scrub or treat the bowl. So that's nice maybe. 
-Also cooking rice was good. I like rice when it's with things I like... Hmm. 
-Need to do something with the other stuff. More milk for the cheeto mac. More 
-ramen packets. OK oh well.
+** Best thing: 
+cleaning toilet. It turns out you can push all the water through the system and 
+clear it out to scrub or treat the bowl. So that's nice maybe. Also cooking 
+rice was good. I like rice when it's with things I like... Hmm. Need to do 
+something with the other stuff. More milk for the cheeto mac. More ramen 
+packets. OK oh well.
 
 I need to steel myself for another day week life of the office. To not get 
 annoyed by Gene, or depressed by John, or fed up with Josh. Oh. Right. I have 
@@ -2521,8 +2550,9 @@ Envy? ~Jealousy, turning snakes into the sea.~
 
 Oh well. A good metaphor, for another time.
 
-Best thing: waking up at 7 this morning in advance of the alarm. I'll set it 
-back 5 minutes now and see how much I can each day.
+** Best thing: 
+waking up at 7 this morning in advance of the alarm. I'll set it back 5 minutes 
+now and see how much I can each day.
 
 * 2022-03-22 8:49 pm
 If I lose it all, then I lose it all. What a meme. Took me several episodes to 
@@ -2538,13 +2568,15 @@ I spoke with John about - -
 Fitshucks and shitfucks. Clarice called about mom and ruined my evening. I gave 
 everyone everyone else's numbers so they can leave me out of it.
 
-Best thing of today: If I Lose It All. Great meme.
+** Best thing of today: 
+If I Lose It All. Great meme.
 
 * 2022-03-23 9:49 pm
-Best thing: reinstalled server with Ubuntu Desktop Minimal instead of Debian. 
-Just Werks, unlike the weird phantom wifi problems I had been having. Now I 
-just need to make sure that the hotspot restarts itself on reboot. A venture 
-for another time.
+** Best thing: 
+reinstalled server with Ubuntu Desktop Minimal instead of Debian. Just Werks, 
+unlike the weird phantom wifi problems I had been having. Now I just need to 
+make sure that the hotspot restarts itself on reboot. A venture for another 
+time.
 
 I can't get into this 'watching anime as it comes out' lifestyle. I've been 
 sort of trying with attack on Titan since I caught all the way up, and the 
@@ -2628,7 +2660,8 @@ gotta write an amateur sed script to convert all the formatting. Or just do it
 manually. Or just not. Plus the  system-crafter guy has a guide on getting it 
 all set up so that's good.
 
-Best thing: getting the site back up and working correctly. That is wonderful.
+** Best thing:
+ getting the site back up and working correctly. That is wonderful.
 
 * 2022-03-26 10:34 pm
 Watching Ascendence of a Bookworm. Exactly what I wanted in anime. Absolutely 
@@ -2636,28 +2669,32 @@ subarashii.
 Also. Did some minor tweaking to emacs; I may just have to find another color 
 scheme that actually works instead of my own hacked up nightmare...
 
-Best thing: trying out doom emacs again and reading their docs. Gives a better 
-perspective of what's out there to optimize.
+** Best thing:
+ trying out doom emacs again and reading their docs. Gives a better perspective 
+of what's out there to optimize.
 
 Still not using their theme though.
 
 * 2022-03-27 9:16 pm
-Best thing: set up windows on the old dextop and simplified the Message script.
+**Best thing: 
+set up windows on the old dextop and simplified the Message script.
 
 * 2022-03-28 7:48 pm
-Best thing: simplifying the face definitions of my emacs colorscheme and 
-working with the comment-delimiter stuff.
+** Best thing:
+ simplifying the face definitions of my emacs colorscheme and working with the 
+comment-delimiter stuff.
 
 There's still more to do. I want to get all of Doom's org formatting in my 
 fonts, and get the heading/ document structure figured out better. Or at least 
 better fonts and colors.
 
 * 2022-03-29 9:35 pm
-Best thing: gui for ffcut script. Also super happy with my latest tweak to 
-emacs: adding a better color to the variable-name face, which is also 
-org-heading-2 for some reason. Previously it was very similar to my text face's 
-off-yellow, which was not good. Now it's gray and thin. Maybe I should make it 
-italic or underlined? Nah, that's too much. I want to keep this simple.
+** Best thing: 
+gui for ffcut script. Also super happy with my latest tweak to emacs: adding a 
+better color to the variable-name face, which is also org-heading-2 for some 
+reason. Previously it was very similar to my text face's off-yellow, which was 
+not good. Now it's gray and thin. Maybe I should make it italic or underlined? 
+Nah, that's too much. I want to keep this simple.
 
 Man, all these dependencies take time to install and that's not good. Gotta 
 eliminate a few. Once the colorscheme is done (ish) I can get rid of autothemer 
@@ -2672,11 +2709,13 @@ optimizations for a bygone era.
 Welp. I need to get up in the morning. Bye.
 
 * 2022-03-30 9:07 pm
-Best thing: rearranging the emacs color scheme. There's still a bunch of 
-balance issues but I think it's getting better.
+** Best thing:
+ rearranging the emacs color scheme. There's still a bunch of balance issues 
+but I think it's getting better.
 
 * 2022-03-31 11:33 pm
-Best thing: deciding to walk to work tomorrow.
+** Best thing: 
+deciding to walk to work tomorrow.
 Also. Today I made the ffcut script download a static ffmpeg, since github 
 doesn't let you upload files that big. I still want a progress bar, but for now 
 this is fine.
@@ -2691,12 +2730,14 @@ obviously. I wish someone had already done that, but it'll be okay to do myself.
 ~Suffer at the sight (I don't)~
 ~I don't believe it's better.~
 
-Best thing: walking to work. Very relaxing. Also the paycheck. I've got an 
-extra $300 plus another month of security.
+** Best thing: 
+walking to work. Very relaxing. Also the paycheck. I've got an extra $300 plus 
+another month of security.
 
 Why do I struggle with human interactions? What do I gain from their confusion 
 and pity? Well, I don't want to face them as an absolute. My absolute self is 
 the hurricane, and I don't even care to look at it. Much less force others to.
+
 Natsuki Subaru has "scary eyes". Shirogane Miyuki has "scary eyes". Ayanokoji 
 Kiyotaka has dull eyes. I have weary eyes most of the time now. What does that 
 mean? What eyes does Charles have? Can I ever look at him again, as anything?
@@ -2772,8 +2813,9 @@ like me and has a terrible relationship with his sexuality and doesn't trust
 his stamina or body image with anyone else. Nah. He's probably just reasonably 
 modest and a little shy and very preoccupied.
 
-Best thing of today: working out putting a title on the site without it showing 
-as a visual heading. That was good.
+** Best thing of today:
+ working out putting a title on the site without it showing as a visual 
+heading. That was good.
 
 I'm tired. I'm depressed. I haven't met with any friends in about a month at 
 least. Not since that retreat I ducked out of. I need new friends, but it's not 
@@ -2786,7 +2828,7 @@ This document is huge. It's going to take a while to open every day unless I do
 something about it. Which I might. I sort of was planning to upload it to the 
 website anyway.
 
-A couple best things today:
+** A couple best things today:
 
 - finally fixed line indentation on the Message script. Now I just need a basic 
 email function and it will have surpassed John's.
@@ -2821,11 +2863,13 @@ will tell. I'll finish the last of the first pizza tomorrow. Then can come the
 experiments...
 
 * 2022-04-05 7:26 pm
-I missed yesterday. I missed yesterday? Hmm. Best thing of yesterday: Jon 
-telling me that he can hear minds. I basically believe it, too.
+I missed yesterday. I missed yesterday? Hmm. 
+** Best thing of yesterday: 
+Jon telling me that he can hear minds. I basically believe it, too.
 
-Best thing of today: starting to rewrite conan-dl in powershell this morning. 
-It was all downhill from there though.
+** Best thing of today:
+ starting to rewrite conan-dl in powershell this morning. It was all downhill 
+from there though.
 
 So. I think I have to start doing something else. In addition to the current 
 stuff. I'm wasting a lot of time right now as it is. The intention is to 
@@ -2847,12 +2891,13 @@ I hereby wish my immediate future self luck!
 * 2022-04-06 8:50 pm
 Well that didn't work. At all? Not really. Not very much.
 
-Best thing of today: idk it was awful. I've felt like that every day lately. 
-Maybe, I need to make a change. Definitely, rather. Best thing for real today: 
-starting this anime. It's got a stupid long poorly translated title: something 
-like "isekai'd with my fellow old man friend who is now an impossibly beautiful 
-girl". It's popcorn but doesn't get stuck in the teeth. So chips but not 
-corrosively salty. So perfect basically.
+** Best thing of today:
+ idk it was awful. I've felt like that every day lately. Maybe, I need to make 
+a change. Definitely, rather. Best thing for real today: starting this anime. 
+It's got a stupid long poorly translated title: something like "isekai'd with 
+my fellow old man friend who is now an impossibly beautiful girl". It's popcorn 
+but doesn't get stuck in the teeth. So chips but not corrosively salty. So 
+perfect basically.
 
 I haven't finished it so there's not much to say. Lead guys are both relatable, 
 lead girl is hot/cute (how far have I sunk that I can say that), visual 
@@ -2941,9 +2986,11 @@ who will support me and be there and that I can learn more about. I want
 someone to love, somebody to love me. A hug. Please God I need a hug. Anybody. 
 Hug me. Guess I'm no better than Sockness in that regard...
 
-Oh right. Best thing of today: abstracting parts of the scripts into a separate 
-file. And next time I may do some sort of exe compilation. Hopefully that will 
-hide the host window better than my current solution...
+Oh right.
+** Best thing of today: 
+abstracting parts of the scripts into a separate file. And next time I may do 
+some sort of exe compilation. Hopefully that will hide the host window better 
+than my current solution...
 
 Ooh. An idea to work on to maybe help. A goal for tomorrow.
 
@@ -2971,9 +3018,9 @@ global-whitespace-mode for tab visualization.
 * 2022-04-08 10:47 pm
 Both above emacs things are now incorporated into my configuration. Hooray.
 
-Best thing of today: getting Japanese input and whitespace visualization on 
-emacs. It's like in the movies, literally. You just type and it converts the 
-characters.
+** Best thing of today:
+ getting Japanese input and whitespace visualization on emacs. It's like in the 
+movies, literally. You just type and it converts the characters.
 
 Now what we need is to merge quail (the emacs foreign input system) into 
 ivy/counsel...
@@ -2981,9 +3028,9 @@ ivy/counsel...
 I'm tired. Good night.
 
 * 2022-04-09 11:14 pm
-Best thing of today: optimizing emacs startup time. It was getting up to a 
-second there until today. Now it's about half. I'd prefer even less, but this 
-is fine for now.
+** Best thing of today:
+ optimizing emacs startup time. It was getting up to a second there until 
+today. Now it's about half. I'd prefer even less, but this is fine for now.
 
 * 2022-04-10 5:58 pm
 Finally got space bar prefixes on emacs figured out. Haven't implemented them 
@@ -3003,18 +3050,19 @@ it's cold like this we can pretty well pretend they don't exist, since they
 deactivate in the cold. Or something.
 
 * 2022-04-10 9:01 pm
-Best thing of today: tackling emacs prefix keys. Soon I will have everything on 
-spacebar and need no modifier keys. No control, no meta. And hopefully in a 
-remember-able way.
+** Best thing of today:
+ tackling emacs prefix keys. Soon I will have everything on spacebar and need 
+no modifier keys. No control, no meta. And hopefully in a remember-able way.
 
 It's a good day. I have been saved. I am not Chris Chan. Thus I shall endure.
 
 * 2022-04-11 9:21 pm
-Best thing of today: adding treemacs and minimap to emacs. The minimap is kind 
-of broken, but it's fine for now. I think the implementation is rather fraught, 
-inherently, but surprisingly there are only 2 and the other one is worse. 
-Treemacs is also fine. The least janky out of the options in one random list. 
-Also has git integration which is neat I guess.
+** Best thing of today:
+ adding treemacs and minimap to emacs. The minimap is kind of broken, but it's 
+fine for now. I think the implementation is rather fraught, inherently, but 
+surprisingly there are only 2 and the other one is worse. Treemacs is also 
+fine. The least janky out of the options in one random list. Also has git 
+integration which is neat I guess.
 
 Things go by in a whirl. It's already April 11th. In a month the others will 
 get out of school and have summer free time all day. And I won't. I'll be stuck 
@@ -3068,7 +3116,7 @@ I just set up the file syncer, so it might or might not have sync'd up. Let's
 check.
 
 * 2022-04-12 10:56 pm
-Best thing: notes sync. I don't even care if it actually worked. Today was 
+** Best thing: notes sync. I don't even care if it actually worked. Today was 
 vicariously stressful and I did nothing else of note.
 
 * 2022-04-13 6:24 pm
@@ -3089,12 +3137,13 @@ No. It didn't. Whatever. Not like I want anyone to read this...
 Hmm.
 
 * 2022-04-13 9:56 pm
-Best thing: working out the note syncing. The only other good thing that 
-happened was hanging foil on the window. Maybe I'll be able to sleep earlier 
-now.
+** Best thing: 
+working out the note syncing. The only other good thing that happened was 
+hanging foil on the window. Maybe I'll be able to sleep earlier now.
 
 * 2022-04-14 9:26 pm
-Best thing of today: waking up early and taking a shower.
+** Best thing of today: 
+waking up early and taking a shower.
 
 Okay, hmm. Ani-cli broke again. Might have to switch to anime-dl if that's a 
 thing. Which it definitely is.
@@ -3127,13 +3176,14 @@ thing and a bunch of discovery, and I must have had cheeto Mac in the evening
 because the tupperware was oily and orange. Oh yeah. We had subway for lunch 
 and Josh was late picking it up.
 
-Best thing of today: fixing the READMEs for my dotfiles. Also the tangent that 
-that led me on led to using zplug to manage more things was pretty useful. I 
-want to do more with that sooner or later. But for now the next thing is to 
-auto-tangle all those org files. Ideally both on save and when deploying a new 
-system. There's gotta be a way to do that, right? Well I'll find it. And do all 
-the other things as well. If I could manage everything with zplug that would be 
-supremely convenient...
+** Best thing of today:
+ fixing the READMEs for my dotfiles. Also the tangent that that led me on led 
+to using zplug to manage more things was pretty useful. I want to do more with 
+that sooner or later. But for now the next thing is to auto-tangle all those 
+org files. Ideally both on save and when deploying a new system. There's gotta 
+be a way to do that, right? Well I'll find it. And do all the other things as 
+well. If I could manage everything with zplug that would be supremely 
+convenient...
 What has this file become? All I do is gush about my pseudo-programming 
 escapades. Where are the hot takes? The rants? The reviews? They're all in my 
 head, and I'm not in the space to let them out lately. I'm pretty full right 
@@ -3160,7 +3210,8 @@ Why, oh why. Did I go. To dad's. I wasted like 5 hours and a good amount of
 gas, and for what? Well, I at least got the tires. Need to change those very 
 soon... Like a week ago...
 
-Best thing of today: laying here now. Tired but resigned. I need nothing else.
+** Best thing of today: 
+laying here now. Tired but resigned. I need nothing else.
 
 * 2022-04-18 9:32 pm
 ~I need something else, to get me through this~ stupid song. Darn stupid 
@@ -3175,8 +3226,8 @@ college because homework and stress. He said to wait and when I get to it it
 won't be like I remember. I think he may have been a bit overwhelmed by how 
 much I shared. Oh well. That is one affliction with which I am cursed.
 
-Best thing of today: sending email works. In powershell. Now I just have to 
-give feedback on it.
+** Best thing of today: 
+sending email works. In powershell. Now I just have to give feedback on it.
 
 * 2022-04-19 8:12 am
 Jon out today. Guess I'll just sit here and do nothing. Nah, I'll do something 
@@ -3211,17 +3262,19 @@ pop my ears and pressurize my sinuses. But nope. It endures.
 
 Worst thing of today: all of work.
 
-Best thing of today: working with powershell string manipulation for the 
-ani-cli rewrite. Most of the logic is simple to port, but I'm not sure how to 
-handle passing multi-line stdin to a While loop. I guess just use For and pipe 
-into .Add($_) if they'll let me.
+** Best thing of today:
+ working with powershell string manipulation for the ani-cli rewrite. Most of 
+the logic is simple to port, but I'm not sure how to handle passing multi-line 
+stdin to a While loop. I guess just use For and pipe into .Add($_) if they'll 
+let me.
 
 * 2022-04-20
 My headache is splitting. I cannot think, I cannot live. I'm just sitting and 
 breathing and listening to the ringing of my ears.
 
-Best thing of today: not getting pulled over this morning. There was a cop 
-right there and he didn't even look my way.
+** Best thing of today:
+ not getting pulled over this morning. There was a cop right there and he 
+didn't even look my way.
 
 * 2022-04-21 8:29 pm
 My brain no longer trembles, but the throat is ravaged and my shoulders want to 
@@ -3239,24 +3292,28 @@ waifu-bait ecchi garbage. Makes up for a cringe and inevitable plot with sexy
 animation. That's my brief rambling review. It's probably wrong because 
 everyone on YouTube says it's fantastic. Well, whatever. At least I'm not 
 blindly following somebody's takes on it like I do for most things.
-Best thing of today: walking around Fred Meyer. I almost felt normal.
+
+** Best thing of today:
+ walking around Fred Meyer. I almost felt normal.
 
 2022-04-22 10:34 pm
 The ache is pretty much gone from my shoulders. But my throat is scabbing 
 itself over a lot. Does it not know how to heal? Nah, it shall heal in time.
 
-Best thing of today: getting a good version of Emacs for macos installed. The 
-built-in webkit browser almost doesn't not work. Only problem, I use emacs as a 
-transient process and not as a daemon or root window. Thus having to open and 
-close the browser along with the editor all the time. Not ideal.
+** Best thing of today:
+ getting a good version of Emacs for macos installed. The built-in webkit 
+browser almost doesn't not work. Only problem, I use emacs as a transient 
+process and not as a daemon or root window. Thus having to open and close the 
+browser along with the editor all the time. Not ideal.
 
 * 2022-04-23 3:40 pm
 Current at random tire shop #1 waiting on my car. The one Jon gave me didn't 
 answer.
 
 * 2022-04-23 8:51 pm
-Best thing of today: walking around after dropping off the car. Didn't get 
-anywhere but at least I burned energy.
+** Best thing of today: 
+walking around after dropping off the car. Didn't get anywhere but at least I 
+burned energy.
 
 * 2022-04-24 8:33 pm
 Just watched (finished) Serial Experiments Lain...
@@ -3271,12 +3328,13 @@ plot collapse out of 10; must watch.
  getting blazers out of car. Needed to happen for months now.
 
 * 2022-04-25 8:42 pm
-Best thing of today: shower in the morning. All downhill from there, now my 
-headache is back. Night.
+** Best thing of today: 
+shower in the morning. All downhill from there, now my headache is back. Night.
 
 * 2022-04-26 10:05 pm
-Best thing of today: installing the new Ubuntu. It's broken so I'll have to go 
-back to fedora, though. That can wait till tomorrow.
+** Best thing of today:
+ installing the new Ubuntu. It's broken so I'll have to go back to fedora, 
+though. That can wait till tomorrow.
 
 * 2022-04-27 10:08 am
 At work right now, might randomly trail off.
@@ -3284,24 +3342,26 @@ I used to be good with people. I used to not get flight or fight reactions when
 going up against a crowd.
 
 * 2022-04-27 9:56 pm
-Best thing of today: not finishing lunch. I feel like I've gotten less hungry 
-which is a step forward.
+** Best thing of today: 
+not finishing lunch. I feel like I've gotten less hungry which is a step 
+forward.
 
 * 2022-04-28 9:45 pm
-Best thing of today: Lillian texted in the morning. That was surprising and 
-positive enough to get me through a pretty bad day at work. Though John bore 
-most of that. Well, we got some files closed and some reckonings had. Man, all 
-these alcohol users are idiots! Every last one. Especially Josh. Our business 
-is a joke. We lure people in, then do the communication of a public defender 
-and the continuances of a lifetime. And plead them out when the court starts to 
-notice. We call someone. And schedule them, and reschedule them out for weeks 
-and weeks.
+** Best thing of today: 
+Lillian texted in the morning. That was surprising and positive enough to get 
+me through a pretty bad day at work. Though John bore most of that. Well, we 
+got some files closed and some reckonings had. Man, all these alcohol users are 
+idiots! Every last one. Especially Josh. Our business is a joke. We lure people 
+in, then do the communication of a public defender and the continuances of a 
+lifetime. And plead them out when the court starts to notice. We call someone. 
+And schedule them, and reschedule them out for weeks and weeks.
 
 * 2022-04-29 11:36 pm
-Best thing of today: getting jellyfin set up on the server. It works and uses 
-my garbage css from Luke Smith. Sort of likey, whatever. Also set up gitea. But 
-that was pretty trivial in comparison. For now I'm just so relieved I have 
-something to show that's more than a plain auto-generated directory listing.
+** Best thing of today:
+ getting jellyfin set up on the server. It works and uses my garbage css from 
+Luke Smith. Sort of likey, whatever. Also set up gitea. But that was pretty 
+trivial in comparison. For now I'm just so relieved I have something to show 
+that's more than a plain auto-generated directory listing.
 
 It's got a player that works on browsers and stuff, it auto-populates the 
 metadata of anything it can identify, and it was a bitch to set up. Why? I 
@@ -3314,8 +3374,8 @@ do that other than make all the hyperlinks assume we're already signed in.
 Which doesn't work.
 
 * 2022-04-30 9:14 pm
-Best thing of today: rediscovering Canon Rock. Such a great arrangement of an 
-archetypical song.
+** Best thing of today:
+ rediscovering Canon Rock. Such a great arrangement of an archetypical song.
 
 Tried doom emacs again today. It was okay again. Got my theme working but most 
 everything else was broken. Unfortunate. I think doom could be useful for me, 
@@ -3352,12 +3412,14 @@ Didn't work. Huh. Removed a line from the push script.
 The problem was ssh listening wrong.
 
 * 2022-05-01 9:28 pm
-Best thing of today: taking a shower. Now my hair is all fluffy and will be 
-annoying in the morning. Oh well.
+** Best thing of today: 
+taking a shower. Now my hair is all fluffy and will be annoying in the morning. 
+Oh well.
 
 * 2022-05-02 7:10 pm
-Best thing of today: org-table for the timesheet. With formulas and sums. Org 
-handles time values so that's awesome. So much better than =ses=...
+** Best thing of today: 
+org-table for the timesheet. With formulas and sums. Org handles time values so 
+that's awesome. So much better than =ses=...
 
 Also great: adding flycheck and company to all prog-modes. It feels like what I 
 always wanted neovim to be, except it actually works. Like I have the bling of 
@@ -3365,23 +3427,26 @@ doom-emacs without the bloat. Now I just have to incorporate =paredit= with
 evil bindings. May as well do that now-ish... Bye.
 
 * 2022-05-03 9:34 pm
-Best thing of today: phone message script works and compiles.
+** Best thing of today: 
+phone message script works and compiles.
 
 Also finally got org faces in Emacs fixed. GNU+have to deploy that everywhere; 
 the default font on windows is bad.
 
 * 2022-05-04 7:16 pm
-Best thing of today: new outlook window defaults to the print dialog. Had to 
-bodge it by sending a raw key, but hey it works. Might have to do a few other 
-things, and it won't run on Jon's machine, but for now this is good for me. 
-I've switched the main remote repo to my personal git server so that's cool. 
-I'm considering switching all my git repos over. Hmm.
+** Best thing of today:
+ new outlook window defaults to the print dialog. Had to bodge it by sending a 
+raw key, but hey it works. Might have to do a few other things, and it won't 
+run on Jon's machine, but for now this is good for me. I've switched the main 
+remote repo to my personal git server so that's cool. I'm considering switching 
+all my git repos over. Hmm.
 
 For some reason the face fix didn't work on windows. Will troubleshoot now.
 
 * 2022-05-05 9:10 pm
-Best thing of today: hmm. I didn't feel depressed, but nothing particularly 
-good happened. Got paid, at least.
+** Best thing of today: 
+hmm. I didn't feel depressed, but nothing particularly good happened. Got paid, 
+at least.
 
 TODO tomorrow:
 - make a config file for message.ps1 (half done) 
@@ -3390,9 +3455,10 @@ TODO tomorrow:
 - get rid of something or some stuff. (ivy, counsel) 
 
 * 2022-05-06 11:17 pm
-Best thing of today: getting emacs set up with more atomic and customizable 
-completion. This setup looks a little better and feels faster too. There's 
-still so much to tweak, but this so far is nice.
+** Best thing of today:
+ getting emacs set up with more atomic and customizable completion. This setup 
+looks a little better and feels faster too. There's still so much to tweak, but 
+this so far is nice.
 
 * test test test
 This is a test of the exportion of notes in this app
@@ -3407,8 +3473,9 @@ I've mostly switched over to the pixel 6 for phone things. It's a little
 heavier but a lot faster so that's nice. Problem: exporting this note is even 
 jankier than before because android 12 removed filesystem permissions.
 
-Best thing of yesterday: going to prom and schmoozing with everyone. I feel 
-understood, or at least accommodated.
+** Best thing of yesterday:
+ going to prom and schmoozing with everyone. I feel understood, or at least 
+accommodated.
 
 It's mother's day. I asked mom if she'd like to go out to lunch with me. She 
 said "no". One word, no punctuation. That's kind of sad. Not that I'd have it 
@@ -3418,8 +3485,8 @@ This phone has a fingerprint sensor underneath the screen. It's like magic or
 something. The convenience of that remains to be seen.
 
 * 2022-05-08 8:45 pm
-Best thing of today: vi mode in powershell. With a little more tweaking I might 
-switch from zsh...
+** Best thing of today: 
+vi mode in powershell. With a little more tweaking I might switch from zsh...
 
 Powershell on Android doesn't seem to be a thing though. I might be able to get 
 the raspberry pi version to run or something.
@@ -3458,7 +3525,9 @@ been. I'm such a bad conversationalist. All I did was ramble.
 ~when all I want to do is try...~
 
 * 2022-05-09 10:01 pm
-Okay day. Best thing: getting '^p' shortcut working again in message script.
+Okay day. 
+** Best thing: 
+getting '\^p' shortcut working again in message script.
 
 I spoke out loud to no one about many things today. I think it was good. I 
 shouldn't be telling the world and I need to consider it to be more sure of 
@@ -3493,7 +3562,8 @@ Gnight.
 
 * 2022-05-10 9:20 pm
 I recorded a video today. I probably won't publish it. Call it a practice 
-video. Anyway. Best thing of today: watching the next episode of better call 
-Saul. Also the actual food of dinner was pretty good. I didn't like the 
-company, but that's a given.
+video. Anyway. 
+** Best thing of today: 
+watching the next episode of better call Saul. Also the actual food of dinner 
+was pretty good. I didn't like the company, but that's a given.
 
