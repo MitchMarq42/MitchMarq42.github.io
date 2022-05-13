@@ -3567,3 +3567,30 @@ video. Anyway.
 watching the next episode of better call Saul. Also the actual food of dinner 
 was pretty good. I didn't like the company, but that's a given.
 
+* 2022-05-11 9:19 pm
+** best thing of today:
+ got a lot of decent powershell written. The use-package imitation was going to 
+not work, but I needed it so much that I just kind of hacked it out. It has 
+=build=, =manifest=, =dev=, and =if= keywords. Next thing I should add for 
+security is a =pin= for checking out approved commits. And probably support for 
+other sites like gitlab, and loose files, and lots of other stuff. And make its 
+keywords more consistent with emacs use-package.
+
+Also, the Messages script now has a config file! Problem is, I stole the 
+dialogs from Visual Basic so now the form loses its style and shrinks. That 
+shouldn't be how that works, but it is. Or something. I don't know.
+
+I think today was a good day. Has it made up for all the bad days? Of course 
+not. They weren't all that bad, and today wasn't all that good. Everything is 
+so flat. Walking in the wind and the sun with the hair and the blazer is nice, 
+and the code doing what you want is nice, but the food is boring after a few 
+bites. The pillow is flat after a little wiggle. The scalp is itchy and the 
+hair is oily after a few days. The youtu.be recommendations are ever more 
+random and fleeting. The apartment is musty but I'm noseblind after a moment. 
+My eyes are dry, but closing them won't help. Everything is so flat.
+
+And now for something completely different:
+
+They should call the =;= character a super-comma not a semi-colon. Don't change 
+my mind, you're wrong.
+
