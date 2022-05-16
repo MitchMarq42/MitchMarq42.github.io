@@ -3594,3 +3594,145 @@ And now for something completely different:
 They should call the =;= character a super-comma not a semi-colon. Don't change 
 my mind, you're wrong.
 
+* 2022-05-12 7:53 pm
+** Best thing of today: 
+sitting down after my hour long walk and drinking sprite and hacking Internet 
+Explorer. I have hope. This will be good. If we can click buttons and insert 
+text, we can do everything. I might make a "dashboard" with buttons for testing 
+things. But I won't. I don't want to. I want a script that just works. Hmm. 
+Also it should work on John's machine which is possibly running powershell 2. 
+That's ancient. Windows 10 comes with powershell 5, and the linux/Mac install 
+is powershell 7. It's old enough that many things might be different in 
+unexpected ways. But internet explorer hasn't changed in a long time so that 
+might be fine.
+
+* 2022-05-13 10:29 pm
+** best thing of today:
+ getting windows 11 installed on the chonktab. The problem was some stupid 
+ill-documented bios-level abstraction layer for SSDs. That Linux works just 
+fine with. Oh well. Now it's there, and I can start getting it set up for 
+development maybe. Need to find an installation of powershell 2...
+
+* 2022-05-14 9:05 pm
+This is stupid. This is all stupid. I'm doomscrolling on YouTube just like I 
+was on reddit. It's time to stop. If I delete the app now, I won't be able to 
+get it back without a hassle since Vanced is dead and the manager I was using 
+is sussy. And using the default version with ads is out of the question. Hmm. 
+But what would I do without that constant extra sound? I guess I'd have to 
+live...
+
+Making app guis is dumb. Powershell is a snowflake, python is broken or costs 
+money, and the c# xml thingy I found can't open a link. So far I'll stick with 
+powershell because it works and I understand it.
+
+Vscode is also a thing that I tried today. With the nvim extension, it's emacs 
+with less jank but too much mouse reliance. I don't think I actually need it. I 
+don't think I even want it for the things people use it for. It's just a 
+notepad with a terminal and tabs and clutter. Also, powershell ISE is a joke. 
+Garbage. All of this stuff is confusing and uncomfortable to me.
+
+~take me for a ride, I'm the one you pushed aside, but it's coming back to you, 
+yeah it's coming back to you~
+
+I wish winforms just worked on Linux. Like come on. I don't care if the dll is 
+10 gigs, that's worth it. That's the simplest way to do this and I want it. 
+That python thing would be good if it worked. And wasn't python. Chotto matte! 
+I should just use lisp! Solves everything. Make a browser mini window running a 
+clojure-script of the form, and it works fine.
+
+~run to the sound, take it back and double down, cause it's coming back to you, 
+yeah it's coming back to you~
+
+Are those even a thing anymore? Oh no. I'm walking down the path that leads to 
+Electron. Well whatever. If that's what it takes then that's what I'll do. But 
+hopefully not.
+
+~well AH AH AH and we're pouring gasoline, so dance around the fire that we 
+once believed in~
+
+I drank a huge soda today. I definitely didn't pee that much. Where did it go?
+
+Ah, there it is. Never mind.
+
+I don't want to be bored. I feel like this lifestyle has taken from me that 
+infinite exclusive laziness I have always prided myself on. I have control. And 
+I don't even know how to use it. It's disappointing. I've been hiding from the 
+disappointment because "it's what I've always wanted".
+
+~All I ever wanted to do was do right things; never wanted to be the king (I 
+SWEAR)~
+
+I'm such a garbage entity. I can't even sustain my own happiness or existence. 
+I want what I cannot and should not have, then I get it and feel a tenth of the 
+pleasure. I've been here too long for my own good. I need a break. I need a 
+release. I need a cringe Hero's Journey plot to start and take me away.
+
+~All I ever wanted to do was save your life; never wanted to grab the knife 
+(BEWARE)~
+
+Something just happen already. Someone just invite me on a month long trip or 
+something. Just end this.
+
+~ah, ah, ahh~
+
+~if I lose it all, slip and fall, I will never look away;
+If I lose it all, lose it all, lose it all~
+
+I have nothing to look ahead to. Nothing to look back on. Nothing to look at 
+now except the hurricane inside and the howling void of the internet.
+
+~if I lose it all, outside the wall, live to die another day~
+
+~I don't want anything, just here to...~
+
+~BREAK FREE~
+
+My head wants to explode. This is so stupid. I want to throw things. I want to 
+smash it all up. Beat it from the back of my broken hands, or whatever. Just 
+kill it all, at once. My statement. My eternal complaint before God and man and 
+myself. I don't want to be, if I can't be the center. And since I am imperfect 
+and perfection is unattainable, I must not be the center. That position is 
+already filled, anyway. So. There is no future for me. No. There is. It will 
+happen. Just not usefully. I hate this. I'm mad. I'm in a doing-things state 
+but everything I've done today has failed. Why try when nothing works, when you 
+can't bother. Give up. Be done.
+
+* 2022-05-14 11:27 pm
+** best thing of today:
+Eating chicken pot pie in the morning. It was all downhill from there.
+
+~I feel the love, and I feel it burn~
+
+~down this river, every turn~
+
+~'hope' is our four-letter word~
+
+~Make that money, watch it burn~
+
+I must be in a bad state for such a pathetic and unspeakable act (you know what 
+I mean) to /improve/ my mood. It's usually depressing and hollow, but this time 
+it felt like a relief. Like an accomplishment. That's awful. But at least it 
+burns energy. It took a while this time, too. I went for webcomics instead of 
+video and that dragged it out a lot. Plus the caffeine and overstimulation. It 
+took about an hour as opposed to 5 minutes.
+
+I don't want to talk about this anymore.
+
+My head hurts a little.
+
+This phone has way worse battery life than the other one. It's down to 33%, and 
+would be about 20 if I hadn't plugged it in for a bit. The poco would still 
+have 55 or so.
+
+* 2022-05-15 3:50 pm
+You know what? I don't. Clojurescript still doesn't work. I was awake really 
+late and slept on the couch. Somehow. I thought about what it means to me to 
+experience and understand the world, in contrast with Chris Chan. He isn't even 
+aware that there's a greater pattern behind it all. He's just hopelessly 
+imitating and rationalizing. Well, I rationalize too. I'm great at it. So there.
+
+I really need a material hobby besides eating. This can't be good for me. All I 
+do is eat and eat and eat. And it's never as good as I wanted, and it all adds 
+up, and I feel heavy and my throat is never relaxed from holding it down.
+
+Well, with that said, time to go find some dinner...
