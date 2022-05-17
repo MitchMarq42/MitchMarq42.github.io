@@ -3736,3 +3736,20 @@ do is eat and eat and eat. And it's never as good as I wanted, and it all adds
 up, and I feel heavy and my throat is never relaxed from holding it down.
 
 Well, with that said, time to go find some dinner...
+
+* 2022-05-15 10:09 pm
+** Best thing of today:
+Attempting to reconstitute the raisins. Failed but at least it was something.
+
+* 2022-05-16 9:12 pm
+Pretty chill day, especially for a Monday.
+** best thing:
+Extracting the courtview table into a powershell object. Now we can do 
+everything with it. One problem: you need excel installed, which is a pain and 
+costs money. If I could include modules that would be better or something,...
+
+No. The right way would be regex-ing the html into xml then importing it 
+natively. Like I did for the csv. This is bakana.
+
+And now I'm coughing for no reason.
+
