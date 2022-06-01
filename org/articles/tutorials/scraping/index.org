@@ -7,6 +7,9 @@
 
 
 * Using =sed= and =curl= to extract information from webpages
+:PROPERTIES:
+:ID:       bc78e324-730c-482d-9608-4f16011cab3f
+:END:
 ----
 ** Introduction
 I'll go over a bit more technicalities in my article on =grep=, but I wanted to discuss a practical use of UNIX command-line tools. This is also in relation to data-hoarding, but we'll get into that.
@@ -102,3 +105,11 @@ So we can
 #+begin_src shell
   curl 'https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0' | sed 's/></>\n</g' | grep 'dc-list-no' | sed 's/
 #+end_src
+
+... This is never getting finished. I don't have the time or energy.
+
+Here's a better version by the legendary Chokerman:
+#+begin_src shell
+  curl -s 'https://www.xerblade.com/p/detective-conan-important-episode-list.html?m=0'|grep -Eo "dc-list-no\'>[0-9].*?<"|sed -nr 's/.*>(.*)<.*/\1/p'
+#+end_src
+(inciting incident [[https://github.com/pystardust/ani-cli/issues/723][here]])
