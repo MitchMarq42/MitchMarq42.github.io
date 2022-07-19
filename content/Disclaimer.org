@@ -1,0 +1,4 @@
+* Pages generated with Hugo and Org Mode
+* Typed in GNU Emacs
+* Hosted on a convertible laptop
+* DNS provided by sav.com

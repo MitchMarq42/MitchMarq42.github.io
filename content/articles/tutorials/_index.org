@@ -1,0 +1,8 @@
+* Sub-sub-index of tutorials
+
+- [.] TODO: all below:
+  - [X] [[/articles/tutorials/scraping/][using sed and curl to extract information from webpages]]
+  - [ ] all the things I do with `nvim`
+  - [ ] how to pick a laptop (from a _connoiseur_)
+  - [ ] remembering facts and information without trying
+  - [ ] why I don't use `grep` anymore
