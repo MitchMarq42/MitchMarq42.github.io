@@ -1,5 +1,5 @@
 *~
 .packages
 html
-videos
-org/musings_log.org
+**/videos
+**/musings_log.org
