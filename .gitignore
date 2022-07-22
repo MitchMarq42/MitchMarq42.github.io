@@ -2,5 +2,5 @@
 .packages
 html
 **/videos
-**/musings_log.org
+**/musings_log*
 public/*ml
