@@ -1,4 +1,6 @@
-= Communication is fake, actually =
+#+title: Communication
+
+* Communication is fake, actually
 ----
 Surely you've noticed it by now. People know and use different definitions of relatively common words in English. I don't know how it is outside of English, I'm not there. All I know is, this approaches absurdity.
 

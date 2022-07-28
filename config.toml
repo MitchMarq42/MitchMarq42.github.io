@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "The Best Site Ever! (not)"
 
 theme = "lugo"
+
+[params]
+stylesheet = "/style.css"
