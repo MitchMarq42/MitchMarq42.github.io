@@ -1,8 +1,8 @@
-baseURL = "https://mitchmarq42.xyz"
+baseURL = "https://mitchmarq42.xyz/"
 languageCode = "en-us"
 title = "The Best Site Ever! (not)"
 
 theme = "lugo"
 
 [params]
-stylesheet = "/style.css"
+style = 'https://landchad.net/style.css'
