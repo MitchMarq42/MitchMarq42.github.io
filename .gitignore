@@ -4,3 +4,5 @@ html
 **/videos
 **/musings_log*
 public/*ml
+.old
+.hugo_build.lock
