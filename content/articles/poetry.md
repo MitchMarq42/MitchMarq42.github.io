@@ -1,7 +1,7 @@
 ---
 title: Stupid poems I wrote one time and still have for some reason
 draft: false
-date:  08/10 03:04:05PM '20 -0900
+date:  2021-08-13
 ---
 # Stupidity
 
