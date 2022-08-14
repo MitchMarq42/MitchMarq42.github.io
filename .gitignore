@@ -3,6 +3,6 @@
 html
 **/videos
 **/musings_log*
-public/*ml
+public/*
 .old
 .hugo_build.lock
