@@ -6,3 +6,4 @@ html
 public
 .old
 .hugo_build.lock
+/content-org/
