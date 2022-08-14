@@ -8,19 +8,23 @@
 
 ---
 
+{{< youtube 7OJooftmecs >}}
+
+---
+
 (my stuff is dumb. You should check out [[https://blog.samwhited.com/2015/04/the-dharma-of-vi/][The Dharma of Vi]] instead. It's both humorous and profound.)
 
 [[/disclaimer][Disclaimer]] -- Actually just info. Not a legal document by any means.
 
 [[/articles/deletion/][articles/deletion]] -- (test) -- A meme in my brain. See [[https://lukesmith.xyz/articles/deletion][the original]] for non-context...
 
-[[/articles/musings_log/][Random Notes]] -- Notes that I leave myself. Empty.
+[[/musings_log/][Random Notes]] -- Notes that I leave myself. Empty.
 
 There are several things I intend to do with this site:
 
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[/articles/tutorials/][tutorials]]
-- [[https://jellyfin.mitchmarq42.xyz/videos/web/index.html#!/home.html][Video]] streaming (through jellyfin)
+- [[https://jellyfin.mitchmarq42.xyz/jellyfin/web/index.html#!/home.html][Video]] streaming (through jellyfin)
 - [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]]
 
 : /All my life I been searchin' for something/ 
@@ -47,7 +51,7 @@ And other such non-entities.
 <img
 src="https://landchad.net/pix/landchad.gif"
 width="50"
-alt="LandChad.net">
+alt="theme stolen from LandChad.net">
 </a>
 <a href="https://gnu.org/software/emacs">
 <img
@@ -60,5 +64,11 @@ alt="Built with Emacs">
 src="https://orgmode.org/resources/img/org-mode-unicorn.svg"
 width="50"
 alt="Built with Org Mode">
+</a>
+<a href="https://gohugo.io">
+<img
+src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg"
+width="50"
+alt="Built with Hugo">
 </a>
 #+END_EXPORT
