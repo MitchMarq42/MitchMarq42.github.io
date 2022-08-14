@@ -1,40 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Best Site Ever! (not)</title><link>https://mitchmarq42.xyz/articles/</link><description>Recent content on The Best Site Ever! (not)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://mitchmarq42.xyz/articles/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://mitchmarq42.xyz/articles/tutorials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/</guid><description>
-&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-Sub-sub-index of tutorials
-&lt;/h2>
-&lt;div id="outline-text-headline-1" class="outline-text-2">
-&lt;ul>
-&lt;li>
-&lt;p>[.] TODO: all below:&lt;/p>
-&lt;ul>
-&lt;li class="checked">&lt;a href="https://mitchmarq42.xyz/articles/tutorials/scraping/">using sed and curl to extract information from webpages&lt;/a>&lt;/li>
-&lt;li class="unchecked">all the things I do with `nvim`&lt;/li>
-&lt;li class="unchecked">how to pick a laptop (from a &lt;span style="text-decoration: underline;">connoiseur&lt;/span>)&lt;/li>
-&lt;li class="unchecked">remembering facts and information without trying&lt;/li>
-&lt;li class="unchecked">why I don&amp;#39;t use `grep` anymore&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;/div></description></item><item><title>Almost based...</title><link>https://mitchmarq42.xyz/articles/based/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/based/</guid><description>
-&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-Why does everyone based have to be so stupid?
-&lt;/h2>
-&lt;div id="outline-text-headline-1" class="outline-text-2">
-&lt;p>
-—&lt;/p>
-&lt;p>
-This is something I&amp;#39;ve been noticing for a while: You become aware of a person and think they&amp;#39;re normal. That&amp;#39;s the baseline. Then they say or do something extremely impressive. Godly. Based, even. You start to look up to them for that.&lt;/p>
-&lt;p>
-But then you notice it. Often it&amp;#39;s only one, but there&amp;#39;s some part of their life that they&amp;#39;re just completely floundering on. Maybe they know it, maybe they don&amp;#39;t. But it&amp;#39;s there. You know it&amp;#39;s there, and that colors everything you respected about them.&lt;/p>
-&lt;p>
-&lt;strong>Why does everyone based have to be so stupid?&lt;/strong>&lt;/p>
-&lt;p>
-I don&amp;#39;t know either. If you ever find out, let me know.&lt;/p>
-&lt;/div>
-&lt;/div></description></item><item><title>Communication</title><link>https://mitchmarq42.xyz/articles/selflangs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/selflangs/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Best Site Ever! (not)</title><link>https://mitchmarq42.xyz/articles/</link><description>Recent content in Articles on The Best Site Ever! (not)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/articles/index.xml" rel="self" type="application/rss+xml"/><item><title>Communication</title><link>https://mitchmarq42.xyz/articles/selflangs/</link><pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/selflangs/</guid><description>
 &lt;div id="outline-container-headline-1" class="outline-2">
 &lt;h2 id="headline-1">
 Communication is fake, actually
@@ -77,15 +41,7 @@ Here&amp;#39;s some arguments, for those who are into it.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/div>
-&lt;/div></description></item><item><title>Deletion</title><link>https://mitchmarq42.xyz/articles/deletion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/deletion/</guid><description>
-&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-This is a meme
-&lt;/h2>
-&lt;div id="outline-text-headline-1" class="outline-text-2">
-&lt;p>I&amp;#39;m not actually deleting anything in particular&lt;/p>
-&lt;/div>
-&lt;/div></description></item><item><title>something I wrote in a state of mind</title><link>https://mitchmarq42.xyz/articles/idkman/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/idkman/</guid><description>&lt;p>I feel sad. I feel mad. I think I shouldn&amp;#39;t bother. I want to fix it all in one fell swoop. I want to find a shortcut. I want to build on what exists. I want to realize it all. I want it I am tired I am lazy. Truly slothful. Just can&amp;#39;t give up. How long, how long will I slide?&lt;/p>
+&lt;/div></description></item><item><title>something I wrote in a state of mind</title><link>https://mitchmarq42.xyz/articles/idkman/</link><pubDate>Sat, 20 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/idkman/</guid><description>&lt;p>I feel sad. I feel mad. I think I shouldn&amp;#39;t bother. I want to fix it all in one fell swoop. I want to find a shortcut. I want to build on what exists. I want to realize it all. I want it I am tired I am lazy. Truly slothful. Just can&amp;#39;t give up. How long, how long will I slide?&lt;/p>
 &lt;p>
 Nothing is wrong. Why not? Why would it be? How are we here, why do we even? Let it go. Let it stay. Be that as it may, I&amp;#39;ll be on my way. Maybe some more money will fix it? Throw some money, burn some cash. Sing to the river. But what if it all returns to nothing? A pillar, a fortress, a lair, leaning and sliding as the ground upon which it is founded shifts manically. A cataclysm. A temptation. An inevitable pull towards chaos. But entropy is just the tendency towards equalization. We can&amp;#39;t have equality. Some are more equal than others. Isn&amp;#39;t that dystopian? Probably less than most of the boomer cargo cult. I beg to dream and differ. Just another paper I&amp;#39;ll never deliver. Amen brother Ben, shot a rooster killed a hen. And then? What then?&lt;/p>
 &lt;p>
@@ -95,7 +51,53 @@ Last night I had a dream. Several details have already slipped away but I&amp;#3
 &lt;p>
 It was some anime. At least, a bunch of the people looked like anime characters. There was a magic system based on &lt;strong>can&amp;#39;t remember the name&lt;/strong> but it contained three tiers that were red and circular. Like Lisp parentheticals (`()`). I went to the arctic entry of Eagle River Walmart and I was Kirito from SAO Abridged. there was some sexual-like but definitely-not-sex sexuality to the magic system. As I entered I turned left and right there was a minor hostage situation. Both participants were girls, one was Asuna (again, the Abridged version of course). She yelled something about there being no plot and I retorted, &amp;#34;come on, sure there&amp;#39;s a plot. It&amp;#39;s not that bad a show.&amp;#34; then I took off into the store. There was a very-realistic-metal-but-not-real gun involved and I was in a chase around the empty aisles in the store. The only employee was the mamasan from KFC and she was telling us to be more composed in the store. I asked if it was about the fake-but-realistic gun and she said no but took it anyway. That part ended, I went back to the mandatory Japanese shrine hot springs house with the babbling brook containing a visualization of the magic system, and began waking up. Then I finished waking up, stumbled out of my room, and found the broken mirrors.&lt;/p>
 &lt;p>
-What&amp;#39;s the truth? What&amp;#39;s a lie? Is everything a rip-off of Overlord? Is Overlord a rip-off of SAO? All I know is, SAO is not an isekai. It&amp;#39;s not an isekai. It is anything but an isekai. It is the same as anything silly and bad. Bad? Yeah sure I guess it&amp;#39;s bad. But hey, I guess I&amp;#39;ll have to continue on my way. Bye.&lt;/p></description></item><item><title>Stupid poems I wrote one time and still have for some reason</title><link>https://mitchmarq42.xyz/articles/poetry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/poetry/</guid><description>&lt;h1 id="stupidity">Stupidity&lt;/h1>
+What&amp;#39;s the truth? What&amp;#39;s a lie? Is everything a rip-off of Overlord? Is Overlord a rip-off of SAO? All I know is, SAO is not an isekai. It&amp;#39;s not an isekai. It is anything but an isekai. It is the same as anything silly and bad. Bad? Yeah sure I guess it&amp;#39;s bad. But hey, I guess I&amp;#39;ll have to continue on my way. Bye.&lt;/p></description></item><item><title>Tutorials</title><link>https://mitchmarq42.xyz/articles/tutorials/</link><pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/</guid><description>
+&lt;div id="outline-container-headline-1" class="outline-2">
+&lt;h2 id="headline-1">
+Sub-sub-index of tutorials
+&lt;/h2>
+&lt;div id="outline-text-headline-1" class="outline-text-2">
+&lt;ul>
+&lt;li>
+&lt;p>[.] TODO: all below:&lt;/p>
+&lt;ul>
+&lt;li class="checked">&lt;a href="https://mitchmarq42.xyz/articles/tutorials/scraping/">using sed and curl to extract information from webpages&lt;/a>&lt;/li>
+&lt;li class="unchecked">all the things I do with `nvim`&lt;/li>
+&lt;li class="unchecked">how to pick a laptop (from a &lt;span style="text-decoration: underline;">connoiseur&lt;/span>)&lt;/li>
+&lt;li class="unchecked">remembering facts and information without trying&lt;/li>
+&lt;li class="unchecked">why I don&amp;#39;t use `grep` anymore&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div></description></item><item><title>Almost based...</title><link>https://mitchmarq42.xyz/articles/based/</link><pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/based/</guid><description>
+&lt;div id="outline-container-headline-1" class="outline-2">
+&lt;h2 id="headline-1">
+Why does everyone based have to be so stupid?
+&lt;/h2>
+&lt;div id="outline-text-headline-1" class="outline-text-2">
+&lt;p>
+—&lt;/p>
+&lt;p>
+This is something I&amp;#39;ve been noticing for a while: You become aware of a person and think they&amp;#39;re normal. That&amp;#39;s the baseline. Then they say or do something extremely impressive. Godly. Based, even. You start to look up to them for that.&lt;/p>
+&lt;p>
+But then you notice it. Often it&amp;#39;s only one, but there&amp;#39;s some part of their life that they&amp;#39;re just completely floundering on. Maybe they know it, maybe they don&amp;#39;t. But it&amp;#39;s there. You know it&amp;#39;s there, and that colors everything you respected about them.&lt;/p>
+&lt;p>
+&lt;strong>Why does everyone based have to be so stupid?&lt;/strong>&lt;/p>
+&lt;p>
+I don&amp;#39;t know either. If you ever find out, let me know.&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Deletion</title><link>https://mitchmarq42.xyz/articles/deletion/</link><pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/deletion/</guid><description>
+&lt;div id="outline-container-headline-1" class="outline-2">
+&lt;h2 id="headline-1">
+This is a meme
+&lt;/h2>
+&lt;/div>
+&lt;div id="outline-container-headline-2" class="outline-2">
+&lt;h2 id="headline-2">
+I&amp;#39;m not actually deleting anything in particular
+&lt;/h2>
+&lt;/div></description></item><item><title>Stupid poems I wrote one time and still have for some reason</title><link>https://mitchmarq42.xyz/articles/poetry/</link><pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/poetry/</guid><description>&lt;h1 id="stupidity">Stupidity&lt;/h1>
 &lt;p>Don&amp;rsquo;t you hate it&lt;/p>
 &lt;p>Does it not make you cry&lt;/p>
 &lt;p>When you&amp;rsquo;re screamin'&lt;/p>
