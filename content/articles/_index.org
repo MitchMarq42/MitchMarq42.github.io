@@ -1,3 +1,5 @@
+#+title: Articles
+#+date: 2021-11-14
 * Index. This contains all the files I want you to see.
 
 (but actually it's just lost hopes and dreams)
