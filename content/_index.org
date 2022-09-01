@@ -9,7 +9,7 @@
 
 ---
 
-{{< youtube 7OJooftmecs >}}
+# {{< youtube 7OJooftmecs >}}
 
 ---
 
@@ -25,8 +25,9 @@ There are several things I intend to do with this site:
 
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[/articles/tutorials/][tutorials]]
-- [[https://jellyfin.mitchmarq42.xyz/jellyfin/web/index.html#!/home.html][Video]] streaming (through jellyfin)
-- [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]]
+- [[https://jellyfin.mitchmarq42.xyz/jellyfin/web/index.html#!/home.html][Video]] streaming (through jellyfin) for my pirated anime
+- [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]] for my code
+- [[https://cloud.mitchmarq42.xyz/][NextCloud instance]] for my files
 
 : /All my life I been searchin' for something/ 
 : /Something never comes, never leads to nothing/ 
