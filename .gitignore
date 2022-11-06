@@ -7,3 +7,4 @@ public/**
 .old
 .hugo_build.lock
 /content-org/
+/static/ubuntu-22.04-desktop-amd64.iso
