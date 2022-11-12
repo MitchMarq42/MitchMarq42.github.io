@@ -19,7 +19,7 @@
 
 [[/articles/deletion/][articles/deletion]] -- (test) -- A meme in my brain. See [[https://lukesmith.xyz/articles/deletion][the original]] for non-context...
 
-[[/musings_log/][Random Notes]] -- Notes that I leave myself. Empty.
+# [[/musings_log/][Random Notes]] -- Notes that I leave myself. Empty.
 
 There are several things I intend to do with this site:
 
