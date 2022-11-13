@@ -73,4 +73,5 @@ src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/imag
 width="50"
 alt="Built with Hugo">
 </a>
+<a rel="me" href="https://emacs.ch/@mitchmarq42xyz">Mastodon</a>
 #+END_EXPORT
