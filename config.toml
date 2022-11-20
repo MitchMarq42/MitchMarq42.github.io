@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "The Best Site Ever! (not)"
 
 theme = "lugo"
+# theme = "after-dark"
 
 [params]
 style = 'https://landchad.net/style.css'
