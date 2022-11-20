@@ -1,5 +1,13 @@
 @import url("https://landchad.net/style.css");
+/* @import url("https://cdn.simplecss.org/simple.min.css"); */
 body {
 	background-image: url("https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/share/backgrounds/mojave_midnight.jpg");
 	background-attachment: fixed;
+}
+
+body.dark-mode,
+body.dark-mode main * {
+    background-image: url("https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/share/backgrounds/echidna_bliss.jpg"
+    )
+    color: #202040
 }
