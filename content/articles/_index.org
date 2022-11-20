@@ -2,11 +2,4 @@
 #+date: 2021-11-14
 * Index. This contains all the files I want you to see.
 
-(but actually it's just lost hopes and dreams)
 
-- [o] TODO: All below:
-    - [X] [[/articles/deletion/][deletion]] -- Just a meme. To remind me.
-    - [X] [[/articles/selflangs/][Communication is Fake, actually...]]
-    - [ ] [[/articles/depression/][Dealing with drift-away, impostor syndrome, inferiority, etc]] (not advice)
-    - [X] [[/articles/based/][Why does everyone based have to be so stupid?]] [RANT]
-    - [ ] [[/articles/idkman/][Help! I've fallen and I can't get up]]
