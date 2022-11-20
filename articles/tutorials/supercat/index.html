@@ -1,0 +1,93 @@
+<!doctype html><html lang=en><head><title>A Better =Cat= for Eshell | The Best Site Ever! (not)</title><link rel=canonical href=https://mitchmarq42.xyz/><link rel=alternate type=application/rss+xml title="The Best Site Ever! (not) RSS" href=/index.xml><link rel=stylesheet type=text/css href=/style.css><link rel=icon href=/favicon.ico><meta name=description content="tl;dr: Scroll to bottom Part 1: Awesome syntax-highlighted cat A few weeks ago I was wasting time on Reddit. There was a post on r/emacs recommending AwEshell. There's several features listed, many of which I don't particularly care about– multiple buffers (C-u works for me); IDE-style window placement (I treat eshell like a tmux pane or terminal window). But one struck my eye:
+Make cat file with syntax highlight. Now that's a cool idea."><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index, follow"><meta charset=utf-8></head><body><main><header><h1>A better =cat= for Eshell</h1></header><article><div id=outline-container-headline-1 class=outline-2><h2 id=headline-1>tl;dr: Scroll to bottom</h2></div><div id=outline-container-headline-2 class=outline-2><h2 id=headline-2>Part 1: Awesome syntax-highlighted <code class=verbatim>cat</code></h2><div id=outline-text-headline-2 class=outline-text-2><p>A few weeks ago I was wasting time on Reddit. There was a post on r/emacs
+recommending <a href=https://github.com/manateelazycat/aweshell>AwEshell</a>. There's several features listed, many of which I don't
+particularly care about– multiple buffers (<code>C-u</code> works for me); IDE-style window
+placement (I treat eshell like a tmux pane or terminal window). But one struck
+my eye:</p><blockquote><ol><li>Make cat file with syntax highlight.</li></ol></blockquote><p>Now that's a cool idea.</p><p>Here's the function, with some minor modifications:</p><div class="src src-elisp"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>  (defun aweshell-cat-with-syntax-highlight (filename)
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Like cat(1) but with syntax highlighting.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Taken from https://github.com/manateelazycat/aweshell/blob/d246df619573ca3f46070cc0ac82d024271ed243/aweshell.el#L775&#34;</span>
+</span></span><span style=display:flex><span>    (let ((existing-buffer (<span style=color:#a6e22e>get-file-buffer</span> filename))
+</span></span><span style=display:flex><span>	  (buffer (find-file-noselect filename)))
+</span></span><span style=display:flex><span>      (eshell-print
+</span></span><span style=display:flex><span>       (with-current-buffer buffer
+</span></span><span style=display:flex><span>	 (if (<span style=color:#a6e22e>fboundp</span> <span style=color:#e6db74>&#39;font-lock-ensure</span>)
+</span></span><span style=display:flex><span>	     (font-lock-ensure)
+</span></span><span style=display:flex><span>	   (with-no-warnings
+</span></span><span style=display:flex><span>	     (font-lock-fontify-buffer)))
+</span></span><span style=display:flex><span>	 (let ((contents (<span style=color:#a6e22e>buffer-string</span>)))
+</span></span><span style=display:flex><span>	   (<span style=color:#a6e22e>remove-text-properties</span> <span style=color:#ae81ff>0</span> (<span style=color:#a6e22e>length</span> contents) <span style=color:#f92672>&#39;</span>(read-only <span style=color:#66d9ef>nil</span>) contents)
+</span></span><span style=display:flex><span>	   contents)))
+</span></span><span style=display:flex><span>      (unless existing-buffer
+</span></span><span style=display:flex><span>	(<span style=color:#a6e22e>kill-buffer</span> buffer)) <span style=color:#66d9ef>nil</span>))</span></span></code></pre></div></div></div></div><div id=outline-container-headline-3 class=outline-2><h2 id=headline-3>Part 2: To display an image</h2><div id=outline-text-headline-3 class=outline-text-2><div id=outline-container-headline-4 class=outline-3><h3 id=headline-4></h3><div id=outline-text-headline-4 class=outline-text-3><p>There's this Linux utility <a href=https://github.com/posva/catimg>catimg</a> that converts images to true-color unicode
+blocks and prints them to your terminal. It's nice to just view the rough image
+in the terminal, without having to open another window or – Kamisama forbid –
+use the mouse.</p></div></div><div id=outline-container-headline-5 class=outline-3><h3 id=headline-5></h3><div id=outline-text-headline-5 class=outline-text-3><p>The Kitty terminal has <a href=https://sw.kovidgoyal.net/kitty/kittens/icat/>a module ("Kitten")</a> for displaying images. It works very
+similarly to <code class=verbatim>catimg</code>, but uses Kitty's custom graphics protocol, and thus can
+show pixel-perfect data, not just chunks.</p><p>When I'm in Kitty for any significant period of time, I tend to</p><div class="src src-shell"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>  alias catimg<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;kitty +icat&#34;</span></span></span></code></pre></div></div><p>just to remember better.</p></div></div><div id=outline-container-headline-6 class=outline-3><h3 id=headline-6></h3><div id=outline-text-headline-6 class=outline-text-3><p>I recently signed up to Mastadon – specifically the <a href=https://emacs.ch>https://emacs.ch</a>
+instance. It's still very new, but there's a bunch of cool people on
+there. Recently Xenodium (real name Álvaro Ramírez) posted a link to [[this
+blog][<a href=https://xenodium.com/wizard-zines-comics-eshell-util/]]>https://xenodium.com/wizard-zines-comics-eshell-util/]]</a> in which he showcases a
+custom function to view a specific image from a collection.</p><p>I thought it was odd that we don't have an <code class=verbatim>eshell/catimg</code> command to wrap, so I
+did a little googling…</p></div></div><div id=outline-container-headline-7 class=outline-3><h3 id=headline-7></h3><div id=outline-text-headline-7 class=outline-text-3><p>… And immediately arrived at <a href=https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode>this StackExchange question</a> about <code class=verbatim>cat</code>-ing files
+and images with just <code class=verbatim>cat</code>.</p><p>The first answer is about using <code class=verbatim>iimage-mode</code>, which is a whole 'nother thing, and
+I probably need to check it out at some point.</p><p>The second answer, the accepted one, uses Advice and a similar method to
+Xenodium's to display the image. Here's the magic:</p><div class="src src-elisp"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>  (<span style=color:#a6e22e>add-text-properties</span> <span style=color:#ae81ff>0</span> (<span style=color:#a6e22e>length</span> arg)
+</span></span><span style=display:flex><span>                       <span style=color:#f92672>`</span>(display <span style=color:#f92672>,</span>(create-image file)
+</span></span><span style=display:flex><span>                                 modification-hooks
+</span></span><span style=display:flex><span>                                 (iimage-modification-hook))
+</span></span><span style=display:flex><span>                       arg)
+</span></span><span style=display:flex><span>  (eshell-buffered-print arg)</span></span></code></pre></div></div><p>Of course, that's in the middle of a long function that's meant to be run as
+advice. I don't like Advice in principle, so I kept scrolling.</p><p>The third answer went on a tangent about inserting screenshots into Markdown
+files. Which is cool, but not today.</p><p>The fourth answer should have been accepted.<br>First, there's a basic snippet for displaying images. But the answerer notes
+that big images don't fit. So they provide some more thorough functions that
+resize files.</p><p>For our copying convenience, here's that whole snippet but with all the functions renamed
+and credited:</p><div class="src src-elisp"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>    (defun esh-catimg--imagep (filename)
+</span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;Check if FILENAME is an image. Helper for </span><span style=color:#e6db74>`esh-catimg--image-print&#39;</span><span style=color:#e6db74>.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &#34;</span>
+</span></span><span style=display:flex><span>      (let ((extension (file-name-extension filename))
+</span></span><span style=display:flex><span>            (image-extensions <span style=color:#f92672>&#39;</span>(<span style=color:#e6db74>&#34;png&#34;</span> <span style=color:#e6db74>&#34;jpg&#34;</span> <span style=color:#e6db74>&#34;bmp&#34;</span>)))
+</span></span><span style=display:flex><span>        (<span style=color:#a6e22e>member</span> extension image-extensions)))
+</span></span><span style=display:flex><span>    (defun esh-catimg--image-width (filename)
+</span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;Get the pixel (?) width of the image FILENAME, using imagemagick. Helper
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  for </span><span style=color:#e6db74>`esh-catimg--image-print&#39;</span><span style=color:#e6db74>.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &#34;</span>
+</span></span><span style=display:flex><span>      (<span style=color:#a6e22e>string-to-number</span>
+</span></span><span style=display:flex><span>       (shell-command-to-string
+</span></span><span style=display:flex><span>        (<span style=color:#a6e22e>format</span> <span style=color:#e6db74>&#34;convert &#39;%s&#39; -ping -format \&#34;%%w\&#34; info:&#34;</span> filename))))
+</span></span><span style=display:flex><span>    (defun esh-catimg--rescale-image (filename)
+</span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;Rescale an image to a maximum width, or leave untouched if already small.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Returns the new file path. Helper for </span><span style=color:#e6db74>`esh-catimg--image-print&#39;</span><span style=color:#e6db74>.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &#34;</span>
+</span></span><span style=display:flex><span>      (let ((file (make-temp-file <span style=color:#e6db74>&#34;resized_emacs&#34;</span>))
+</span></span><span style=display:flex><span>            (max-width <span style=color:#ae81ff>350</span>))
+</span></span><span style=display:flex><span>        (if (<span style=color:#a6e22e>&gt;</span> (esh-catimg--image-width filename) max-width)
+</span></span><span style=display:flex><span>            (progn
+</span></span><span style=display:flex><span>              (shell-command-to-string
+</span></span><span style=display:flex><span>               (<span style=color:#a6e22e>format</span> <span style=color:#e6db74>&#34;convert -resize %dx &#39;%s&#39; &#39;%s&#39;&#34;</span> max-width filename file))
+</span></span><span style=display:flex><span>              file)
+</span></span><span style=display:flex><span>          filename)))
+</span></span><span style=display:flex><span>    (defun esh-catimg--image-print (file)
+</span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;Print the single image FILE.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &#34;</span>
+</span></span><span style=display:flex><span>      (eshell/printnl (<span style=color:#a6e22e>propertize</span> <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#e6db74>&#39;display</span> (create-image file))))</span></span></code></pre></div></div></div></div></div></div><div id=outline-container-headline-8 class=outline-2><h2 id=headline-8>Putting it all together</h2><div id=outline-text-headline-8 class=outline-text-2><p>So, to recap: We have</p><ol><li><code class=verbatim>aweshell-cat-with-syntax-highlighting</code> to dump any text file to eshell with syntax highlighting</li><li><code class=verbatim>esh-catimg--image-print</code> to display any image to eshell in a reasonable size</li></ol><p>So now it's time to put it all together. Here's <code class=verbatim>eshell/cat</code> with most of the guts
+ripped out and replaced with our helper functions.</p><div class="src src-elisp"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>  (defun eshell/cat (<span style=color:#66d9ef>&amp;rest</span> args)
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;Wrapper around </span><span style=color:#e6db74>`aweshell-cat-with-syntax-highlight&#39;</span><span style=color:#e6db74> for multiple ARGS.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Also, can cat images for some reason.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>See:
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>https://github.com/manateelazycat/aweshell/blob/d246df619573ca3f46070cc0ac82d024271ed243/aweshell.el#L775
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &#34;</span>
+</span></span><span style=display:flex><span>    (setq args (eshell-stringify-list (flatten-tree args)))
+</span></span><span style=display:flex><span>    (dolist (file args)
+</span></span><span style=display:flex><span>      (if (string= file <span style=color:#e6db74>&#34;-&#34;</span>)
+</span></span><span style=display:flex><span>	  (throw <span style=color:#e6db74>&#39;eshell-external</span>
+</span></span><span style=display:flex><span>		 (eshell-external-command <span style=color:#e6db74>&#34;cat&#34;</span> args))
+</span></span><span style=display:flex><span>	(if (esh-catimg--imagep file)
+</span></span><span style=display:flex><span>	    (esh-catimg--image-print (esh-catimg--rescale-image file))
+</span></span><span style=display:flex><span>	  (aweshell-cat-with-syntax-highlight file)))))</span></span></code></pre></div></div><p>It iterates over each argument and applies the correct function.</p></div></div><div id=nextprev><a href=/articles/tutorials/scraping/><div id=prevart>Previous:<br>Scraping</div></a></div></article></main><footer><a href=https://mitchmarq42.xyz/>https://mitchmarq42.xyz/</a><br><br><a href=/index.xml><img src=/rss.svg style=max-height:1.5em alt="RSS Feed" title="Subscribe via RSS for updates."></a></footer></body></html>
