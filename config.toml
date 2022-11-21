@@ -7,3 +7,7 @@ theme = "lugo"
 
 [params]
 style = 'https://landchad.net/style.css'
+
+[markup]
+  [markup.highlight]
+  style = "fruity"
