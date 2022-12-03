@@ -28,12 +28,27 @@ There are several things I intend to do with this site:
 - [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]] for my code
 - [[https://cloud.mitchmarq42.xyz/][NextCloud instance]] for my files
 
-: /All my life I been searchin' for something/ 
-: /Something never comes, never leads to nothing/ 
-: /Nothing satisfies but I'm getting close/ 
-: /Closer to the prize at the end of the rope/ 
-
-Etc.
+  # Lyric scraper, embedded.
+#+begin_src elisp :exports results
+  (let* ((lyrics-buffer (find-file "/home/mitch/.local/git/mitchmarq42.github.io/content/lyrics.txt"))
+         (line-count (with-current-buffer lyrics-buffer (count-lines
+                                                         (point-min)
+                                                         (point-max))))
+         (random (1+ (random (1- line-count))))
+         (lyrics-block
+          (with-current-buffer lyrics-buffer
+            (goto-char (point-min))
+            (forward-line random)
+            (buffer-substring-no-properties
+             (or (save-excursion (re-search-backward "---" nil t))
+                 (goto-char (point-min)))
+             (or (save-excursion (re-search-forward "---" nil t))
+                 (goto-char (point-max)))))))
+    (kill-buffer lyrics-buffer)
+    (string-trim
+     lyrics-block "---\n" "\n---"))
+#+end_src
+#+RESULTS: 
 
 #+begin_src sh
 #!/bin/sh
