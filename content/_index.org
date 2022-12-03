@@ -47,31 +47,32 @@ sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
 And other such non-entities.
 
 * Made with:
-#+BEGIN_EXPORT html
-<a href="https://landchad.net">
-<img
+{{< figure
+link=https://gohugo.io
+src=https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg
+width=50
+alt="Built with Hugo"
+>}}
+{{<figure
+link="https://landchad.net"
 src="https://landchad.net/pix/landchad.gif"
 width="50"
-alt="theme stolen from LandChad.net">
-</a>
+alt="theme stolen from LandChad.net"
+>}}
+#+BEGIN_EXPORT html
 <a href="https://gnu.org/software/emacs">
 <img
-src="https://www.gnu.org/software/emacs/images/emacs.png"
-width="50"
-alt="Built with Emacs">
+    src="https://www.gnu.org/software/emacs/images/emacs.png"
+    width="50"
+    alt="Built with Emacs">
 </a>
 <a href="https://orgmode.org">
 <img
-src="https://orgmode.org/resources/img/org-mode-unicorn.svg"
-width="50"
-alt="Built with Org Mode">
+    src="https://orgmode.org/resources/img/org-mode-unicorn.svg"
+    width="50"
+    alt="Built with Org Mode">
 </a>
-<a href="https://gohugo.io">
-<img
-src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg"
-width="50"
-alt="Built with Hugo">
-</a>
+#+END_EXPORT
 
 
 <a rel="me" href="https://emacs.ch/@mitchmarq42xyz">Mastodon</a>
