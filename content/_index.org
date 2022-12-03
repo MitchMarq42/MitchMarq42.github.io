@@ -1,15 +1,12 @@
-#+TITLE: The best site ever! (not)
+#+TITLE: MitchMarq42 の blog
 #+date: 2021-11-13
 #+OPTIONS: toc:nil title:nil
 #+LINK_HOME: index.html
 
-* Welcome to the website of Mitchell Marquez!
+-----
 
-** For some reason, this is a real thing that actually exists.
 
 ---
-
-# {{< youtube 7OJooftmecs >}}
 
 ---
 
@@ -77,6 +74,11 @@ alt="theme stolen from LandChad.net"
 </a>
 #+END_EXPORT
 
+-----
 
+#+BEGIN_EXPORT html
+Also gonna drop a link to my
 <a rel="me" href="https://emacs.ch/@mitchmarq42xyz">Mastodon</a>
 #+END_EXPORT
+
+* Links to around this site:
