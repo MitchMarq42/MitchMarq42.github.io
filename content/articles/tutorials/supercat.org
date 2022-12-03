@@ -10,9 +10,7 @@ particularly care about-- multiple buffers (~C-u~ works for me); IDE-style windo
 placement (I treat eshell like a tmux pane or terminal window). But one struck
 my eye:
 
-#+begin_quote
-13. Make cat file with syntax highlight.
-#+end_quote
+:  13. Make cat file with syntax highlight.
 
 Now that's a cool idea.
 
