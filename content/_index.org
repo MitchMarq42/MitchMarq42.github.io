@@ -15,6 +15,7 @@
 
 There are several things I intend to do with this site:
 
+- My [[https://mitchmarq42.xyz/setup.sh][setup script]]
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[/articles/tutorials/][tutorials]]
 - [[https://jellyfin.mitchmarq42.xyz/jellyfin/web/index.html#!/home.html][Video]] streaming (through jellyfin) for my pirated anime
