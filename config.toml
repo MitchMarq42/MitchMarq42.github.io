@@ -1,6 +1,6 @@
 baseURL = "https://mitchmarq42.xyz/"
 languageCode = "en-us"
-title = "The Best Site Ever! (not)"
+title = "MitchMarq42 の Blog"
 
 theme = ["hugo-redirect", "lugo"]
 # theme = "after-dark"
