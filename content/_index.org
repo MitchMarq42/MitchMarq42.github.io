@@ -55,12 +55,6 @@ There are several things I intend to do with this site:
 sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
 #+end_src
 
-- [-] This is a checkbox which is not checked
-   - [X] This one is checked, but that has an effect on the previous one
-   - [ ] This one is not checked, and that means something.
-
-And other such non-entities.
-
 * Made with:
 {{< figure
 link=https://gohugo.io
