@@ -15,18 +15,12 @@
 
 (my stuff is dumb. You should check out [[https://blog.samwhited.com/2015/04/the-dharma-of-vi/][The Dharma of Vi]] instead. It's both humorous and profound.)
 
-[[/disclaimer][Disclaimer]] -- Actually just info. Not a legal document by any means.
-
-
-# [[/musings_log/][Random Notes]] -- Notes that I leave myself. Empty.
-
 There are several things I intend to do with this site:
 
 - [[./articles/index.org][Articles]] and text-based rants
 - Intermediate Linux/computer [[/articles/tutorials/][tutorials]]
 - [[https://jellyfin.mitchmarq42.xyz/jellyfin/web/index.html#!/home.html][Video]] streaming (through jellyfin) for my pirated anime
 - [[https://git.mitchmarq42.xyz/mitch/dotfiles][Git server]] for my code
-- [[https://cloud.mitchmarq42.xyz/][NextCloud instance]] for my files
 
   # Lyric scraper, embedded.
 #+begin_src elisp :exports results
