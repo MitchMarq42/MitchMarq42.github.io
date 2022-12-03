@@ -41,10 +41,14 @@ There are several things I intend to do with this site:
      lyrics-block "---\n" "\n---"))
 #+end_src
 #+RESULTS: 
+: Is this the real life
+: Is this just fantasy
+: Caught in a landslide
+: No escape from reality
 
 #+begin_src sh
-#!/bin/sh
-sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
+  #!/bin/sh
+  sed 's/vimwiki/org-mode/g;s/\.md/\.org/g'
 #+end_src
 
 * Made with:
