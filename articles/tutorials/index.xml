@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Best Site Ever! (not)</title><link>https://mitchmarq42.xyz/articles/tutorials/</link><description>Recent content in Tutorials on The Best Site Ever! (not)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/articles/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>A better =cat= for Eshell</title><link>https://mitchmarq42.xyz/articles/tutorials/supercat/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/supercat/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MitchMarq42 の Blog</title><link>https://mitchmarq42.xyz/articles/tutorials/</link><description>Recent content in Tutorials on MitchMarq42 の Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/articles/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>A better =cat= for Eshell</title><link>https://mitchmarq42.xyz/articles/tutorials/supercat/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/supercat/</guid><description>
 &lt;div id="outline-container-headline-1" class="outline-2">
 &lt;h2 id="headline-1">
 tl;dr: Scroll to bottom
@@ -14,11 +14,9 @@ recommending &lt;a href="https://github.com/manateelazycat/aweshell">AwEshell&lt
 particularly care about– multiple buffers (&lt;code>C-u&lt;/code> works for me); IDE-style window
 placement (I treat eshell like a tmux pane or terminal window). But one struck
 my eye:&lt;/p>
-&lt;blockquote>
-&lt;ol>
-&lt;li>Make cat file with syntax highlight.&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
+&lt;pre class="example">
+13. Make cat file with syntax highlight.
+&lt;/pre>
 &lt;p>
 Now that&amp;#39;s a cool idea.&lt;/p>
 &lt;p>

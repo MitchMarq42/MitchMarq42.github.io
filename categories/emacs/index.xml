@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MitchMarq42 の Blog</title><link>https://mitchmarq42.xyz/</link><description>Recent content in MitchMarq42 の blog on MitchMarq42 の Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 13 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>Making Neofetch aware of Emacs</title><link>https://mitchmarq42.xyz/eofetch/</link><pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/eofetch/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MitchMarq42 の Blog</title><link>https://mitchmarq42.xyz/categories/emacs/</link><description>Recent content in emacs on MitchMarq42 の Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/categories/emacs/index.xml" rel="self" type="application/rss+xml"/><item><title>Making Neofetch aware of Emacs</title><link>https://mitchmarq42.xyz/eofetch/</link><pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/eofetch/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>I have a confession to make. I was, and still technically am, an Arch user (by
 the way). On my main machines I use ubuntu or fedora, but that&amp;rsquo;s only because
 I&amp;rsquo;m tired of updates and reboots. Computers have always been toys to me, but the
@@ -230,29 +230,4 @@ the original, since we&amp;rsquo;re setting &lt;code>$ascii_distro&lt;/code> bef
 &lt;a href="https://codeberg.org/akib/emacs-eat">EAT&lt;/a>+Eshell), or with the variable &lt;code>$INSIDE_EMACS&lt;/code> set, will display the custom
 Emacs logo. Running neofetch outside of Emacs should still display your distro&amp;rsquo;s
 logo, and running it &lt;!-- raw HTML omitted -->inside&lt;!-- raw HTML omitted --> Emacs but with &lt;code>--ascii_distro arch&lt;/code> will display the
-Arch logo.&lt;/p></description></item><item><title>Articles</title><link>https://mitchmarq42.xyz/articles/</link><pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/</guid><description>
-&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-Index. This contains all the files I want you to see.
-&lt;/h2>
-&lt;/div></description></item><item><title>Credits</title><link>https://mitchmarq42.xyz/disclaimer/</link><pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/disclaimer/</guid><description>
-&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-Pages generated with Hugo and Org Mode
-&lt;/h2>
-&lt;/div>
-&lt;div id="outline-container-headline-2" class="outline-2">
-&lt;h2 id="headline-2">
-Typed in GNU Emacs
-&lt;/h2>
-&lt;/div>
-&lt;div id="outline-container-headline-3" class="outline-2">
-&lt;h2 id="headline-3">
-Hosted on a convertible laptop
-&lt;/h2>
-&lt;/div>
-&lt;div id="outline-container-headline-4" class="outline-2">
-&lt;h2 id="headline-4">
-DNS provided by sav.com
-&lt;/h2>
-&lt;/div></description></item><item><title/><link>https://mitchmarq42.xyz/.htaccess</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/.htaccess</guid><description/></item><item><title/><link>https://mitchmarq42.xyz/redirect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/redirect/</guid><description/></item></channel></rss>
+Arch logo.&lt;/p></description></item></channel></rss>

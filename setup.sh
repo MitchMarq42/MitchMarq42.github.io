@@ -1,0 +1,1 @@
+<!doctype html><html><head><title>Redirect</title><link rel=canonical href=https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/bin/mitch-setup.sh><meta charset=utf-8><meta http-equiv=refresh content="0; url=https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/bin/mitch-setup.sh"></head></html>

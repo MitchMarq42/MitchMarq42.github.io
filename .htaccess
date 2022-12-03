@@ -1,0 +1,13 @@
+#--------------------------------------------------------------------------
+# .htaccess redirects file. Generated using hugo-redirect:
+#
+#     https://github.com/gcc42/hugo-redirect
+# 
+# DO NOT add more rules manually. For instructions on adding more
+# redirect rules here, see Readme.md on the above link.
+#--------------------------------------------------------------------------
+
+
+
+
+Redirect 301 /setup.sh    https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/bin/mitch-setup.sh
