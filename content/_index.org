@@ -1,5 +1,6 @@
 #+TITLE: MitchMarq42 の blog
 #+date: 2021-11-13
+#+STARTUP: hideblocks
 #+OPTIONS: toc:nil title:nil
 #+LINK_HOME: index.html
 
