@@ -2,7 +2,7 @@ baseURL = "https://mitchmarq42.xyz/"
 languageCode = "en-us"
 title = "The Best Site Ever! (not)"
 
-theme = "lugo"
+theme = ["hugo-redirect", "lugo"]
 # theme = "after-dark"
 
 [params]
