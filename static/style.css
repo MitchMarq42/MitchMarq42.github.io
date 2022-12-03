@@ -1,13 +1,15 @@
 /* @import url("https://landchad.net/style.css"); */
-@import url("https://cdn.simplecss.org/simple.min.css");
+/* @import url("https://cdn.simplecss.org/simple.min.css"); */
+@import url ("https://raw.githubusercontent.com/zweifisch/vimwiki-assets/master/github.css");
 body {
-	background-image: url("https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/share/backgrounds/mojave_midnight.jpg");
-	background-attachment: fixed;
-}
+    background-color: rgb(12.5734%,16.1074%,23.4775%);
+    background-image: url("https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/share/backgrounds/mojave_midnight.jpg");
+    background-attachment: fixed;
+    color: #f0f0f0;
+    grid-template-columns: auto;
+};
 
-body.dark-mode,
-body.dark-mode main * {
-    background-image: url("https://git.mitchmarq42.xyz/mitch/dotfiles/raw/branch/main/.local/share/backgrounds/echidna_bliss.jpg"
-    )
-    color: #202040
+
+article {
+    display: flex;
 }
