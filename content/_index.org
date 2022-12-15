@@ -82,9 +82,18 @@ alt="theme stolen from LandChad.net"
 
 -----
 
-#+BEGIN_EXPORT html
-Also gonna drop a link to my
-<a rel="me" href="https://emacs.ch/@mitchmarq42xyz">Mastodon</a>
-#+END_EXPORT
+*Latest posts from my mastodon:*
+
+#+begin_export html
+<iframe
+allowfullscreen
+    sandbox="allow-top-navigation allow-scripts"
+    width="500"
+    height="300"
+    src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Femacs.ch%2Fusers%2Fmitchmarq42xyz&theme=dark&size=100&header=false&replies=false&boosts=false"
+></iframe>
+#+end_export
+
+-----
 
 * Links to around this site:
