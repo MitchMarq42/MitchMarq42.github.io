@@ -1,4 +1,544 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MitchMarq42 の Blog</title><link>https://mitchmarq42.xyz/articles/tutorials/</link><description>Recent content in Tutorials on MitchMarq42 の Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/articles/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Scraping</title><link>https://mitchmarq42.xyz/articles/tutorials/scraping/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/scraping/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MitchMarq42 の Blog</title><link>https://mitchmarq42.xyz/articles/tutorials/</link><description>Recent content in Tutorials on MitchMarq42 の Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mitchmarq42.xyz/articles/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>1337 fake Screensaver</title><link>https://mitchmarq42.xyz/articles/tutorials/trimatrix/</link><pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/trimatrix/</guid><description>&lt;p>It&amp;rsquo;s 2022. Screens don&amp;rsquo;t really need saving anymore - in fact, when there&amp;rsquo;s talk
+of a &amp;ldquo;screensaver&amp;rdquo;, it&amp;rsquo;s usually a lock-screen and/or just some animation that
+would be cool if &amp;ldquo;screensavers&amp;rdquo; were still a thing. What I&amp;rsquo;m about to present is
+no different.&lt;/p>
+&lt;h2 id="the-vision">The vision&lt;/h2>
+&lt;p>&lt;em>One Vision&lt;/em>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>one flesh, one bone, one true religion
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>one voice, one hope, one real decision
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>gimme gimme gimme gimme
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...fried chicken
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I want each of my monitors to display a fullscreen Matrix-like text crawl, and
+then when I quit one of them it quits all of them. That&amp;rsquo;s what I want. Should be
+pretty simple, right?&lt;/p>
+&lt;h2 id="the-obvious-solution">The obvious solution&lt;/h2>
+&lt;p>We should be able to just open one big Cmatrix window that covers all three
+screens (yes I have three screens. Only two monitors though - the other one is a
+laptop). That way there&amp;rsquo;s only one to quit. Elementary, Watson-kun.&lt;/p>
+&lt;h2 id="problem-1-resolution">Problem 1: resolution&lt;/h2>
+&lt;p>Here&amp;rsquo;s how my monitors look physically:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>+---------------+---------------+ | | | +----------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| | | pillar| | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| 1920x1080 | 1366x760 | | | | | 1920x1080|
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| | | &amp;lt;--cable--&amp;gt; +----------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+---------------+---------------+ |___|/ \___________\
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>But here&amp;rsquo;s how they look to the computer:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>+---------------+----------+---------------+
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| | | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| 1920x1080 | 1366x760 | 1920x1080 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| |----------| |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>+---------------+ +---------------+
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>So a window that looks fine on the left monitor will be zoomed in on the middle
+monitor, and small on the right &lt;del>monitor&lt;/del>​laptop.&lt;/p>
+&lt;p>This means that having one big window stretching over all three screens will
+look all wonky. We need separate windows with different zoom levels.&lt;/p>
+&lt;h2 id="problem-2-separate-windows">Problem 2: Separate windows&lt;/h2>
+&lt;p>Opening multiple terminal windows is fine - just call them with &lt;code>&amp;amp;&lt;/code> and call it
+a day.&lt;/p>
+&lt;p>Closing them is another matter.&lt;/p>
+&lt;p>Thankfully, things like &lt;code>kill&lt;/code> and &lt;code>killall&lt;/code> exist. If we have the PIDs of each
+terminal process, it&amp;rsquo;s killable. There are various shell-scripting tricks for
+getting the PID straight off the process invocation, but I decided not to bother
+with anything fancy. Instead, I&amp;rsquo;ll just use a terminal I don&amp;rsquo;t normally &amp;ndash;
+&lt;code>Xterm&lt;/code> &amp;ndash; and kill all of those when one exits.&lt;/p>
+&lt;h3 id="problem-2-dot-5-window-placement">Problem 2.5: Window Placement&lt;/h3>
+&lt;p>I&amp;rsquo;m using ubuntu on this computer because I don&amp;rsquo;t care. Snaps aren&amp;rsquo;t that bad,
+Gnome isn&amp;rsquo;t that bad, and all the server things I want to run, run. However,
+Gnome is also a Wayland compositor, making ordinary Xorg tools insufficient for
+automation - specifically stuff like &lt;code>xdotool&lt;/code> for sending keystrokes and mouse
+events. In addition, XWayland+Gnome doesn&amp;rsquo;t seem to honor a window&amp;rsquo;s request to
+be placed on a specific monitor.&lt;/p>
+&lt;p>So behold! &lt;code>Ydotool&lt;/code>​! An Xdotool replacement for Wayland!&lt;/p>
+&lt;p>&amp;hellip; which doesn&amp;rsquo;t work on gnome either. At least, I couldn&amp;rsquo;t get it to work. No
+idea why, it&amp;rsquo;s been a week since this part.&lt;/p>
+&lt;p>Okay, for real this time. Behold &lt;a href="https://git.sr.ht/~geb/dotool">dotool&lt;/a>. A display-server-agnostic desktop
+automator and event simulator. Works sort of like xdotool or ydotool but with
+pipe syntax for reasons.&lt;/p>
+&lt;p>Once it&amp;rsquo;s installed and working, we can run basic commands like&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#0086d2">&amp;#34;type twelve&amp;#34;&lt;/span> | dotool
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>resulting in&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>twelve
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>getting typed to the current window.&lt;/p>
+&lt;p>On my gnome setup which is hacky and probably non-standard, the keybinding to
+move a window to the right by one monitor is super + shift + right. Let&amp;rsquo;s define
+this as a function in bash:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>moveright () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># move a window right one workspace&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;key super+shift+right&amp;#34;&lt;/span> | dotool
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>now running &lt;code>moveright&lt;/code> in the terminal will move the currently selected window
+to the right. It leaves the mouse in the same place because that&amp;rsquo;s what the
+keybinding does.&lt;/p>
+&lt;p>But I want to be able to move it twice. If we leave the mouse, another window
+might get selected (this is a setting that I enable because it&amp;rsquo;s very convenient
+on tiling WMs). So another function&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mouseright () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># move mouse one monitor right (ish)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;mousemove 1300 0&amp;#34;&lt;/span> | dotool
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>1300 isn&amp;rsquo;t quite right, but it&amp;rsquo;s close enough for now.&lt;/p>
+&lt;p>We should also have one for moving it back to the left:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>mouseleft () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># move mouse one monitor left (ish)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;mousemove -1300 0&amp;#34;&lt;/span> | dotool
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="problem-2-dot-5-dot-1-actually-throwing-windows-onto-the-screen-an-moving-them-around">Problem 2.5.1: Actually throwing windows onto the screen an moving them around&lt;/h3>
+&lt;p>Assuming we start with the mouse on the left monitor, here&amp;rsquo;s the basic control
+flow:&lt;/p>
+&lt;ul>
+&lt;li>Spawn the window that will be on the right monitor
+&lt;ul>
+&lt;li>Move it right (to middle monitor)&lt;/li>
+&lt;li>Move the mouse to follow it&lt;/li>
+&lt;li>Move it right (to right monitor)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Move mouse left (back to left monitor)&lt;/li>
+&lt;li>Spawn the window that will be on the middle monitor
+&lt;ul>
+&lt;li>Move it right (to middle monitor)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Spawn the window that will be on the left monitor&lt;/li>
+&lt;/ul>
+&lt;p>Also, the font sizes. The rightmost screen is small but with a high resolution,
+so the text should be larger. The middle screen is large with low resolution, so
+small text. Then somewhere in between for the left monitor.&lt;/p>
+&lt;p>As previously mentioned, we&amp;rsquo;re using Xterm. Xterm&amp;rsquo;s (relevant) command-line
+options include:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>-fullscreen start in fullscreen
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-bg COLOR background color, very intuitive
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-fa FONT font, semi-intuitive
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-e COMMAND command to run, in quotes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>So to asynchronously launch a fullscreen Xterm with a black background and (not
+my) Meslo font in size 12 running Cmatrix in screensaver mode, we can do:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>xterm -fullscreen -bg black -fa &lt;span style="color:#0086d2">&amp;#34;MesloLGS NF:size=12&amp;#34;&lt;/span> -e &lt;span style="color:#0086d2">&amp;#34;cmatrix&amp;#34;&lt;/span> &amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Sprucing that up into a function taking an argument for the font size:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">COLOR&lt;/span>=blue
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">FONT&lt;/span>=MeseloLGS&lt;span style="color:#0086d2">\ &lt;/span>NF:size=
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>matrixterm () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># spawn terminal with fun matrix in it&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># $1 = the size of font&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> xterm -fullscreen -bg black -fa &lt;span style="color:#0086d2">&amp;#34;&lt;/span>&lt;span style="color:#0086d2">${&lt;/span>&lt;span style="color:#fb660a">FONT&lt;/span>&lt;span style="color:#0086d2">}&lt;/span>&lt;span style="color:#fb660a">$1&lt;/span>&lt;span style="color:#0086d2">&amp;#34;&lt;/span> -e &lt;span style="color:#0086d2">&amp;#34;cmatrix -abC&lt;/span>&lt;span style="color:#fb660a">$COLOR&lt;/span>&lt;span style="color:#0086d2">&amp;#34;&lt;/span> &amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice the expanded variable $FONT, and $COLOR. Cmatrix takes different colors
+and at the moment I&amp;rsquo;m partial to blue.&lt;/p>
+&lt;p>So the control flow including fonts can go something like&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>openonall () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># Open $1 on all monitors&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">$1&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">14&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> moveright
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mouseright
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> moveright
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mouseleft
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">$1&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> moveright
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">$1&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">12&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>openall matrixterm
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="problem-3-on-opening-and-closing">Problem 3: on opening and closing&lt;/h2>
+&lt;p>As previously mentioned, processes are okay. If we know the PIDs we can just
+kill them. &lt;a href="https://www.howtogeek.com/devops/bash-process-termination-hacks/">Here&amp;rsquo;s&lt;/a> an article on finding and killing processes. I personally
+don&amp;rsquo;t believe in Xargs, so we&amp;rsquo;re going to do this in multiple steps.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">XTERMS&lt;/span>=&lt;span style="color:#fb660a;font-weight:bold">$(&lt;/span>ps -ef | grep xterm | grep -v &lt;span style="color:#0086d2">&amp;#39;grep&amp;#39;&lt;/span> | awk &lt;span style="color:#0086d2">&amp;#39;{print $2}&amp;#39;&lt;/span>&lt;span style="color:#fb660a;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>So here&amp;rsquo;s an array of all the PIDs of running &lt;code>xterm&lt;/code>​s. I want to streamline
+checking if each of these are still running and signal an error if any aren&amp;rsquo;t:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>isrunning () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># $1 = process to check&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ps -p &lt;span style="color:#fb660a">$1&lt;/span> &amp;gt;/dev/null
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>checkallprocs () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">for&lt;/span> proc in &lt;span style="color:#fb660a">$*&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> isrunning &lt;span style="color:#fb660a">$proc&lt;/span> || &lt;span style="color:#fb660a;font-weight:bold">return&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>So any run of &lt;code>checkallprocs $XTERMS&lt;/code> will succeed as long as all of the
+original xterms are running, but will fail once one is manually terminated. This
+is perfect for a While loop:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">INTERVAL&lt;/span>=0.5
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">while&lt;/span> checkallprocs &lt;span style="color:#fb660a">$XTERMS&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sleep &lt;span style="color:#fb660a">$INTERVAL&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The interpreter doesn&amp;rsquo;t move on until this loop is broken, meaning we can simply
+put the final Kill right after it.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">for&lt;/span> proc in &lt;span style="color:#fb660a">$XTERMS&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> kill -9 &lt;span style="color:#fb660a">$proc&lt;/span> 2&amp;gt;/dev/null
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>One of those iterations will fail because that xterm is already closed. But oh
+well.&lt;/p>
+&lt;h2 id="wrapping-it-up-in-a-script-with-a-hotkey">Wrapping it up in a script with a hotkey&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://git.mitchmarq42.xyz/mitch/dotfiles/src/branch/main/.local/bin/trimatrix">Here&amp;rsquo;s&lt;/a> the whole script&lt;/li>
+&lt;/ul>
+&lt;p>And I bound it to super+z because nothing else appeared to be bound to that key
+and it&amp;rsquo;s easy to hit when leaving the computer.&lt;/p>
+&lt;p>There&amp;rsquo;s definitely improvements that can be made to this, but I found it to be a
+positive learning experience and wanted to share it with thou, the void.&lt;/p></description></item><item><title>Making Neofetch aware of Emacs</title><link>https://mitchmarq42.xyz/articles/tutorials/eofetch/</link><pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/eofetch/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>I have a confession to make. I was, and still technically am, an Arch user (by
+the way). On my main machines I use ubuntu or fedora, but that&amp;rsquo;s only because
+I&amp;rsquo;m tired of updates and reboots. Computers have always been toys to me, but the
+OS itself was becoming more of a tool or platform.&lt;/p>
+&lt;p>Enter Emacs.&lt;/p>
+&lt;p>If you&amp;rsquo;re reading this, you probably know how freakin&amp;rsquo; &lt;em>cool&lt;/em> Emacs is. A few days
+ago, the &lt;a href="https://codeberg.org/akib/emacs-eat">EAT terminal&lt;/a> went public, and it&amp;rsquo;s great. You can even use it inside
+Eshell. And with this, it feels like Emacs is my true OS more than the
+underlying OS itself, I felt it would be a good exercise to have blingy terminal
+tools reflect that.&lt;/p>
+&lt;p>Enter Neofetch.&lt;/p>
+&lt;p>If you somehow haven&amp;rsquo;t come across Neofetch yet, Kamisama bless your sweet
+summer soul. It&amp;rsquo;s the thing that looks like this:&lt;/p>
+&lt;p>{{&amp;lt; figure
+src=&lt;img src="https://linoxide.com/wp-content/uploads/2018/07/neofetch-ArchLinux.png" alt=""> &amp;gt;}}&lt;/p>
+&lt;p>The challenge: &lt;strong>Make Neofetch display the Emacs logo&lt;/strong>&lt;/p>
+&lt;h2 id="part-1-how-neofetch-works">Part 1: how Neofetch works&lt;/h2>
+&lt;p>Neofetch is written in Bash 3.2+, which makes it compatible with even the
+ancient bash that MacOS ships with. It has a config file which it creates if not
+present, and will read from at startup. This config file is also written in
+Bash, and thus you can define custom functions in it that follow the standard
+format of the built-in ones. For example:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>get_pane() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">pane&lt;/span>=&lt;span style="color:#fb660a;font-weight:bold">$(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [ -n &lt;span style="color:#0086d2">${&lt;/span>&lt;span style="color:#fb660a">TMUX&lt;/span>&lt;span style="color:#0086d2">}&lt;/span> ] &amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;&lt;/span>&lt;span style="color:#0086d2">${&lt;/span>&lt;span style="color:#fb660a">TMUX&lt;/span>//%//&lt;span style="color:#0086d2">}&lt;/span>&lt;span style="color:#0086d2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [ -z &lt;span style="color:#0086d2">${&lt;/span>&lt;span style="color:#fb660a">TMUX&lt;/span>&lt;span style="color:#0086d2">}&lt;/span> ] &amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#39;N/A&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>prin &lt;span style="color:#0086d2">&amp;#34;Tmux Pane&amp;#34;&lt;/span> &lt;span style="color:#0086d2">&amp;#34;&lt;/span>&lt;span style="color:#fb660a">$pane&lt;/span>&lt;span style="color:#0086d2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This displays the Tmux pane that you&amp;rsquo;re in, or else &amp;ldquo;N/A&amp;rdquo;. I used to use tmux
+for everything because I wanted to keep processes running despite closing and
+opening terminals, and splitting windows arbitrarily. Thankfully now Emacs can
+handle most of that!&lt;/p>
+&lt;p>Anyway, snippets like the above will get recognized by neofetch when it prints
+information on the right of the image. It scans for all the &amp;ldquo;get_*&amp;rdquo; functions
+and runs them in the order described in the function &lt;code>print_info&lt;/code> (defined at the
+top of the config). So for tmux all I have to do to enable it is put something
+like&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>info &lt;span style="color:#0086d2">&amp;#34;Tmux Pane&amp;#34;&lt;/span> pane
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>before the end of that function.&lt;/p>
+&lt;p>Problem:&lt;/p>
+&lt;h3 id="logos-do-not-work-like-info-lines">Logos do not work like info lines&lt;/h3>
+&lt;p>All of the ascii art that Neofetch displays happens through a single function
+called &lt;code>get_distro_ascii&lt;/code> which consists of a single &lt;strong>5226&lt;/strong>-line Case statement,
+each of which contains a color setting and a mangled-looking heredoc to dump to
+the terminal.&lt;/p>
+&lt;p>This is not extensible at all.&lt;/p>
+&lt;p>The standard advice is to submit a pull request and add the distro/image you
+want, but the maintainer seems to no longer be active. There are forks, but I
+really don&amp;rsquo;t want to rely on that kind of thing. As long as the original
+Neofetch works, I will use it and only modify my own config file. It&amp;rsquo;s just
+simpler that way.&lt;/p>
+&lt;p>So now, we have a puzzle: How do we &lt;del>advise&lt;/del> add to a function in Bash without
+wiping out the original?&lt;/p>
+&lt;h2 id="part-2-adding-to-a-function-in-bash">Part 2: Adding to a function in Bash&lt;/h2>
+&lt;p>If this were Elisp, I would just do something like&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span>(setq &lt;span style="color:#fb660a">old-get_distro_ascii&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">symbol-function&lt;/span> &lt;span style="color:#0086d2">&amp;#39;get_distro_ascii&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>(defun &lt;span style="color:#fb660a">get_distro_ascii&lt;/span> ()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (if (&lt;span style="color:#fb660a">&amp;lt;test-are-we-in-emacs&amp;gt;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">&amp;lt;display-emacs-things&amp;gt;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">funcall&lt;/span> &lt;span style="color:#fb660a">old-get_distro_ascii&lt;/span>)))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>I &lt;em>really&lt;/em> didn&amp;rsquo;t want to bother figuring this out in bash. So I did a web
+search. And what I discovered, may shock you.&lt;/p>
+&lt;p>&lt;a href="https://www.appsloveworld.com/bash/100/210/save-the-old-value-of-a-function-bash-so-that-it-can-be-called-later">Renaming a function&lt;/a> is totally a thing!&lt;/p>
+&lt;p>So all I would have to do in Bash is&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>renameFunction get_distro_ascii old--get_distro_ascii
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>get_distro_ascii ()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">if&lt;/span> &amp;lt;check-if-emacs&amp;gt;; &lt;span style="color:#fb660a;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;display-emacs-things&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> old--get_distro_ascii
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now with the technical aspect out of the way, time to do Art.&lt;/p>
+&lt;h2 id="part-3-art">Part 3: Art&lt;/h2>
+&lt;p>There&amp;rsquo;s this really handy site
+&lt;a href="https://www.text-image.com/convert/ascii.html">https://www.text-image.com/convert/ascii.html&lt;/a>. You give it an image and a pixel
+width, and it spits out ascii art of the image. Good start.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>@@@@@@@@@@@@@@@@@&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;@@@@@@@@@@@@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@@@@@@&amp;amp;#GPYYJJJJJJY5PB#&amp;amp;@@@@@@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@@@&amp;amp;GYJ????????J?????JJYPB&amp;amp;@@@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@#5J?????????7!^:.. .7JJJYG&amp;amp;@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@&amp;amp;PJ????J?????7!!~~^. JYYYY5B@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@&amp;amp;5??????^. ...!YYYYYYYG&amp;amp;@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@&amp;amp;5??????J^ .!7?JJJYYYYYYYYYYYYYG@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@G????JJJJJ?^. .~7JYYYYYYYYYYY55555#@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&amp;amp;5?JJJJJJJYYYY?~. .:!?YYYY55555555G@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&amp;amp;Y?JJJJJY?!^.. .:~?55555555555G&amp;amp;@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@&amp;amp;5JJJJJ7. .^!?JY555555555555555B@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@GJJJY? :Y555555555555555555555#@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@&amp;amp;5JYYY~ .~7?JJYYYYY5555P555555B@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@&amp;amp;PJYYYY?~:. . .:JP555B&amp;amp;@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@&amp;amp;GYYYY5555YYJ?7!~^:. .^7555P#@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@&amp;amp;G5YY555Y?7!!~~!7?JY5PPP5PB&amp;amp;@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@@@&amp;amp;BP555555555PPPP5555PG#&amp;amp;@@@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@@@@@@&amp;amp;#BGGPPPPPPPPGB#&amp;amp;@@@@@@@@@@@@
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@@@@@@@@@@@@@@@@@@&amp;amp;&amp;amp;&amp;amp;&amp;amp;@@@@@@@@@@@@@@@@@@
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>(the above is the Emacs logo at
+&lt;img src="https://www.gnu.org/software/emacs/images/emacs.png" alt=""> with a width of 40.)&lt;/p>
+&lt;p>This is nice, but there&amp;rsquo;s two problems:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>@&lt;/code> Background&lt;/li>
+&lt;li>Monochrome&lt;/li>
+&lt;/ol>
+&lt;p>Let&amp;rsquo;s tackle the &lt;code>@&lt;/code> background first:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span> &amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;#GPYYJJJJJJY5PB#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;GYJ????????J?????JJYPB&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> #5J?????????7!*./eEe.7JJJYG&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;PJ????J?????7!!~~^/eeeeJYYYY5B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5??????^.eeeeeeeeeee/^/!YYYYYYYG&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5??????J^eeee.!7?JJJYYYYYYYYYYYYYG
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> G????JJJJJ?^\ee\~7JYYYYYYYYYYY55555#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5?JJJJJJJYYYY?~\eee.:!?YYYY55555555G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;Y?JJJJJY?!^./eeeeeee.:~?55555555555G&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5JJJJJ7.eeeeee/^!?JY555555555555555B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> GJJJY?eeeeee:Y555555555555555555555#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5JYYY~eeeee\.7?JJYYYYY5555P555555B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;PJYYYY?~:\eeeeeeeeeEeee\.:JP555B&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;GYYYY5555YYJ?7!~\.&amp;gt;eee/^7555P#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;G5YY555Y?7!.~~^7?JY5PPP5PB&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;BP555555555PPPP5555PG#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;#BGGPPPPPPPPGB#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>@&lt;/code>​s were pretty easy to get rid of. I used a &lt;em>lot&lt;/em> of evil-Ex commands. Also,
+you may notice that the giant E has been filled in with little &lt;code>e&lt;/code>​s.&lt;/p>
+&lt;p>Next, the coloring.&lt;/p>
+&lt;h3 id="how-neofetch-works-part-2-the-coloring">How Neofetch works part 2: the coloring&lt;/h3>
+&lt;p>Each clause in that giant Case statement has a &lt;code>set-colors x y&lt;/code> line above the art
+itself. &lt;code>x&lt;/code> and &lt;code>y&lt;/code> (and posssibly more) are simply the 8/16 terminal colors.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>0. Black
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>1. Red
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>2. Green
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>etc.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Color 5 is magenta and color 7 is white. If we allow the &amp;ldquo;dark/light&amp;rdquo; colors
+(8-15) we should probably use 13 (darkmagenta) and 15 (darkwhite), but I don&amp;rsquo;t
+particularly want to rely on that, and my theme&amp;rsquo;s colors may be backwards so
+we&amp;rsquo;ll stick to 5 and 7 for now.&lt;/p>
+&lt;p>Neofetch embeds color escape codes in the ascii art with sequences like &lt;code>${cX}&lt;/code>
+where X is the slot after &lt;code>set-colors&lt;/code>. Thus we can &lt;code>set-colors 5 7&lt;/code> and then access
+color 5 with &lt;code>${c1}&lt;/code> and color 7 with &lt;code>${c2}&lt;/code>.&lt;/p>
+&lt;p>Let&amp;rsquo;s can put &lt;code>${c1}&lt;/code> right before the start of the art. Then when the white E
+would start we put a &lt;code>${c2}&lt;/code>, and when each line of the E ends another &lt;code>${c1}&lt;/code>. This
+looks gross:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>${c1} &amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;#GPYYJJJJJJY5PB#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;GYJ????????J?????JJYPB&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> #5J?????????7!*${c2}./eEe${c1}.7JJJYG&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;PJ????J?????7!!~~^${c2}/eeee${c1}JYYYY5B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5??????^${c2}.eeeeeeeeeee/^${c1}/!YYYYYYYG&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5??????J^${c2}eeee.${c1}!7?JJJYYYYYYYYYYYYYG
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> G????JJJJJ?^${c2}\\ee\${c1}~7JYYYYYYYYYYY55555#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;amp;5?JJJJJJJYYYY?~${c2}\\eee.${c1}:!?YYYY55555555G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;amp;Y?JJJJJY?!^${c2}./eeeeeee.${c1}:~?55555555555G&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;amp;5JJJJJ7${c2}.eeeeee/${c1}^!?JY555555555555555B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> GJJJY?${c2}eeeeee${c1}:Y555555555555555555555#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;5JYYY~${c2}eeeee\.${c1}7?JJYYYYY5555P555555B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;PJYYYY?~:${c2}\\eeeeeeeeeEeee\.${c1}:JP555B&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;GYYYY5555YYJ?7!~\${c2}.&amp;gt;eee/${c1}^7555P#
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;G5YY555Y?7!${c2}.~~^${c1}7?JY5PPP5PB&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;BP555555555PPPP5555PG#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;#BGGPPPPPPPPGB#&amp;amp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>But the screenshot doesn&amp;rsquo;t:&lt;/p>
+&lt;figure>&lt;img src="https://mitchmarq42.xyz/eofetch.png"/>
+&lt;/figure>
+&lt;h2 id="part-4-putting-it-all-together">Part 4: Putting it all together&lt;/h2>
+&lt;p>Problem: How do we tell neofetch that it&amp;rsquo;s inside Emacs? Well, there is the
+variable &lt;code>$INSIDE_EMACS&lt;/code>​. The problem is how and where to use it.&lt;/p>
+&lt;p>I actually didn&amp;rsquo;t have a perfect solution when I tooted out that screenshot. Nor
+when I started this article. But I&amp;rsquo;ve done a minor hack and now have a solution.&lt;/p>
+&lt;p>In the default config file there&amp;rsquo;s a line: &lt;code>ascii_distro=&amp;quot;auto&amp;quot;&lt;/code>​. Neofetch by
+default auto-detects your distro from various things like &lt;code>uname&lt;/code> and
+​/​etc​/​issue. It overrides this if you pass the command-line option
+&lt;code>--ascii-distro&lt;/code>​. This all happens &lt;em>before&lt;/em> &lt;code>get_distro_ascii&lt;/code> is run. Which of
+course, but that also means we can&amp;rsquo;t detect whether there was a command-line
+override within our new &lt;code>get_distro_ascii&lt;/code>​.&lt;/p>
+&lt;p>Looking at it with fresh eyes, we can clearly just check when &lt;code>ascii_distro&lt;/code> would
+get set to auto. So first replace&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">ascii_distro&lt;/span>=&lt;span style="color:#0086d2">&amp;#34;auto&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>with&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#fb660a">ascii_distro&lt;/span>=&lt;span style="color:#fb660a;font-weight:bold">$(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">if&lt;/span> [[ &lt;span style="color:#fb660a">$INSIDE_EMACS&lt;/span> ]]; &lt;span style="color:#fb660a;font-weight:bold">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;Emacs&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#0086d2">&amp;#34;auto&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then, below the initial &lt;code>print_info()&lt;/code> definition but above everything else, paste
+the code from &lt;a href="https://www.appsloveworld.com/bash/100/210/save-the-old-value-of-a-function-bash-so-that-it-can-be-called-later">that article&lt;/a> to rename bash functions. Then use it:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>renameFunction get_distro_ascii old--get_distro_ascii
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And now we can &lt;strong>finally&lt;/strong> get to the good bit. I&amp;rsquo;m using a case statement just like
+the original, since we&amp;rsquo;re setting &lt;code>$ascii_distro&lt;/code> beforehand.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>get_distro_ascii() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">case&lt;/span> &lt;span style="color:#fb660a;font-weight:bold">$(&lt;/span>trim &lt;span style="color:#0086d2">&amp;#34;&lt;/span>&lt;span style="color:#fb660a">$ascii_distro&lt;/span>&lt;span style="color:#0086d2">&amp;#34;&lt;/span>&lt;span style="color:#fb660a;font-weight:bold">)&lt;/span> in
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Emacs&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># set_colors 13 15&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> set_colors &lt;span style="color:#0086f7;font-weight:bold">5&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">7&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> read -rd &lt;span style="color:#0086d2">&amp;#39;&amp;#39;&lt;/span> ascii_data &lt;span style="color:#0086d2">&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">${c1} &amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;#GPYYJJJJJJY5PB#&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;GYJ????????J?????JJYPB&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> #5J?????????7!*${c2}./eEe${c1}.7JJJYG&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;PJ????J?????7!!~~^${c2}/eeee${c1}JYYYY5B
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;5??????^${c2}.eeeeeeeeeee/^${c1}/!YYYYYYYG&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;5??????J^${c2}eeee.${c1}!7?JJJYYYYYYYYYYYYYG
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> G????JJJJJ?^${c2}\\ee\${c1}~7JYYYYYYYYYYY55555#
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">&amp;amp;5?JJJJJJJYYYY?~${c2}\\eee.${c1}:!?YYYY55555555G
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">&amp;amp;Y?JJJJJY?!^${c2}./eeeeeee.${c1}:~?55555555555G&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">&amp;amp;5JJJJJ7${c2}.eeeeee/${c1}^!?JY555555555555555B
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> GJJJY?${c2}eeeeee${c1}:Y555555555555555555555#
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;5JYYY~${c2}eeeee\.${c1}7?JJYYYYY5555P555555B
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;PJYYYY?~:${c2}\\eeeeeeeeeEeee\.${c1}:JP555B&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;GYYYY5555YYJ?7!~\${c2}.&amp;gt;eee/${c1}^7555P#
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;G5YY555Y?7!${c2}.~~^${c1}7?JY5PPP5PB&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;BP555555555PPPP5555PG#&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;#BGGPPPPPPPPGB#&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2"> &amp;amp;&amp;amp;&amp;amp;&amp;amp;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">EOF&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> *)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#080;background-color:#0f140f;font-style:italic"># if not in emacs just run the original which displays your distro&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> old--get_distro_ascii
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a;font-weight:bold">esac&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now running &lt;code>neofetch&lt;/code> inside any Emacs terminal (again, I recommend Akib&amp;rsquo;s
+&lt;a href="https://codeberg.org/akib/emacs-eat">EAT&lt;/a>+Eshell), or with the variable &lt;code>$INSIDE_EMACS&lt;/code> set, will display the custom
+Emacs logo. Running neofetch outside of Emacs should still display your distro&amp;rsquo;s
+logo, and running it &lt;!-- raw HTML omitted -->inside&lt;!-- raw HTML omitted --> Emacs but with &lt;code>--ascii_distro arch&lt;/code> will display the
+Arch logo.&lt;/p>
+&lt;p>&lt;strong>ADDENDUM:&lt;/strong> If you&amp;rsquo;re on Mac you might have to put &lt;code>old_get_distro_ascii&lt;/code>
+instead of &lt;code>old--get_distro_ascii&lt;/code>, as their ancient Bash gives an error about
+invalid identifier.&lt;/p></description></item><item><title>A better cat for Eshell</title><link>https://mitchmarq42.xyz/articles/tutorials/supercat/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/supercat/</guid><description>&lt;p>&lt;strong>tl;dr: Scroll to bottom&lt;/strong>&lt;/p>
+&lt;h2 id="part-1-awesome-syntax-highlighted-cat">Part 1: Awesome syntax-highlighted &lt;code>cat&lt;/code>&lt;/h2>
+&lt;p>A few weeks ago I was wasting time on Reddit. There was a post on r/emacs
+recommending &lt;a href="https://github.com/manateelazycat/aweshell">AwEshell&lt;/a>. There&amp;rsquo;s several features listed, many of which I don&amp;rsquo;t
+particularly care about&amp;ndash; multiple buffers (&lt;code>C-u&lt;/code> works for me); IDE-style window
+placement (I treat eshell like a tmux pane or terminal window). But one struck
+my eye:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>13. Make cat file with syntax highlight.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now that&amp;rsquo;s a cool idea.&lt;/p>
+&lt;p>Here&amp;rsquo;s the function, with some minor modifications:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">aweshell-cat-with-syntax-highlight&lt;/span> (&lt;span style="color:#fb660a">filename&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Like cat(1) but with syntax highlighting.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Taken from https://github.com/manateelazycat/aweshell/blob/d246df619573ca3f46070cc0ac82d024271ed243/aweshell.el#L775&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (let ((&lt;span style="color:#fb660a">existing-buffer&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">get-file-buffer&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">buffer&lt;/span> (&lt;span style="color:#fb660a">find-file-noselect&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">eshell-print&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (with-current-buffer &lt;span style="color:#fb660a">buffer&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (if (&lt;span style="color:#ff0086;font-weight:bold">fboundp&lt;/span> &lt;span style="color:#0086d2">&amp;#39;font-lock-ensure&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">font-lock-ensure&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (with-no-warnings
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">font-lock-fontify-buffer&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (let ((&lt;span style="color:#fb660a">contents&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">buffer-string&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">remove-text-properties&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">0&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">length&lt;/span> &lt;span style="color:#fb660a">contents&lt;/span>) &amp;#39;(&lt;span style="color:#fb660a">read-only&lt;/span> &lt;span style="color:#0086d2">nil&lt;/span>) &lt;span style="color:#fb660a">contents&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">contents&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (unless &lt;span style="color:#fb660a">existing-buffer&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">kill-buffer&lt;/span> &lt;span style="color:#fb660a">buffer&lt;/span>)) &lt;span style="color:#0086d2">nil&lt;/span>))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="part-2-to-display-an-image">Part 2: To display an image&lt;/h2>
+&lt;h3 id="d41d8c">&lt;/h3>
+&lt;p>There&amp;rsquo;s this Linux utility &lt;a href="https://github.com/posva/catimg">catimg&lt;/a> that converts images to true-color unicode
+blocks and prints them to your terminal. It&amp;rsquo;s nice to just view the rough image
+in the terminal, without having to open another window or &amp;ndash; Kamisama forbid &amp;ndash;
+use the mouse.&lt;/p>
+&lt;h3 id="d41d8c">&lt;/h3>
+&lt;p>The Kitty terminal has &lt;a href="https://sw.kovidgoyal.net/kitty/kittens/icat/">a module (&amp;ldquo;Kitten&amp;rdquo;)&lt;/a> for displaying images. It works very
+similarly to &lt;code>catimg&lt;/code>, but uses Kitty&amp;rsquo;s custom graphics protocol, and thus can
+show pixel-perfect data, not just chunks.&lt;/p>
+&lt;p>When I&amp;rsquo;m in Kitty for any significant period of time, I tend to&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>alias &lt;span style="color:#fb660a">catimg&lt;/span>=&lt;span style="color:#0086d2">&amp;#34;kitty +icat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>just to remember better.&lt;/p>
+&lt;h3 id="d41d8c">&lt;/h3>
+&lt;p>I recently signed up to Mastadon &amp;ndash; specifically the &lt;a href="https://emacs.ch">https://emacs.ch&lt;/a>
+instance. It&amp;rsquo;s still very new, but there&amp;rsquo;s a bunch of cool people on
+there. Recently Xenodium (real name Álvaro Ramírez) posted a link to &lt;a href="https://xenodium.com/wizard-zines-comics-eshell-util/">this blog&lt;/a> in which he showcases a
+custom function to view a specific image from a collection.&lt;/p>
+&lt;p>I thought it was odd that we don&amp;rsquo;t have an &lt;code>eshell/catimg&lt;/code> command to wrap, so I
+did a little googling&amp;hellip;&lt;/p>
+&lt;h3 id="d41d8c">&lt;/h3>
+&lt;p>&amp;hellip; And immediately arrived at &lt;a href="https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode">this StackExchange question&lt;/a> about &lt;code>cat&lt;/code>-ing files
+and images with just &lt;code>cat&lt;/code>.&lt;/p>
+&lt;p>The first answer is about using &lt;code>iimage-mode&lt;/code>, which is a whole &amp;rsquo;nother thing, and
+I probably need to check it out at some point.&lt;/p>
+&lt;p>The second answer, the accepted one, uses Advice and a similar method to
+Xenodium&amp;rsquo;s to display the image. Here&amp;rsquo;s the magic:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span>(&lt;span style="color:#ff0086;font-weight:bold">add-text-properties&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">0&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">length&lt;/span> &lt;span style="color:#fb660a">arg&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> `(&lt;span style="color:#fb660a">display&lt;/span> ,(&lt;span style="color:#fb660a">create-image&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">modification-hooks&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">iimage-modification-hook&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">arg&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>(&lt;span style="color:#fb660a">eshell-buffered-print&lt;/span> &lt;span style="color:#fb660a">arg&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Of course, that&amp;rsquo;s in the middle of a long function that&amp;rsquo;s meant to be run as
+advice. I don&amp;rsquo;t like Advice in principle, so I kept scrolling.&lt;/p>
+&lt;p>The third answer went on a tangent about inserting screenshots into Markdown
+files. Which is cool, but not today.&lt;/p>
+&lt;p>The fourth answer should have been accepted. &lt;!-- raw HTML omitted -->
+First, there&amp;rsquo;s a basic snippet for displaying images. But the answerer notes
+that big images don&amp;rsquo;t fit. So they provide some more thorough functions that
+resize files.&lt;/p>
+&lt;p>For our copying convenience, here&amp;rsquo;s that whole snippet but with all the functions renamed
+and credited:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">esh-catimg--imagep&lt;/span> (&lt;span style="color:#fb660a">filename&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Check if FILENAME is an image. Helper for &lt;/span>&lt;span style="color:#0086d2">`esh-catimg--image-print&amp;#39;&lt;/span>&lt;span style="color:#0086d2">.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (let ((&lt;span style="color:#fb660a">extension&lt;/span> (&lt;span style="color:#fb660a">file-name-extension&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">image-extensions&lt;/span> &amp;#39;(&lt;span style="color:#0086d2">&amp;#34;png&amp;#34;&lt;/span> &lt;span style="color:#0086d2">&amp;#34;jpg&amp;#34;&lt;/span> &lt;span style="color:#0086d2">&amp;#34;bmp&amp;#34;&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">member&lt;/span> &lt;span style="color:#fb660a">extension&lt;/span> &lt;span style="color:#fb660a">image-extensions&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">esh-catimg--image-width&lt;/span> (&lt;span style="color:#fb660a">filename&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Get the pixel (?) width of the image FILENAME, using imagemagick. Helper
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">for &lt;/span>&lt;span style="color:#0086d2">`esh-catimg--image-print&amp;#39;&lt;/span>&lt;span style="color:#0086d2">.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">string-to-number&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">shell-command-to-string&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">format&lt;/span> &lt;span style="color:#0086d2">&amp;#34;convert &amp;#39;%s&amp;#39; -ping -format \&amp;#34;%%w\&amp;#34; info:&amp;#34;&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span>))))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">esh-catimg--rescale-image&lt;/span> (&lt;span style="color:#fb660a">filename&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Rescale an image to a maximum width, or leave untouched if already small.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Returns the new file path. Helper for &lt;/span>&lt;span style="color:#0086d2">`esh-catimg--image-print&amp;#39;&lt;/span>&lt;span style="color:#0086d2">.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (let ((&lt;span style="color:#fb660a">file&lt;/span> (&lt;span style="color:#fb660a">make-temp-file&lt;/span> &lt;span style="color:#0086d2">&amp;#34;resized_emacs&amp;#34;&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">max-width&lt;/span> &lt;span style="color:#0086f7;font-weight:bold">350&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (if (&lt;span style="color:#ff0086;font-weight:bold">&amp;gt;&lt;/span> (&lt;span style="color:#fb660a">esh-catimg--image-width&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span>) &lt;span style="color:#fb660a">max-width&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (progn
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">shell-command-to-string&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#ff0086;font-weight:bold">format&lt;/span> &lt;span style="color:#0086d2">&amp;#34;convert -resize %dx &amp;#39;%s&amp;#39; &amp;#39;%s&amp;#39;&amp;#34;&lt;/span> &lt;span style="color:#fb660a">max-width&lt;/span> &lt;span style="color:#fb660a">filename&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">file&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#fb660a">filename&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">esh-catimg--image-print&lt;/span> (&lt;span style="color:#fb660a">file&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Print the single image FILE.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Taken from https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">eshell/printnl&lt;/span> (&lt;span style="color:#ff0086;font-weight:bold">propertize&lt;/span> &lt;span style="color:#0086d2">&amp;#34; &amp;#34;&lt;/span> &lt;span style="color:#0086d2">&amp;#39;display&lt;/span> (&lt;span style="color:#fb660a">create-image&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>))))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="putting-it-all-together">Putting it all together&lt;/h2>
+&lt;p>So, to recap: We have&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>aweshell-cat-with-syntax-highlighting&lt;/code> to dump any text file to eshell with syntax highlighting&lt;/li>
+&lt;li>&lt;code>esh-catimg--image-print&lt;/code> to display any image to eshell in a reasonable size&lt;/li>
+&lt;/ol>
+&lt;p>So now it&amp;rsquo;s time to put it all together. Here&amp;rsquo;s &lt;code>eshell/cat&lt;/code> with most of the guts
+ripped out and replaced with our helper functions.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span> (defun &lt;span style="color:#fb660a">eshell/cat&lt;/span> (&lt;span style="color:#fb660a">&amp;amp;rest&lt;/span> &lt;span style="color:#fb660a">args&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0086d2">&amp;#34;Wrapper around &lt;/span>&lt;span style="color:#0086d2">`aweshell-cat-with-syntax-highlight&amp;#39;&lt;/span>&lt;span style="color:#0086d2"> for multiple ARGS.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">Also, can cat images for some reason.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">See:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">https://github.com/manateelazycat/aweshell/blob/d246df619573ca3f46070cc0ac82d024271ed243/aweshell.el#L775
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#0086d2">https://emacs.stackexchange.com/questions/3432/display-images-in-eshell-with-iimage-mode &amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (setq &lt;span style="color:#fb660a">args&lt;/span> (&lt;span style="color:#fb660a">eshell-stringify-list&lt;/span> (&lt;span style="color:#fb660a">flatten-tree&lt;/span> &lt;span style="color:#fb660a">args&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (dolist (&lt;span style="color:#fb660a">file&lt;/span> &lt;span style="color:#fb660a">args&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (if (&lt;span style="color:#fb660a">string=&lt;/span> &lt;span style="color:#fb660a">file&lt;/span> &lt;span style="color:#0086d2">&amp;#34;-&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (throw &lt;span style="color:#0086d2">&amp;#39;eshell-external&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">eshell-external-command&lt;/span> &lt;span style="color:#0086d2">&amp;#34;cat&amp;#34;&lt;/span> &lt;span style="color:#fb660a">args&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (if (&lt;span style="color:#fb660a">esh-catimg--imagep&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">esh-catimg--image-print&lt;/span> (&lt;span style="color:#fb660a">esh-catimg--rescale-image&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> (&lt;span style="color:#fb660a">aweshell-cat-with-syntax-highlight&lt;/span> &lt;span style="color:#fb660a">file&lt;/span>)))))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It iterates over each argument and applies the correct function.&lt;/p></description></item><item><title>Scraping</title><link>https://mitchmarq42.xyz/articles/tutorials/scraping/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate><guid>https://mitchmarq42.xyz/articles/tutorials/scraping/</guid><description>
 &lt;p>(This article is currently incomplete. I will work on it more later.)&lt;/p>
 &lt;div id="outline-container-headline-1" class="outline-2">
 &lt;h2 id="headline-1">

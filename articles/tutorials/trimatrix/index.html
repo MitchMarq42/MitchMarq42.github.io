@@ -1,0 +1,118 @@
+<!doctype html><html lang=en><head><title>1337 Fake Screensaver | MitchMarq42 の Blog</title><link rel=canonical href=https://mitchmarq42.xyz/><link rel=alternate type=application/rss+xml title="MitchMarq42 の Blog RSS" href=/index.xml><link rel=stylesheet type=text/css href=/style.css><link rel=icon href=/favicon.ico><meta name=description content="It&rsquo;s 2022. Screens don&rsquo;t really need saving anymore - in fact, when there&rsquo;s talk of a &ldquo;screensaver&rdquo;, it&rsquo;s usually a lock-screen and/or just some animation that would be cool if &ldquo;screensavers&rdquo; were still a thing. What I&rsquo;m about to present is no different.
+The vision One Vision
+one flesh, one bone, one true religion one voice, one hope, one real decision gimme gimme gimme gimme ...fried chicken I want each of my monitors to display a fullscreen Matrix-like text crawl, and then when I quit one of them it quits all of them."><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="index, follow"><meta charset=utf-8></head><body><main><header><h1>1337 fake Screensaver</h1></header><article><p>It&rsquo;s 2022. Screens don&rsquo;t really need saving anymore - in fact, when there&rsquo;s talk
+of a &ldquo;screensaver&rdquo;, it&rsquo;s usually a lock-screen and/or just some animation that
+would be cool if &ldquo;screensavers&rdquo; were still a thing. What I&rsquo;m about to present is
+no different.</p><h2 id=the-vision>The vision</h2><p><em>One Vision</em></p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>one flesh, one bone, one true religion
+</span></span><span style=display:flex><span>one voice, one hope, one real decision
+</span></span><span style=display:flex><span>gimme gimme gimme gimme
+</span></span><span style=display:flex><span>...fried chicken
+</span></span></code></pre></div><p>I want each of my monitors to display a fullscreen Matrix-like text crawl, and
+then when I quit one of them it quits all of them. That&rsquo;s what I want. Should be
+pretty simple, right?</p><h2 id=the-obvious-solution>The obvious solution</h2><p>We should be able to just open one big Cmatrix window that covers all three
+screens (yes I have three screens. Only two monitors though - the other one is a
+laptop). That way there&rsquo;s only one to quit. Elementary, Watson-kun.</p><h2 id=problem-1-resolution>Problem 1: resolution</h2><p>Here&rsquo;s how my monitors look physically:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>+---------------+---------------+    |   | |  +----------+
+</span></span><span style=display:flex><span>|               |               |    pillar|  |          |
+</span></span><span style=display:flex><span>|   1920x1080   |    1366x760   |    |   | |  | 1920x1080|
+</span></span><span style=display:flex><span>|               |               | &lt;--cable--&gt; +----------+
+</span></span><span style=display:flex><span>+---------------+---------------+    |___|/   \___________\
+</span></span></code></pre></div><p>But here&rsquo;s how they look to the computer:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>+---------------+----------+---------------+
+</span></span><span style=display:flex><span>|               |          |               |
+</span></span><span style=display:flex><span>|   1920x1080   | 1366x760 |   1920x1080   |
+</span></span><span style=display:flex><span>|               |----------|               |
+</span></span><span style=display:flex><span>+---------------+          +---------------+
+</span></span></code></pre></div><p>So a window that looks fine on the left monitor will be zoomed in on the middle
+monitor, and small on the right <del>monitor</del>​laptop.</p><p>This means that having one big window stretching over all three screens will
+look all wonky. We need separate windows with different zoom levels.</p><h2 id=problem-2-separate-windows>Problem 2: Separate windows</h2><p>Opening multiple terminal windows is fine - just call them with <code>&</code> and call it
+a day.</p><p>Closing them is another matter.</p><p>Thankfully, things like <code>kill</code> and <code>killall</code> exist. If we have the PIDs of each
+terminal process, it&rsquo;s killable. There are various shell-scripting tricks for
+getting the PID straight off the process invocation, but I decided not to bother
+with anything fancy. Instead, I&rsquo;ll just use a terminal I don&rsquo;t normally &ndash;
+<code>Xterm</code> &ndash; and kill all of those when one exits.</p><h3 id=problem-2-dot-5-window-placement>Problem 2.5: Window Placement</h3><p>I&rsquo;m using ubuntu on this computer because I don&rsquo;t care. Snaps aren&rsquo;t that bad,
+Gnome isn&rsquo;t that bad, and all the server things I want to run, run. However,
+Gnome is also a Wayland compositor, making ordinary Xorg tools insufficient for
+automation - specifically stuff like <code>xdotool</code> for sending keystrokes and mouse
+events. In addition, XWayland+Gnome doesn&rsquo;t seem to honor a window&rsquo;s request to
+be placed on a specific monitor.</p><p>So behold! <code>Ydotool</code>​! An Xdotool replacement for Wayland!</p><p>&mldr; which doesn&rsquo;t work on gnome either. At least, I couldn&rsquo;t get it to work. No
+idea why, it&rsquo;s been a week since this part.</p><p>Okay, for real this time. Behold <a href=https://git.sr.ht/~geb/dotool>dotool</a>. A display-server-agnostic desktop
+automator and event simulator. Works sort of like xdotool or ydotool but with
+pipe syntax for reasons.</p><p>Once it&rsquo;s installed and working, we can run basic commands like</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>echo <span style=color:#0086d2>&#34;type twelve&#34;</span> | dotool
+</span></span></code></pre></div><p>resulting in</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>twelve
+</span></span></code></pre></div><p>getting typed to the current window.</p><p>On my gnome setup which is hacky and probably non-standard, the keybinding to
+move a window to the right by one monitor is super + shift + right. Let&rsquo;s define
+this as a function in bash:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>moveright () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># move a window right one workspace</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#0086d2>&#34;key super+shift+right&#34;</span> | dotool
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>now running <code>moveright</code> in the terminal will move the currently selected window
+to the right. It leaves the mouse in the same place because that&rsquo;s what the
+keybinding does.</p><p>But I want to be able to move it twice. If we leave the mouse, another window
+might get selected (this is a setting that I enable because it&rsquo;s very convenient
+on tiling WMs). So another function</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>mouseright () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># move mouse one monitor right (ish)</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#0086d2>&#34;mousemove 1300 0&#34;</span> | dotool
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>1300 isn&rsquo;t quite right, but it&rsquo;s close enough for now.</p><p>We should also have one for moving it back to the left:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>mouseleft () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># move mouse one monitor left (ish)</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#0086d2>&#34;mousemove -1300 0&#34;</span> | dotool
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=problem-2-dot-5-dot-1-actually-throwing-windows-onto-the-screen-an-moving-them-around>Problem 2.5.1: Actually throwing windows onto the screen an moving them around</h3><p>Assuming we start with the mouse on the left monitor, here&rsquo;s the basic control
+flow:</p><ul><li>Spawn the window that will be on the right monitor<ul><li>Move it right (to middle monitor)</li><li>Move the mouse to follow it</li><li>Move it right (to right monitor)</li></ul></li><li>Move mouse left (back to left monitor)</li><li>Spawn the window that will be on the middle monitor<ul><li>Move it right (to middle monitor)</li></ul></li><li>Spawn the window that will be on the left monitor</li></ul><p>Also, the font sizes. The rightmost screen is small but with a high resolution,
+so the text should be larger. The middle screen is large with low resolution, so
+small text. Then somewhere in between for the left monitor.</p><p>As previously mentioned, we&rsquo;re using Xterm. Xterm&rsquo;s (relevant) command-line
+options include:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>-fullscreen                 start in fullscreen
+</span></span><span style=display:flex><span>-bg COLOR                   background color, very intuitive
+</span></span><span style=display:flex><span>-fa FONT                    font, semi-intuitive
+</span></span><span style=display:flex><span>-e COMMAND                  command to run, in quotes
+</span></span></code></pre></div><p>So to asynchronously launch a fullscreen Xterm with a black background and (not
+my) Meslo font in size 12 running Cmatrix in screensaver mode, we can do:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>xterm -fullscreen -bg black -fa <span style=color:#0086d2>&#34;MesloLGS NF:size=12&#34;</span> -e <span style=color:#0086d2>&#34;cmatrix&#34;</span> &amp;
+</span></span></code></pre></div><p>Sprucing that up into a function taking an argument for the font size:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#fb660a>COLOR</span>=blue
+</span></span><span style=display:flex><span><span style=color:#fb660a>FONT</span>=MeseloLGS<span style=color:#0086d2>\ </span>NF:size=
+</span></span><span style=display:flex><span>matrixterm () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># spawn terminal with fun matrix in it</span>
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># $1 = the size of font</span>
+</span></span><span style=display:flex><span>    xterm -fullscreen -bg black -fa <span style=color:#0086d2>&#34;</span><span style=color:#0086d2>${</span><span style=color:#fb660a>FONT</span><span style=color:#0086d2>}</span><span style=color:#fb660a>$1</span><span style=color:#0086d2>&#34;</span> -e <span style=color:#0086d2>&#34;cmatrix -abC</span><span style=color:#fb660a>$COLOR</span><span style=color:#0086d2>&#34;</span> &amp;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Notice the expanded variable $FONT, and $COLOR. Cmatrix takes different colors
+and at the moment I&rsquo;m partial to blue.</p><p>So the control flow including fonts can go something like</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>openonall () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># Open $1 on all monitors</span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a>$1</span> <span style=color:#0086f7;font-weight:700>14</span>
+</span></span><span style=display:flex><span>    moveright
+</span></span><span style=display:flex><span>    mouseright
+</span></span><span style=display:flex><span>    moveright
+</span></span><span style=display:flex><span>    mouseleft
+</span></span><span style=display:flex><span>    <span style=color:#fb660a>$1</span> <span style=color:#0086f7;font-weight:700>9</span>
+</span></span><span style=display:flex><span>    moveright
+</span></span><span style=display:flex><span>    <span style=color:#fb660a>$1</span> <span style=color:#0086f7;font-weight:700>12</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>openall matrixterm
+</span></span></code></pre></div><h2 id=problem-3-on-opening-and-closing>Problem 3: on opening and closing</h2><p>As previously mentioned, processes are okay. If we know the PIDs we can just
+kill them. <a href=https://www.howtogeek.com/devops/bash-process-termination-hacks/>Here&rsquo;s</a> an article on finding and killing processes. I personally
+don&rsquo;t believe in Xargs, so we&rsquo;re going to do this in multiple steps.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#fb660a>XTERMS</span>=<span style=color:#fb660a;font-weight:700>$(</span>ps -ef | grep xterm | grep -v <span style=color:#0086d2>&#39;grep&#39;</span> | awk <span style=color:#0086d2>&#39;{print $2}&#39;</span><span style=color:#fb660a;font-weight:700>)</span>
+</span></span></code></pre></div><p>So here&rsquo;s an array of all the PIDs of running <code>xterm</code>​s. I want to streamline
+checking if each of these are still running and signal an error if any aren&rsquo;t:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>isrunning () {
+</span></span><span style=display:flex><span>    <span style=color:#080;background-color:#0f140f;font-style:italic># $1 = process to check</span>
+</span></span><span style=display:flex><span>    ps -p <span style=color:#fb660a>$1</span> &gt;/dev/null
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>checkallprocs () {
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>for</span> proc in <span style=color:#fb660a>$*</span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>do</span>
+</span></span><span style=display:flex><span>      isrunning <span style=color:#fb660a>$proc</span> || <span style=color:#fb660a;font-weight:700>return</span> <span style=color:#0086f7;font-weight:700>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>done</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>So any run of <code>checkallprocs $XTERMS</code> will succeed as long as all of the
+original xterms are running, but will fail once one is manually terminated. This
+is perfect for a While loop:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#fb660a>INTERVAL</span>=0.5
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>while</span> checkallprocs <span style=color:#fb660a>$XTERMS</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>do</span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#fb660a>$INTERVAL</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>done</span>
+</span></span></code></pre></div><p>The interpreter doesn&rsquo;t move on until this loop is broken, meaning we can simply
+put the final Kill right after it.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span><span style=color:#fb660a;font-weight:700>for</span> proc in <span style=color:#fb660a>$XTERMS</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>do</span>
+</span></span><span style=display:flex><span>    kill -9 <span style=color:#fb660a>$proc</span> 2&gt;/dev/null
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>done</span>
+</span></span></code></pre></div><p>One of those iterations will fail because that xterm is already closed. But oh
+well.</p><h2 id=wrapping-it-up-in-a-script-with-a-hotkey>Wrapping it up in a script with a hotkey</h2><ul><li><a href=https://git.mitchmarq42.xyz/mitch/dotfiles/src/branch/main/.local/bin/trimatrix>Here&rsquo;s</a> the whole script</li></ul><p>And I bound it to super+z because nothing else appeared to be bound to that key
+and it&rsquo;s easy to hit when leaving the computer.</p><p>There&rsquo;s definitely improvements that can be made to this, but I found it to be a
+positive learning experience and wanted to share it with thou, the void.</p><div id=nextprev><a href=/articles/tutorials/eofetch/><div id=prevart>Previous:<br>Making Neofetch aware of Emacs</div></a></div></article></main><footer><a href=https://mitchmarq42.xyz/>https://mitchmarq42.xyz/</a><br><br><a href=/index.xml><img src=/rss.svg style=max-height:1.5em alt="RSS Feed" title="Subscribe via RSS for updates."></a></footer></body></html>
