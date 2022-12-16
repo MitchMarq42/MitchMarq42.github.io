@@ -42,10 +42,40 @@ There are several things I do with this site:
      lyrics-block "---\n" "\n---"))
 #+end_src
 #+RESULTS: 
-: Is this the real life
-: Is this just fantasy
-: Caught in a landslide
-: No escape from reality
+# : Is this the real life
+# : Is this just fantasy
+# : Caught in a landslide
+# : No escape from reality
+
+#+name: inline-js
+#+begin_src elisp :exports none :results export :var blk=""
+(concat
+ "<script type=\"text/javascript\">\n"
+ (cadr (org-babel-lob--src-info blk))
+ "\n"
+ "</script>")
+#+end_src
+# Lyric scraper, dynamic maybe?
+#+name: randlyric
+#+begin_src javascript :exports none
+    var r_text = [
+	"quote # 1",
+	"quote # 2",
+	"quote # 3",
+	"etc..."
+    ];
+    function doText() {
+	var i = Math.floor((r_text.length-1)*Math.random())
+	document.getElementById(‘quotes’).innerHTML = r_text[i];
+    }
+  doText
+#+end_src
+
+#+begin_export html
+  <div id="quotes"></div>
+#+end_export
+
+#+call: inline-js("randlyric")
 
 #+begin_src sh
   #!/bin/sh
@@ -53,6 +83,7 @@ There are several things I do with this site:
 #+end_src
 
 * Made with:
+#+begin_hugo
 {{< figure
 link=https://gohugo.io
 src=https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg
@@ -65,6 +96,7 @@ src="https://landchad.net/pix/landchad.gif"
 width="50"
 alt="theme stolen from LandChad.net"
 >}}
+#+end_hugo
 #+BEGIN_EXPORT html
 <a href="https://gnu.org/software/emacs">
 <img
